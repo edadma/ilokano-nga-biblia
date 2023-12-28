@@ -1,4 +1,4 @@
-package io.guthub.edadma.sjs_capacitor.components
+package io.guthub.edadma.ilokano_nga_biblia.components
 
 import com.raquo.laminar.api.L.{*, given}
 

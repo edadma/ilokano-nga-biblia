@@ -1,4 +1,4 @@
-package io.guthub.edadma.sjs_capacitor;
+package io.guthub.edadma.ilokano_nga_biblia;
 
 import com.getcapacitor.BridgeActivity;
 
