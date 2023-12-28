@@ -7,5 +7,4 @@ import components.*
 def App =
   Card(prevNext, foreignHtmlElement(DomApi.unsafeParseHtmlString(text.juan1)), prevNext)
 
-def prevNext =
-  div(cls := "flex justify-between", LefttButton, RightButton)
+def prevNext = div(cls := "flex justify-between", LefttButton, RightButton)
