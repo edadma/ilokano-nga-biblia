@@ -5,7 +5,7 @@ import scala.util.matching.Regex
 val bibleReference = raw"\s*((?:\d\s*)?[a-zA-Z\s*]*[a-zA-Z])\s+(\d+)\s*[.:,]\s*(\d+)\s*".r
 val repeatedSpaces = new Regex(raw"( )\1+")
 
-def parsseBibleReference(ref: String): Option[(String, Int, String)] =
+def parseBibleReference(ref: String): Option[(String, Int, String)] =
   ref match
     case bibleReference(book, chapter, verse) => Some(replaceRepeatedSpaces(book).toLowerCase, chapter.toInt, verse)
     case _                                    => None
