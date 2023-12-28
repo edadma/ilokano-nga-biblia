@@ -1,0 +1,9 @@
+{
+  "appId": "io.guthub.edadma.ilokano-nga-biblia",
+  "appName": "Ilokano nga Biblia",
+  "webDir": "target/build",
+  "server": {
+    "androidScheme": "http",
+    "cleartext": true
+  }
+}
