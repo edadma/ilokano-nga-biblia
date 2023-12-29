@@ -10,35 +10,11 @@ def Button(content: Node, border: Boolean = true) =
   )
 
 def LefttButton = Button(
-  svg.svg(
-    svg.className := "w-4 h-4",
-    svg.xmlns := "http://www.w3.org/2000/svg",
-    svg.fill := "none",
-    svg.viewBox := "0 0 14 10",
-    svg.path(
-      svg.stroke := "currentColor",
-      svg.strokeLineCap := "round",
-      svg.strokeLineJoin := "round",
-      svg.strokeWidth := "2",
-      svg.d := "M13,5 H1 M1,5 L5,1 M1,5 L5,9",
-    ),
-  ),
+  SVG.leftArrow,
   border = false,
 )
 
 def RightButton = Button(
-  svg.svg(
-    svg.className := "w-4 h-4",
-    svg.xmlns := "http://www.w3.org/2000/svg",
-    svg.fill := "none",
-    svg.viewBox := "0 0 14 10",
-    svg.path(
-      svg.stroke := "currentColor",
-      svg.strokeLineCap := "round",
-      svg.strokeLineJoin := "round",
-      svg.strokeWidth := "2",
-      svg.d := "M1 5h12m0 0L9 1m4 4L9 9",
-    ),
-  ),
+  SVG.rightArrow,
   border = false,
 )
