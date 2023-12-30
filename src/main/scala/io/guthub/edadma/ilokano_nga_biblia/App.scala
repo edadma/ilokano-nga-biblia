@@ -18,7 +18,7 @@ def App =
       cls := "overflow-hidden",
       Input(
         "Sapulen",
-        x =>
+        x => {
           parseBibleReference(x) match
             case None =>
             case Some(book, chapter, verse) =>
@@ -42,7 +42,8 @@ def App =
                         chapterVar.update(_ => chap)
                       end if
                     end if
-                  else bookVar.update(_ => b),
+                  else bookVar.update(_ => b)
+        },
       ),
       div(
         cls := "flex justify-between",
