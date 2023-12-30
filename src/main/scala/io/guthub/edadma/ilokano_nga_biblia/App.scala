@@ -42,20 +42,17 @@ def App =
                   end if
                 else bookVar.update(_ => b),
     ),
-    prevNext,
     div(
+      cls := "flex justify-between",
+      child <-- chapterSignal.map(ch => if ch > 1 then LefttButton(_ => chapterVar.update(_ - 1)) else div()),
+      child <-- chapterSignal.map(ch =>
+        if ch < bookSignal.now().length then RightButton(_ => chapterVar.update(_ + 1)) else div(),
+      ),
+    ),
+    div(
+      cls := "overflow-auto h-[85.8vh]",
       child <-- bookSignal
         .combineWith(chapterSignal)
         .map((book, chapter) => foreignHtmlElement(DomApi.unsafeParseHtmlString(book(chapter - 1)))),
-    ),
-    prevNext,
-  )
-
-def prevNext =
-  div(
-    cls := "flex justify-between",
-    child <-- chapterSignal.map(ch => if ch > 1 then LefttButton(_ => chapterVar.update(_ - 1)) else div()),
-    child <-- chapterSignal.map(ch =>
-      if ch < bookSignal.now().length then RightButton(_ => chapterVar.update(_ + 1)) else div(),
     ),
   )
