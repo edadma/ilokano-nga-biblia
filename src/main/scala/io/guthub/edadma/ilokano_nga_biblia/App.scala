@@ -4,7 +4,9 @@ import com.raquo.laminar.DomApi
 import com.raquo.laminar.api.L.{*, given}
 import components.*
 
-val book = Var(juan)
+import io.guthub.edadma.ilokano_nga_biblia.text.juan
+
+val book = Var(juan.book)
 val bookSignal = book.signal
 val chapter = Var(1)
 val chapterSignal = chapter.signal
