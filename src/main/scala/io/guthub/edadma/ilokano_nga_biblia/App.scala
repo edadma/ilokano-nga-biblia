@@ -17,8 +17,8 @@ def App =
     div(
       cls := "overflow-hidden",
       Input(
-        "Sapulen",
-        x => {
+        placeholderText = "Sapulen",
+        onChangeValue = x => {
           parseBibleReference(x) match
             case None =>
             case Some(book, chapter, verse) =>
@@ -44,6 +44,7 @@ def App =
                     end if
                   else bookVar.update(_ => b)
         },
+        onChangeRef = ref => ref.blur(),
       ),
       div(
         cls := "flex justify-between",
