@@ -18,6 +18,7 @@ def App =
       cls := "overflow-hidden",
       Input(
         placeholderText = "Sapulen",
+        clas = " sm:max-w-md",
         onChangeValue = x => {
           parseBibleReference(x) match
             case None =>
