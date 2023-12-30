@@ -14,45 +14,48 @@ val chapterSignal = chapterVar.signal
 
 def App =
   Card(
-    Input(
-      "Sapulen",
-      x =>
-        parseBibleReference(x) match
-          case None =>
-          case Some(book, chapter, verse) =>
-            books get book match
-              case None =>
-              case Some(b) =>
-                if chapter ne null then
-                  val chap = chapter.toInt
+    div(
+      cls := "overflow-hidden",
+      Input(
+        "Sapulen",
+        x =>
+          parseBibleReference(x) match
+            case None =>
+            case Some(book, chapter, verse) =>
+              books get book match
+                case None =>
+                case Some(b) =>
+                  if chapter ne null then
+                    val chap = chapter.toInt
 
-                  if 1 <= chap && chap <= b.length then
-                    if verse ne null then
-                      val verseElem = dom.document.getElementById(verse)
+                    if 1 <= chap && chap <= b.length then
+                      if verse ne null then
+                        val verseElem = dom.document.getElementById(verse)
 
-                      if verseElem ne null then
-                        verseElem.scrollIntoView()
+                        if verseElem ne null then
+                          verseElem.scrollIntoView()
+                          bookVar.update(_ => b)
+                          chapterVar.update(_ => chap)
+                        end if
+                      else
                         bookVar.update(_ => b)
                         chapterVar.update(_ => chap)
                       end if
-                    else
-                      bookVar.update(_ => b)
-                      chapterVar.update(_ => chap)
                     end if
-                  end if
-                else bookVar.update(_ => b),
-    ),
-    div(
-      cls := "flex justify-between",
-      child <-- chapterSignal.map(ch => if ch > 1 then LefttButton(_ => chapterVar.update(_ - 1)) else div()),
-      child <-- chapterSignal.map(ch =>
-        if ch < bookSignal.now().length then RightButton(_ => chapterVar.update(_ + 1)) else div(),
+                  else bookVar.update(_ => b),
       ),
-    ),
-    div(
-      cls := "overflow-auto h-[85.8vh]",
-      child <-- bookSignal
-        .combineWith(chapterSignal)
-        .map((book, chapter) => foreignHtmlElement(DomApi.unsafeParseHtmlString(book(chapter - 1)))),
+      div(
+        cls := "flex justify-between",
+        child <-- chapterSignal.map(ch => if ch > 1 then LefttButton(_ => chapterVar.update(_ - 1)) else div()),
+        child <-- chapterSignal.map(ch =>
+          if ch < bookSignal.now().length then RightButton(_ => chapterVar.update(_ + 1)) else div(),
+        ),
+      ),
+      div(
+        cls := "no-scrollbar overflow-auto h-[85.8vh]",
+        child <-- bookSignal
+          .combineWith(chapterSignal)
+          .map((book, chapter) => foreignHtmlElement(DomApi.unsafeParseHtmlString(book(chapter - 1)))),
+      ),
     ),
   )
