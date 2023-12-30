@@ -33,29 +33,34 @@ def App =
                         val verseElem = dom.document.getElementById(verse)
 
                         if verseElem ne null then
-                          verseElem.scrollIntoView()
+                          verseElem.scrollIntoView(true)
                           bookVar.update(_ => b)
                           chapterVar.update(_ => chap)
                         end if
                       else
                         bookVar.update(_ => b)
                         chapterVar.update(_ => chap)
+                        scrollToTop()
                       end if
                     end if
                   else
                     bookVar.update(_ => b)
                     chapterVar.update(_ => 1)
+                    scrollToTop()
         },
         onChangeRef = ref => ref.blur(),
       ),
       div(
         cls := "flex justify-between",
-        child <-- chapterSignal.map(ch => if ch > 1 then LefttButton(_ => chapterVar.update(_ - 1)) else div()),
         child <-- chapterSignal.map(ch =>
-          if ch < bookSignal.now().length then RightButton(_ => chapterVar.update(_ + 1)) else div(),
+          if ch > 1 then LefttButton(_ => { chapterVar.update(_ - 1); scrollToTop() }) else div(),
+        ),
+        child <-- chapterSignal.map(ch =>
+          if ch < bookSignal.now().length then RightButton(_ => { chapterVar.update(_ + 1); scrollToTop() }) else div(),
         ),
       ),
       div(
+        idAttr := "text",
         cls := "no-scrollbar overflow-auto h-[85.8vh]",
         child <-- bookSignal
           .combineWith(chapterSignal)
@@ -63,3 +68,8 @@ def App =
       ),
     ),
   )
+
+def scrollToTop(): Unit =
+  val textElem = dom.document.getElementById("text")
+
+  if textElem ne null then textElem.scrollTop = 0
