@@ -10,11 +10,13 @@ val chapter = Var(1)
 val chapterSignal = chapter.signal
 
 def App =
-  Card(prevNext, foreignHtmlElement(DomApi.unsafeParseHtmlString(text.juan1)), prevNext)
+  Card(prevNext, foreignHtmlElement(DomApi.unsafeParseHtmlString(bookSignal.now()(chapterSignal.now() - 1))), prevNext)
 
 def prevNext =
   div(
     cls := "flex justify-between",
-    child <-- chapterSignal.map(ch => if ch > 1 then LefttButton else div()),
-    child <-- chapterSignal.map(ch => if ch < bookSignal.now().length then RightButton else div()),
+    child <-- chapterSignal.map(ch => if ch > 1 then LefttButton(_ => chapter.update(_ - 1)) else div()),
+    child <-- chapterSignal.map(ch =>
+      if ch < bookSignal.now().length then RightButton(_ => chapter.update(_ + 1)) else div(),
+    ),
   )
