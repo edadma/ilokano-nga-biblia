@@ -2,7 +2,7 @@ package io.guthub.edadma.ilokano_nga_biblia.text.juan
 
 val juan6 =
 """<div class="prose prose-h1:text-gray-400 prose-h1:font-fondamento prose-h1:font-normal prose-h2:text-gray-400 prose-h3:text-gray-400 prose-p:text-gray-400 prose-p:m-0">
-<h2>Kapitulo</h2>
+<h2>Kapitulo 6</h2>
 <h3>Pakanen ni Jesus ti Lima Ribu</h3>
 <p class=""><sup>1</sup>Kalpasan daytoy, napan ni Jesus iti bangir ti Baybay ti Galilea, nga isu ti Baybay ti Tiberias.
 <sup>2</sup>Sumarsaruno ti dakkel a bunggoy, agsipud ta nakitada dagiti pagilasinan nga ar-aramidenna kadagiti masakit.
