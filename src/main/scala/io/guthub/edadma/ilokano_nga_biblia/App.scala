@@ -61,7 +61,7 @@ def App =
       ),
       div(
         idAttr := "text",
-        cls := "no-scrollbar overflow-auto h-[85.8vh]",
+        cls := "no-scrollbar overflow-auto h-[calc(100vh-135px)]",
         child <-- bookSignal
           .combineWith(chapterSignal)
           .map((book, chapter) => foreignHtmlElement(DomApi.unsafeParseHtmlString(book(chapter - 1)))),

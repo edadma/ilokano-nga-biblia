@@ -1379,6 +1379,66 @@ html {
   height: 85.8vh;
 }
 
+.h-\[vh\] {
+  height: vh;
+}
+
+.h-\[100vh\] {
+  height: 100vh;
+}
+
+.h-\[c100vh\] {
+  height: c100vh;
+}
+
+.h-\[calc100vh\] {
+  height: calc100vh;
+}
+
+.h-\[calc\(100vh-10px\)\] {
+  height: calc(100vh - 10px);
+}
+
+.h-\[calc\(100vh-50px\)\] {
+  height: calc(100vh - 50px);
+}
+
+.h-\[calc\(100vh-90px\)\] {
+  height: calc(100vh - 90px);
+}
+
+.h-\[calc\(100vh-110px\)\] {
+  height: calc(100vh - 110px);
+}
+
+.h-\[calc\(100vh-130px\)\] {
+  height: calc(100vh - 130px);
+}
+
+.h-\[calc\(100vh-150px\)\] {
+  height: calc(100vh - 150px);
+}
+
+.h-\[calc\(100vh-140px\)\] {
+  height: calc(100vh - 140px);
+}
+
+.h-\[calc\(100vh-1px\)\] {
+  height: calc(100vh - 1px);
+}
+
+.h-\[calc\(100vh-137px\)\] {
+  height: calc(100vh - 137px);
+}
+
+.h-\[calc\(100vh-136px\)\] {
+  height: calc(100vh - 136px);
+}
+
+.h-\[calc\(100vh-135px\)\] {
+  height: calc(100vh - 135px);
+}
+
 .w-4 {
   width: 1rem;
 }
@@ -1584,6 +1644,22 @@ html {
 .prose-p\:text-gray-400 :is(:where(p):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px) {
+  .sm\:max-w-lg {
+    max-width: 32rem;
+  }
+
+  .sm\:max-w-md {
+    max-width: 28rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:max-w-lg {
+    max-width: 32rem;
+  }
 }
 
 :is(:where(.dark) .dark\:border-blue-500) {
