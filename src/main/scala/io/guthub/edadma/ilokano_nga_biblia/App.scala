@@ -42,7 +42,9 @@ def App =
                         chapterVar.update(_ => chap)
                       end if
                     end if
-                  else bookVar.update(_ => b)
+                  else
+                    bookVar.update(_ => b)
+                    chapterVar.update(_ => 1)
         },
         onChangeRef = ref => ref.blur(),
       ),
