@@ -10,7 +10,15 @@ val chapter = Var(1)
 val chapterSignal = chapter.signal
 
 def App =
-  Card(prevNext, foreignHtmlElement(DomApi.unsafeParseHtmlString(bookSignal.now()(chapterSignal.now() - 1))), prevNext)
+  Card(
+    div(
+      prevNext,
+      child <-- bookSignal
+        .combineWith(chapterSignal)
+        .map((b, c) => foreignHtmlElement(DomApi.unsafeParseHtmlString(b(c - 1)))),
+      prevNext,
+    ),
+  )
 
 def prevNext =
   div(
