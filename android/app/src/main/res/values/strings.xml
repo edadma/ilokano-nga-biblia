@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">sjs-capacitor</string>
-    <string name="title_activity_main">sjs-capacitor</string>
+    <string name="app_name">Ilokano nga Biblia</string>
+    <string name="title_activity_main">Ilokano nga Biblia</string>
     <string name="package_name">io.guthub.edadma.ilokano_nga_biblia</string>
     <string name="custom_url_scheme">io.guthub.edadma.ilokano_nga_biblia</string>
 </resources>

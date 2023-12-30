@@ -1,10 +1,10 @@
 apply plugin: 'com.android.application'
 
 android {
-    namespace "io.guthub.edadma.sjs_capacitor"
+    namespace "io.guthub.edadma.ilokano_nga_biblia"
     compileSdkVersion rootProject.ext.compileSdkVersion
     defaultConfig {
-        applicationId "io.guthub.edadma.sjs_capacitor"
+        applicationId "io.guthub.edadma.ilokano_nga_biblia"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

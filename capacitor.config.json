@@ -1,5 +1,5 @@
 {
-  "appId": "io.guthub.edadma.ilokano-nga-biblia",
+  "appId": "io.guthub.edadma.ilokano_nga_biblia",
   "appName": "Ilokano nga Biblia",
   "webDir": "target/build",
   "server": {
