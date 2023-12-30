@@ -3,6 +3,7 @@ package io.guthub.edadma.ilokano_nga_biblia
 import com.raquo.laminar.DomApi
 import com.raquo.laminar.api.L.{*, given}
 import components.*
+import org.scalajs.dom
 
 import io.guthub.edadma.ilokano_nga_biblia.text.juan
 
@@ -26,8 +27,18 @@ def App =
                   val chap = chapter.toInt
 
                   if 1 <= chap && chap <= b.length then
-                    bookVar.update(_ => b)
-                    chapterVar.update(_ => chap)
+                    if verse ne null then
+                      val verseElem = dom.document.getElementById(verse)
+
+                      if verseElem ne null then
+                        verseElem.scrollIntoView()
+                        bookVar.update(_ => b)
+                        chapterVar.update(_ => chap)
+                      end if
+                    else
+                      bookVar.update(_ => b)
+                      chapterVar.update(_ => chap)
+                    end if
                   end if
                 else bookVar.update(_ => b),
     ),
