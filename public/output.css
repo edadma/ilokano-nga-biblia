@@ -1351,6 +1351,10 @@ html {
   margin-bottom: 0;
 }
 
+.sticky {
+  position: sticky;
+}
+
 .me-2 {
   margin-inline-end: 0.5rem;
 }

@@ -15,7 +15,21 @@ def App =
   Card(
     Input(
       "Sapulen",
-      x => println(x),
+      x =>
+        parseBibleReference(x) match
+          case None =>
+          case Some(book, chapter, verse) =>
+            books get book match
+              case None =>
+              case Some(b) =>
+                if chapter ne null then
+                  val chap = chapter.toInt
+
+                  if 1 <= chap && chap <= b.length then
+                    bookVar.update(_ => b)
+                    chapterVar.update(_ => chap)
+                  end if
+                else bookVar.update(_ => b),
     ),
     prevNext,
     div(
