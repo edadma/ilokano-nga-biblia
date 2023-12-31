@@ -1,8 +1,8 @@
 package io.guthub.edadma.ilokano_nga_biblia.text.maysa_juan
 
 val maysa_juan_1 =
-"""<div class="prose prose-h1:font-fondamento prose-h1:font-normal prose-h1:text-gray-600 dark:prose-h1:text-gray-400 prose-h2:text-gray-600 dark:prose-h2:text-gray-400 prose-h3:text-gray-600 dark:prose-h3:text-gray-400 prose-p:text-gray-600 dark:prose-p:text-gray-400 prose-p:m-0">
-<h1>Maudi a Surat ni Juan</h1>
+  """<div class="prose prose-h1:font-fondamento prose-h1:font-normal prose-h1:text-gray-600 dark:prose-h1:text-gray-400 prose-h2:text-gray-600 dark:prose-h2:text-gray-400 prose-h3:text-gray-600 dark:prose-h3:text-gray-400 prose-p:text-gray-600 dark:prose-p:text-gray-400 prose-p:m-0">
+<h1>Umuna a Surat ni Juan</h1>
 <h2>Kapitulo 1</h2>
 <h3>Ti Sao ti Biag</h3>
 <p class="">"<sup id="1">1</sup>Daydi idi damo, a nangngegtayo, a nakitatayo kadagiti matatayo, a kinita ken sinagidtayo babaen kadagiti imatayo, maipapan iti sao ti biag—
