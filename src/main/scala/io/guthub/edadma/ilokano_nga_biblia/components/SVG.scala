@@ -37,7 +37,7 @@ object SVG:
 
   def sun: ReactiveSvgElement[SVGSVGElement] =
     svg(
-      cls := "w-[16px] h-[16px] text-gray-700 dark:text-gray-500",
+      cls := "w-[16px] h-[16px] text-gray-600 dark:text-gray-400",
       xmlns := "http://www.w3.org/2000/svg",
       fill := "currentColor",
       viewBox := "0 0 20 20",
@@ -48,7 +48,7 @@ object SVG:
 
   def moon: ReactiveSvgElement[SVGSVGElement] =
     svg(
-      cls := "w-[16px] h-[16px] text-gray-700 dark:text-gray-500",
+      cls := "w-[16px] h-[16px] text-gray-600 dark:text-gray-400",
       xmlns := "http://www.w3.org/2000/svg",
       fill := "currentColor",
       viewBox := "0 0 18 20",

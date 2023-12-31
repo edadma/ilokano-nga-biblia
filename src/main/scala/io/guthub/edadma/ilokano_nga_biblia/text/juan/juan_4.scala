@@ -1,7 +1,7 @@
 package io.guthub.edadma.ilokano_nga_biblia.text.juan
 
-val juan4 =
-"""<div class="prose prose-h1:text-gray-400 prose-h1:font-fondamento prose-h1:font-normal prose-h2:text-gray-400 prose-h3:text-gray-400 prose-p:text-gray-400 prose-p:m-0">
+val juan_4 =
+"""<div class="prose prose-h1:font-fondamento prose-h1:font-normal prose-h1:text-gray-600 dark:prose-h1:text-gray-400 prose-h2:text-gray-600 dark:prose-h2:text-gray-400 prose-h3:text-gray-600 dark:prose-h3:text-gray-400 prose-p:text-gray-600 dark:prose-p:text-gray-400 prose-p:m-0">
 <h2>Kapitulo 4</h2>
 <h3>Ni Jesus ken ti Babai ti Samaria</h3>
 <p class="">"<sup id="1">1</sup>Ita idi naammuan ni Jesus a nadamag dagiti Fariseo nga ad-adu nga adalan ti ar-aramiden ken buniagan ni Jesus ngem ni Juan
