@@ -19,7 +19,7 @@ def App =
     div(
       cls := "overflow-hidden",
       div(
-        cls := "flex row",
+        cls := "flex justify-between",
         Input(
           placeholderText = "Sapulen",
           clas = " sm:max-w-md",
