@@ -53,7 +53,9 @@ def App =
                       chapterVar.update(_ => 1)
                       scrollToTop()
           },
-          onChangeRef = ref => ref.blur(),
+          onChangeRef = ref =>
+            ref.blur()
+            ref.value = "",
         ),
         child <-- modeSignal.map(mode =>
           Button(
