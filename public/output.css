@@ -1355,8 +1355,24 @@ html {
   position: sticky;
 }
 
+.ml-5 {
+  margin-left: 1.25rem;
+}
+
+.ml-3 {
+  margin-left: 0.75rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
 .block {
   display: block;
+}
+
+.inline {
+  display: inline;
 }
 
 .flex {
@@ -1379,12 +1395,20 @@ html {
   height: calc(100vh - 135px);
 }
 
+.h-\[16px\] {
+  height: 16px;
+}
+
 .w-4 {
   width: 1rem;
 }
 
 .w-full {
   width: 100%;
+}
+
+.w-\[16px\] {
+  width: 16px;
 }
 
 .max-w-full {
@@ -1486,6 +1510,16 @@ html {
 .text-gray-900 {
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
+.text-gray-800 {
+  --tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity));
+}
+
+.text-gray-200 {
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity));
 }
 
 .shadow {
@@ -1655,6 +1689,11 @@ html {
 :is(:where(.dark) .dark\:text-gray-400) {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+:is(:where(.dark) .dark\:text-white) {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 :is(:where(.dark) .dark\:placeholder-gray-400)::-moz-placeholder {

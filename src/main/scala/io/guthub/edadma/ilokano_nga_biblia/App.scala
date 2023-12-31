@@ -11,45 +11,63 @@ val bookVar = Var(juan.book)
 val bookSignal = bookVar.signal
 val chapterVar = Var(1)
 val chapterSignal = chapterVar.signal
+val modeVar = Var["light" | "dark"]("light")
+val modeSignal = modeVar.signal
 
 def App =
   Card(
     div(
       cls := "overflow-hidden",
-      Input(
-        placeholderText = "Sapulen",
-        clas = " sm:max-w-md",
-        onChangeValue = x => {
-          parseBibleReference(x) match
-            case None =>
-            case Some(book, chapter, verse) =>
-              books get book match
-                case None =>
-                case Some(b) =>
-                  if chapter ne null then
-                    val chap = chapter.toInt
+      div(
+        cls := "flex row",
+        Input(
+          placeholderText = "Sapulen",
+          clas = " sm:max-w-md",
+          onChangeValue = x => {
+            parseBibleReference(x) match
+              case None =>
+              case Some(book, chapter, verse) =>
+                books get book match
+                  case None =>
+                  case Some(b) =>
+                    if chapter ne null then
+                      val chap = chapter.toInt
 
-                    if 1 <= chap && chap <= b.length then
-                      if verse ne null then
-                        val verseElem = dom.document.getElementById(verse)
+                      if 1 <= chap && chap <= b.length then
+                        if verse ne null then
+                          val verseElem = dom.document.getElementById(verse)
 
-                        if verseElem ne null then
-                          verseElem.scrollIntoView(true)
+                          if verseElem ne null then
+                            verseElem.scrollIntoView(true)
+                            bookVar.update(_ => b)
+                            chapterVar.update(_ => chap)
+                          end if
+                        else
                           bookVar.update(_ => b)
                           chapterVar.update(_ => chap)
+                          scrollToTop()
                         end if
-                      else
-                        bookVar.update(_ => b)
-                        chapterVar.update(_ => chap)
-                        scrollToTop()
                       end if
-                    end if
-                  else
-                    bookVar.update(_ => b)
-                    chapterVar.update(_ => 1)
-                    scrollToTop()
-        },
-        onChangeRef = ref => ref.blur(),
+                    else
+                      bookVar.update(_ => b)
+                      chapterVar.update(_ => 1)
+                      scrollToTop()
+          },
+          onChangeRef = ref => ref.blur(),
+        ),
+        child <-- modeSignal.map(mode =>
+          Button(
+            if mode == "light" then SVG.moon else SVG.sun,
+            border = false,
+            clas = "ml-2",
+            onClickEvent = _ => {
+              modeVar.update(_ => if mode == "light" then "dark" else "light")
+
+              if mode == "light" then dom.document.documentElement.classList.add("dark")
+              else dom.document.documentElement.classList.remove("dark")
+            },
+          ),
+        ),
       ),
       div(
         cls := "flex justify-between",
