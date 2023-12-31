@@ -11,15 +11,3 @@ def Button(content: Node, border: Boolean = true, onClickEvent: MouseEvent => Un
     content,
     onClick --> onClickEvent,
   )
-
-def LefttButton(onClickEvent: MouseEvent => Unit = _ => {}) = Button(
-  SVG.leftArrow,
-  border = false,
-  onClickEvent,
-)
-
-def RightButton(onClickEvent: MouseEvent => Unit = _ => {}) = Button(
-  SVG.rightArrow,
-  border = false,
-  onClickEvent,
-)

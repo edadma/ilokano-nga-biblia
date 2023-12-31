@@ -54,10 +54,13 @@ def App =
       div(
         cls := "flex justify-between",
         child <-- chapterSignal.map(ch =>
-          if ch > 1 then LefttButton(_ => { chapterVar.update(_ - 1); scrollToTop() }) else div(),
+          if ch > 1 then Button(SVG.leftArrow, border = false, _ => { chapterVar.update(_ - 1); scrollToTop() })
+          else div(),
         ),
         child <-- chapterSignal.map(ch =>
-          if ch < bookSignal.now().length then RightButton(_ => { chapterVar.update(_ + 1); scrollToTop() }) else div(),
+          if ch < bookSignal.now().length then
+            Button(SVG.rightArrow, border = false, _ => { chapterVar.update(_ + 1); scrollToTop() })
+          else div(),
         ),
       ),
       div(
