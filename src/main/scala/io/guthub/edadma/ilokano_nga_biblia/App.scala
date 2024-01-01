@@ -5,16 +5,38 @@ import com.raquo.laminar.api.L.{*, given}
 import components.*
 import org.scalajs.dom
 
+import scala.scalajs.js.Thenable.Implicits._
+import concurrent.ExecutionContext.Implicits.global
+
+import typings.capacitorPreferences.mod.Preferences
+import typings.capacitorPreferences.distEsmDefinitionsMod.{SetOptions, GetOptions, RemoveOptions}
+
 import io.guthub.edadma.ilokano_nga_biblia.text.juan
+
+import scala.util.Random
+
+type Mode = "light" | "dark"
 
 val bookVar = Var(juan.book)
 val bookSignal = bookVar.signal
 val chapterVar = Var(1)
 val chapterSignal = chapterVar.signal
-val modeVar = Var["light" | "dark"]("light")
+val modeVar = Var[Mode]("light")
 val modeSignal = modeVar.signal
 
 def App =
+  Preferences.get(GetOptions("mode")) foreach { v =>
+    v.value match
+      case null =>
+      case mode @ ("light" | "dark") =>
+        modeVar set mode
+        println(mode)
+
+        if mode == "dark" then dom.document.documentElement.classList.add("dark")
+        else dom.document.documentElement.classList.remove("dark")
+      case _ => Preferences.remove(RemoveOptions("mode"))
+  }
+
   Card(
     div(
       cls := "overflow-hidden",
@@ -39,18 +61,18 @@ def App =
 
                           if verseElem ne null then
                             verseElem.scrollIntoView(true)
-                            bookVar.update(_ => b)
-                            chapterVar.update(_ => chap)
+                            bookVar.set(b)
+                            chapterVar.set(chap)
                           end if
                         else
-                          bookVar.update(_ => b)
-                          chapterVar.update(_ => chap)
+                          bookVar.set(b)
+                          chapterVar.set(chap)
                           scrollToTop()
                         end if
                       end if
                     else
-                      bookVar.update(_ => b)
-                      chapterVar.update(_ => 1)
+                      bookVar.set(b)
+                      chapterVar.set(1)
                       scrollToTop()
           },
           onChangeRef = ref =>
@@ -63,7 +85,10 @@ def App =
             border = false,
             clas = "ml-2",
             onClickEvent = _ => {
-              modeVar.update(_ => if mode == "light" then "dark" else "light")
+              val newMode: Mode = if mode == "light" then "dark" else "light"
+
+              modeVar set newMode
+              Preferences set SetOptions("mode", newMode)
 
               if mode == "light" then dom.document.documentElement.classList.add("dark")
               else dom.document.documentElement.classList.remove("dark")
