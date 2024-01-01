@@ -10,7 +10,7 @@ import concurrent.ExecutionContext.Implicits.global
 import typings.capacitorPreferences.mod.Preferences
 import typings.capacitorPreferences.distEsmDefinitionsMod.{GetOptions, RemoveOptions, SetOptions}
 import io.guthub.edadma.ilokano_nga_biblia.text.juan
-import org.scalajs.dom.HTMLInputElement
+import org.scalajs.dom.{HTMLInputElement, MouseEvent}
 
 type Mode = "light" | "dark"
 
@@ -36,20 +36,19 @@ def App =
         cls := "flex justify-between",
         Input(
           placeholderText = "Sapulen",
-          clas = " sm:max-w-md",
+          clas = "sm:max-w-md",
           onChangeEvent = handleSearchInput,
         ),
+        Button(clas = "ml-2", content = "Libro", onClickEvent = _ => println("asdf")),
         child <-- modeSignal.map(mode =>
           Button(
             if mode == "light" then SVG.moon else SVG.sun,
-            border = false,
             clas = "ml-2",
-            onClickEvent = _ => {
+            onClickEvent = _ =>
               val newMode: Mode = if mode == "light" then "dark" else "light"
 
               Preferences set SetOptions("mode", newMode)
-              setMode(newMode)
-            },
+              setMode(newMode),
           ),
         ),
       ),
@@ -59,8 +58,7 @@ def App =
           if ch > 1 then
             Button(
               SVG.leftArrow,
-              border = false,
-              _ =>
+              onClickEvent = (_: MouseEvent) =>
                 chapterVar.update(_ - 1)
                 scrollToTop(),
             )
@@ -70,8 +68,7 @@ def App =
           if ch < bookSignal.now().length then
             Button(
               SVG.rightArrow,
-              border = false,
-              _ =>
+              onClickEvent = (_: MouseEvent) =>
                 chapterVar.update(_ + 1)
                 scrollToTop(),
             )
