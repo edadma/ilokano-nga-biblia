@@ -109,6 +109,7 @@ def App =
       ),
     ),
   )
+end App
 
 def scrollToTop(): Unit =
   val textElem = dom.document.getElementById("text")
