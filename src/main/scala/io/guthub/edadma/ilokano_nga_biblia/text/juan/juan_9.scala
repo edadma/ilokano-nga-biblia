@@ -1,7 +1,7 @@
 package io.guthub.edadma.ilokano_nga_biblia.text.juan
 
 val juan_9 =
-"""<div class="prose prose-h1:font-fondamento prose-h1:font-normal prose-h1:text-gray-600 dark:prose-h1:text-gray-400 prose-h2:text-gray-600 dark:prose-h2:text-gray-400 prose-h3:text-gray-600 dark:prose-h3:text-gray-400 prose-p:text-gray-600 dark:prose-p:text-gray-400 prose-p:m-0">
+"""<div class="prose prose-h1:font-fondamento prose-h1:font-normal prose-h1:text-gray-600 dark:prose-h1:text-gray-400 prose-h2:text-gray-600 dark:prose-h2:text-gray-400 prose-h3:text-gray-600 dark:prose-h3:text-gray-400 prose-p:text-gray-600 dark:prose-p:text-gray-400 prose-p:m-0 prose-p:leading-normal">
 <h2>Kapitulo 9</h2>
 <p class=""><sup id="1">1</sup>Idi lumabas, nakitana ti maysa a lalaki a bulsek manipud pannakayanakna.
 <sup id="2">2</sup>Insaludsod dagiti adalanna kenkuana, “Maestro, siasino ti nagbasol, daytoy a tao wenno dagiti nagannakna, a nayanak a bulsek?”

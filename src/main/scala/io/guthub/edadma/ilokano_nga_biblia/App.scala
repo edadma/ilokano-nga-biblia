@@ -13,8 +13,6 @@ import typings.capacitorPreferences.distEsmDefinitionsMod.{SetOptions, GetOption
 
 import io.guthub.edadma.ilokano_nga_biblia.text.juan
 
-import scala.util.Random
-
 type Mode = "light" | "dark"
 
 val bookVar = Var(juan.book)

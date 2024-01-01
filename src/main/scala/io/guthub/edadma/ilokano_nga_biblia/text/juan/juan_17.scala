@@ -1,7 +1,7 @@
 package io.guthub.edadma.ilokano_nga_biblia.text.juan
 
 val juan_17 =
-"""<div class="prose prose-h1:font-fondamento prose-h1:font-normal prose-h1:text-gray-600 dark:prose-h1:text-gray-400 prose-h2:text-gray-600 dark:prose-h2:text-gray-400 prose-h3:text-gray-600 dark:prose-h3:text-gray-400 prose-p:text-gray-600 dark:prose-p:text-gray-400 prose-p:m-0">
+"""<div class="prose prose-h1:font-fondamento prose-h1:font-normal prose-h1:text-gray-600 dark:prose-h1:text-gray-400 prose-h2:text-gray-600 dark:prose-h2:text-gray-400 prose-h3:text-gray-600 dark:prose-h3:text-gray-400 prose-p:text-gray-600 dark:prose-p:text-gray-400 prose-p:m-0 prose-p:leading-normal">
 <h2>Kapitulo 17</h2>
 <h3>Ti Kararag ti Nangato a Padi</h3>
 <p class=""><sup id="1">1</sup>Idi naisao ni Jesus dagitoy a sasao, intangadna dagiti matana idiay langit ket kinunana, “Ama, dimtengen ti oras; idaydayawmo ti Anakmo tapno maidaydayawnaka ti Anak,

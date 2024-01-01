@@ -1,7 +1,7 @@
 package io.guthub.edadma.ilokano_nga_biblia.text.maysa_juan
 
 val maysa_juan_3 =
-"""<div class="prose prose-h1:font-fondamento prose-h1:font-normal prose-h1:text-gray-600 dark:prose-h1:text-gray-400 prose-h2:text-gray-600 dark:prose-h2:text-gray-400 prose-h3:text-gray-600 dark:prose-h3:text-gray-400 prose-p:text-gray-600 dark:prose-p:text-gray-400 prose-p:m-0">
+"""<div class="prose prose-h1:font-fondamento prose-h1:font-normal prose-h1:text-gray-600 dark:prose-h1:text-gray-400 prose-h2:text-gray-600 dark:prose-h2:text-gray-400 prose-h3:text-gray-600 dark:prose-h3:text-gray-400 prose-p:text-gray-600 dark:prose-p:text-gray-400 prose-p:m-0 prose-p:leading-normal">
 <h2>Kapitulo 3</h2>
 <p class=""><sup id="1">1</sup>Kitaenyo no ania a kita ti ayat ti inted kadatayo ti Ama, tapno maawagantayo nga annak ti Dios; ket kastatayo. Ti rason no apay a ditay am-ammo ti lubong ket saanna nga am-ammo.
 <sup id="2">2</sup>Patpatgek, annaktayo itan ti Dios, ket saan pay a nagparang ti pagbalinantayo; ngem ammotayo nga inton agparang isuna agbalintayo a kas kenkuana, agsipud ta makitatayo isuna a kas kenkuana.
