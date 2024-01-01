@@ -31,57 +31,54 @@ def App =
 
   Card(
     div(
-      cls := "overflow-hidden",
-      div(
-        cls := "flex justify-between",
-        Input(
-          placeholderText = "Sapulen",
-          clas = "sm:max-w-md",
-          onChangeEvent = handleSearchInput,
-        ),
-        Button(clas = "ml-2", content = "Libro", onClickEvent = _ => println("asdf")),
-        child <-- modeSignal.map(mode =>
-          Button(
-            if mode == "light" then SVG.moon else SVG.sun,
-            clas = "ml-2",
-            onClickEvent = _ =>
-              val newMode: Mode = if mode == "light" then "dark" else "light"
+      cls := "flex justify-between",
+      Input(
+        placeholderText = "Sapulen",
+        clas = "sm:max-w-md",
+        onChangeEvent = handleSearchInput,
+      ),
+      Button(clas = "ml-2", content = "Libro", onClickEvent = _ => println("asdf")),
+      child <-- modeSignal.map(mode =>
+        Button(
+          if mode == "light" then SVG.moon else SVG.sun,
+          clas = "ml-2",
+          onClickEvent = _ =>
+            val newMode: Mode = if mode == "light" then "dark" else "light"
 
-              Preferences set SetOptions("mode", newMode)
-              setMode(newMode),
-          ),
+            Preferences set SetOptions("mode", newMode)
+            setMode(newMode),
         ),
       ),
-      div(
-        cls := "flex justify-between",
-        child <-- chapterSignal.map(ch =>
-          if ch > 1 then
-            Button(
-              SVG.leftArrow,
-              onClickEvent = (_: MouseEvent) =>
-                chapterVar.update(_ - 1)
-                scrollToTop(),
-            )
-          else div(),
-        ),
-        child <-- chapterSignal.map(ch =>
-          if ch < bookSignal.now().length then
-            Button(
-              SVG.rightArrow,
-              onClickEvent = (_: MouseEvent) =>
-                chapterVar.update(_ + 1)
-                scrollToTop(),
-            )
-          else div(),
-        ),
+    ),
+    div(
+      cls := "flex justify-between",
+      child <-- chapterSignal.map(ch =>
+        if ch > 1 then
+          Button(
+            SVG.leftArrow,
+            onClickEvent = (_: MouseEvent) =>
+              chapterVar.update(_ - 1)
+              scrollToTop(),
+          )
+        else div(),
       ),
-      div(
-        idAttr := "text",
-        cls := "no-scrollbar overflow-auto h-[calc(100vh-135px)]",
-        child <-- bookSignal
-          .combineWith(chapterSignal)
-          .map((book, chapter) => foreignHtmlElement(DomApi.unsafeParseHtmlString(book(chapter - 1)))),
+      child <-- chapterSignal.map(ch =>
+        if ch < bookSignal.now().length then
+          Button(
+            SVG.rightArrow,
+            onClickEvent = (_: MouseEvent) =>
+              chapterVar.update(_ + 1)
+              scrollToTop(),
+          )
+        else div(),
       ),
+    ),
+    div(
+      idAttr := "text",
+      cls := "no-scrollbar overflow-auto h-[calc(100vh-135px)]",
+      child <-- bookSignal
+        .combineWith(chapterSignal)
+        .map((book, chapter) => foreignHtmlElement(DomApi.unsafeParseHtmlString(book(chapter - 1)))),
     ),
   )
 end App
