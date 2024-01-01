@@ -38,16 +38,16 @@ def App =
         cls := "sm:max-w-md",
         inContext(thisNode => onChange --> { _ => handleSearchInput(thisNode.ref) }),
       ),
-      Button(clas = "ml-2", content = "Libro", onClickEvent = _ => println("asdf")),
+      Button(cls := "ml-2", "Libro", onClick --> (_ => println("asdf"))),
       child <-- modeSignal.map(mode =>
         Button(
           if mode == "light" then SVG.moon else SVG.sun,
-          clas = "ml-2",
-          onClickEvent = _ =>
-            val newMode: Mode = if mode == "light" then "dark" else "light"
-
-            Preferences set SetOptions("mode", newMode)
-            setMode(newMode),
+          cls := "ml-2",
+          onClick --> (_ => println(123)),
+//            val newMode: Mode = if mode == "light" then "dark" else "light"
+//
+//            Preferences set SetOptions("mode", newMode)
+//            setMode(newMode),
         ),
       ),
     ),
@@ -57,9 +57,10 @@ def App =
         if ch > 1 then
           Button(
             SVG.leftArrow,
-            onClickEvent = (_: MouseEvent) =>
+            onClick --> { _ =>
               chapterVar.update(_ - 1)
-              scrollToTop(),
+              scrollToTop()
+            },
           )
         else div(),
       ),
@@ -67,9 +68,10 @@ def App =
         if ch < bookSignal.now().length then
           Button(
             SVG.rightArrow,
-            onClickEvent = (_: MouseEvent) =>
+            onClick --> { _ =>
               chapterVar.update(_ + 1)
-              scrollToTop(),
+              scrollToTop()
+            },
           )
         else div(),
       ),
