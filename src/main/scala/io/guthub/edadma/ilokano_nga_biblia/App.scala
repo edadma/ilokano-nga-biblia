@@ -5,13 +5,12 @@ import com.raquo.laminar.api.L.{*, given}
 import components.*
 import org.scalajs.dom
 
-import scala.scalajs.js.Thenable.Implicits._
+import scala.scalajs.js.Thenable.Implicits.*
 import concurrent.ExecutionContext.Implicits.global
-
 import typings.capacitorPreferences.mod.Preferences
-import typings.capacitorPreferences.distEsmDefinitionsMod.{SetOptions, GetOptions, RemoveOptions}
-
+import typings.capacitorPreferences.distEsmDefinitionsMod.{GetOptions, RemoveOptions, SetOptions}
 import io.guthub.edadma.ilokano_nga_biblia.text.juan
+import org.scalajs.dom.HTMLInputElement
 
 type Mode = "light" | "dark"
 
@@ -38,39 +37,7 @@ def App =
         Input(
           placeholderText = "Sapulen",
           clas = " sm:max-w-md",
-          onChangeValue = x => {
-            parseBibleReference(x) match
-              case None =>
-              case Some(book, chapter, verse) =>
-                books get book match
-                  case None =>
-                  case Some(b) =>
-                    if chapter ne null then
-                      val chap = chapter.toInt
-
-                      if 1 <= chap && chap <= b.length then
-                        if verse ne null then
-                          val verseElem = dom.document.getElementById(verse)
-
-                          if verseElem ne null then
-                            verseElem.scrollIntoView(true)
-                            bookVar.set(b)
-                            chapterVar.set(chap)
-                          end if
-                        else
-                          bookVar.set(b)
-                          chapterVar.set(chap)
-                          scrollToTop()
-                        end if
-                      end if
-                    else
-                      bookVar.set(b)
-                      chapterVar.set(1)
-                      scrollToTop()
-          },
-          onChangeRef = ref =>
-            ref.blur()
-            ref.value = "",
+          onChangeEvent = handleSearchInput,
         ),
         child <-- modeSignal.map(mode =>
           Button(
@@ -121,6 +88,50 @@ def App =
     ),
   )
 end App
+
+def handleSearchInput(ref: HTMLInputElement): Unit =
+  def blur() =
+    ref.blur()
+    ref.value = ""
+
+  parseBibleReference(ref.value) match
+    case None => // parse error
+    case Some(book, chapter, verse) =>
+      books get book match
+        case None => // book not found
+        case Some(b) =>
+          if chapter ne null then
+            val chap = chapter.toInt
+
+            if 1 <= chap && chap <= b.length then
+              if verse ne null then
+                val verseElem = dom.document.getElementById(verse)
+
+                if verseElem ne null then
+                  verseElem.scrollIntoView(true)
+                  bookVar.set(b)
+                  chapterVar.set(chap)
+                  blur()
+                else {
+                  // verse not found
+                }
+                end if
+              else
+                bookVar.set(b)
+                chapterVar.set(chap)
+                scrollToTop()
+                blur()
+              end if
+            else {
+              // chapter not found
+            }
+            end if
+          else
+            bookVar.set(b)
+            chapterVar.set(1)
+            scrollToTop()
+            blur()
+end handleSearchInput
 
 def scrollToTop(): Unit =
   val textElem = dom.document.getElementById("text")

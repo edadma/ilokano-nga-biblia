@@ -6,7 +6,7 @@ import org.scalajs.dom.HTMLInputElement
 def Input(
     placeholderText: String = "",
     onChangeValue: String => Unit = _ => {},
-    onChangeRef: HTMLInputElement => Unit = _ => {},
+    onChangeEvent: HTMLInputElement => Unit = _ => {},
     clas: String = "",
 ) =
   input(
@@ -15,5 +15,5 @@ def Input(
     cls := clas,
     placeholder := placeholderText,
     onChange.mapToValue --> onChangeValue,
-    inContext(thisNode => onChange --> { _ => onChangeRef(thisNode.ref) }),
+    inContext(thisNode => onChange --> { _ => onChangeEvent(thisNode.ref) }),
   )
