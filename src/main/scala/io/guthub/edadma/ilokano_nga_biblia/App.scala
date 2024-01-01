@@ -33,9 +33,10 @@ def App =
     div(
       cls := "flex justify-between",
       Input(
-        placeholderText = "Sapulen",
-        clas = "sm:max-w-md",
-        onChangeEvent = handleSearchInput,
+        typ := "text",
+        placeholder := "Sapulen",
+        cls := "sm:max-w-md",
+        inContext(thisNode => onChange --> { _ => handleSearchInput(thisNode.ref) }),
       ),
       Button(clas = "ml-2", content = "Libro", onClickEvent = _ => println("asdf")),
       child <-- modeSignal.map(mode =>
