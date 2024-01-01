@@ -27,14 +27,9 @@ val modeSignal = modeVar.signal
 def App =
   Preferences.get(GetOptions("mode")) foreach { v =>
     v.value match
-      case null =>
-      case mode @ ("light" | "dark") =>
-        modeVar set mode
-        println(mode)
-
-        if mode == "dark" then dom.document.documentElement.classList.add("dark")
-        else dom.document.documentElement.classList.remove("dark")
-      case _ => Preferences.remove(RemoveOptions("mode"))
+      case null                      =>
+      case mode @ ("light" | "dark") => setMode(mode)
+      case _                         => Preferences.remove(RemoveOptions("mode"))
   }
 
   Card(
@@ -87,11 +82,8 @@ def App =
             onClickEvent = _ => {
               val newMode: Mode = if mode == "light" then "dark" else "light"
 
-              modeVar set newMode
               Preferences set SetOptions("mode", newMode)
-
-              if mode == "light" then dom.document.documentElement.classList.add("dark")
-              else dom.document.documentElement.classList.remove("dark")
+              setMode(newMode)
             },
           ),
         ),
@@ -122,3 +114,9 @@ def scrollToTop(): Unit =
   val textElem = dom.document.getElementById("text")
 
   if textElem ne null then textElem.scrollTop = 0
+
+def setMode(mode: Mode): Unit =
+  modeVar set mode
+
+  if mode == "dark" then dom.document.documentElement.classList.add("dark")
+  else dom.document.documentElement.classList.remove("dark")
