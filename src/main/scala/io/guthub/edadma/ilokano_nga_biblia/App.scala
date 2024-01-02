@@ -13,6 +13,7 @@ import io.guthub.edadma.ilokano_nga_biblia.text.juan
 import org.scalajs.dom.{HTMLInputElement, MouseEvent}
 
 type Mode = "light" | "dark"
+type View = "text" | "books"
 
 val bookVar = Var(juan.book)
 val bookSignal = bookVar.signal
@@ -20,6 +21,8 @@ val chapterVar = Var(1)
 val chapterSignal = chapterVar.signal
 val modeVar = Var[Mode]("light")
 val modeSignal = modeVar.signal
+val viewVar = Var[View]("text")
+val viewSignal = viewVar.signal
 
 def App =
   Preferences.get(GetOptions("mode")) foreach { v =>
@@ -38,7 +41,16 @@ def App =
         cls := "sm:max-w-md",
         inContext(thisNode => onChange --> { _ => handleSearchInput(thisNode.ref) }),
       ),
-      Button(cls := "ml-2", "Libro", onClick --> (_ => println("asdf"))),
+      Button(
+        cls := "ml-2",
+        "Libro",
+        onClick --> { _ =>
+          viewVar.set(viewSignal.now() match
+            case "text"  => "books"
+            case "books" => "text",
+          )
+        },
+      ),
       child <-- modeSignal.map(mode =>
         Button(
           if mode == "light" then SVG.moon else SVG.sun,
@@ -53,36 +65,44 @@ def App =
       ),
     ),
     div(
-      cls := "flex justify-between",
-      child <-- chapterSignal.map(ch =>
-        if ch > 1 then
-          Button(
-            SVG.leftArrow,
-            onClick --> { _ =>
-              chapterVar.update(_ - 1)
-              scrollToTop()
-            },
+      child <-- viewSignal.map {
+        case "text" =>
+          div(
+            div(
+              cls := "flex justify-between",
+              child <-- chapterSignal.map(ch =>
+                if ch > 1 then
+                  Button(
+                    SVG.leftArrow,
+                    onClick --> { _ =>
+                      chapterVar.update(_ - 1)
+                      scrollToTop()
+                    },
+                  )
+                else div(),
+              ),
+              child <-- chapterSignal.map(ch =>
+                if ch < bookSignal.now().length then
+                  Button(
+                    SVG.rightArrow,
+                    onClick --> { _ =>
+                      chapterVar.update(_ + 1)
+                      scrollToTop()
+                    },
+                  )
+                else div("books"),
+              ),
+            ),
+            div(
+              idAttr := "text",
+              cls := "no-scrollbar overflow-auto h-[calc(100vh-135px)]",
+              child <-- bookSignal
+                .combineWith(chapterSignal)
+                .map((book, chapter) => foreignHtmlElement(DomApi.unsafeParseHtmlString(book(chapter - 1)))),
+            ),
           )
-        else div(),
-      ),
-      child <-- chapterSignal.map(ch =>
-        if ch < bookSignal.now().length then
-          Button(
-            SVG.rightArrow,
-            onClick --> { _ =>
-              chapterVar.update(_ + 1)
-              scrollToTop()
-            },
-          )
-        else div(),
-      ),
-    ),
-    div(
-      idAttr := "text",
-      cls := "no-scrollbar overflow-auto h-[calc(100vh-135px)]",
-      child <-- bookSignal
-        .combineWith(chapterSignal)
-        .map((book, chapter) => foreignHtmlElement(DomApi.unsafeParseHtmlString(book(chapter - 1)))),
+        case "books" => div("asdf")
+      },
     ),
   )
 end App
