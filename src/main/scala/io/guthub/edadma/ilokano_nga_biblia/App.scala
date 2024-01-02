@@ -43,7 +43,10 @@ def App =
       ),
       Button(
         cls := "ml-2",
-        "Libro",
+        child.text <-- viewSignal.map {
+          case "text"  => "Libro"
+          case "books" => "text"
+        },
         onClick --> { _ =>
           viewVar.set(viewSignal.now() match
             case "text"  => "books"
