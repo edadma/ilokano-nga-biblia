@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: 'class',
-  content: ["./target/scala-3.3.1/ilokano-nga-biblia-fastopt/**/*.{html,js}", "./public/text/**/*"],
+  content: ["./target/scala-3.3.1/ilokano-nga-biblia-fastopt/**/*.{html,js}", "./public/**/*.html"],
   theme: {
     extend: {
       fontFamily: {
