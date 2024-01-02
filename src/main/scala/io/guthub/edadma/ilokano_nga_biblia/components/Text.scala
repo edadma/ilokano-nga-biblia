@@ -6,6 +6,6 @@ import org.scalajs.dom.HTMLDivElement
 
 def Text(modifiers: Modifier[ReactiveHtmlElement[HTMLDivElement]]*): ReactiveHtmlElement[HTMLDivElement] =
   div(
-    cls := "font-normal text-gray-200 dark:text-gray-400",
+    cls := "font-normal text-gray-600 dark:text-gray-400",
     modifiers,
   )
