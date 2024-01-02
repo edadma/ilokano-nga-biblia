@@ -45,7 +45,7 @@ def App =
         cls := "ml-2",
         child.text <-- viewSignal.map {
           case "text"  => "Libro"
-          case "books" => "text"
+          case "books" => "Teksto"
         },
         onClick --> { _ =>
           viewVar.set(viewSignal.now() match
@@ -105,7 +105,11 @@ def App =
             ),
           )
         case "books" =>
-          div(Text(cls := "mt-5 text-xl", "Dagiti Libro ti Biblia"), books map { (name, text) => p(Button(name)) })
+          div(
+            Text(cls := "mt-6 mb-2 text-xl", "Dagiti Libro ti Biblia"),
+            books map { (name, text) => div(Button(name)) },
+            Text(cls := "mt-5", "Mainayon dagiti awan a libro bayat ti pannakaipatarusda."),
+          )
       },
     ),
   )
