@@ -138,6 +138,7 @@ def handleSearchInput(ref: HTMLInputElement): Unit =
                   verseElem.scrollIntoView(true)
                   bookVar.set(b)
                   chapterVar.set(chap)
+                  viewVar.set("text")
                   blur()
                 else {
                   // verse not found
@@ -146,6 +147,7 @@ def handleSearchInput(ref: HTMLInputElement): Unit =
               else
                 bookVar.set(b)
                 chapterVar.set(chap)
+                viewVar.set("text")
                 scrollToTop()
                 blur()
               end if
