@@ -101,7 +101,8 @@ def App =
                 .map((book, chapter) => foreignHtmlElement(DomApi.unsafeParseHtmlString(book(chapter - 1)))),
             ),
           )
-        case "books" => div("asdf")
+        case "books" =>
+          div(Text(cls := "mt-5 text-xl", "Dagiti Libro ti Biblia"), books map { (name, text) => p(Button(name)) })
       },
     ),
   )
