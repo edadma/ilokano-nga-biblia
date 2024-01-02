@@ -1,6 +1,6 @@
 package io.guthub.edadma.ilokano_nga_biblia
 
-import text.{juan, maysa_juan}
+import text.{juan, umuna_a_juan}
 
 val books =
   Map(
@@ -10,7 +10,7 @@ val books =
     "jua" -> juan.book,
 
     // 1 John
-    "1 juan" -> maysa_juan.book,
-    "1 jn" -> maysa_juan.book,
-    "1 jua" -> maysa_juan.book,
+    "1 juan" -> umuna_a_juan.book,
+    "1 jn" -> umuna_a_juan.book,
+    "1 jua" -> umuna_a_juan.book,
   )

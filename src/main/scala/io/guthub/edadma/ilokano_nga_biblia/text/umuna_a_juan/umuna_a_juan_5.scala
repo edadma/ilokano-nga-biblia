@@ -1,6 +1,6 @@
-package io.guthub.edadma.ilokano_nga_biblia.text.maysa_juan
+package io.guthub.edadma.ilokano_nga_biblia.text.umuna_a_juan
 
-val maysa_juan_5 =
+val umuna_a_juan_5 =
 """<div class="prose prose-h1:font-fondamento prose-h1:font-normal prose-h1:text-gray-600 dark:prose-h1:text-gray-400 prose-h2:text-gray-600 dark:prose-h2:text-gray-400 prose-h3:text-gray-600 dark:prose-h3:text-gray-400 prose-p:text-gray-600 dark:prose-p:text-gray-400 prose-p:m-0 prose-p:leading-normal">
 <h2>Kapitulo 5</h2>
 <h3>Panangagbak iti Lubong</h3>
