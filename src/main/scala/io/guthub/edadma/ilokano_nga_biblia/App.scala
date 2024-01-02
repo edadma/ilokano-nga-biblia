@@ -14,8 +14,9 @@ import org.scalajs.dom.{HTMLInputElement, MouseEvent}
 
 type Mode = "light" | "dark"
 type View = "text" | "books"
+type Book = Seq[String]
 
-val bookVar = Var(juan.book)
+val bookVar = Var[Book](juan.book)
 val bookSignal = bookVar.signal
 val chapterVar = Var(1)
 val chapterSignal = chapterVar.signal
@@ -107,7 +108,7 @@ def App =
         case "books" =>
           div(
             Text(cls := "mt-6 mb-2 text-xl", "Dagiti Libro ti Biblia"),
-            books map { (name, text) => div(Button(name)) },
+            books map { (name, book) => div(Button(name, onClick --> { _ => goToBook(book) })) },
             Text(cls := "mt-5", "Mainayon dagiti awan a libro bayat ti pannakaipatarusda."),
           )
       },
@@ -153,11 +154,15 @@ def handleSearchInput(ref: HTMLInputElement): Unit =
             }
             end if
           else
-            bookVar.set(b)
-            chapterVar.set(1)
-            scrollToTop()
+            goToBook(b)
             blur()
 end handleSearchInput
+
+def goToBook(book: Book): Unit =
+  bookVar.set(book)
+  chapterVar.set(1)
+  viewVar.set("text")
+  scrollToTop()
 
 def scrollToTop(): Unit =
   val textElem = dom.document.getElementById("text")
