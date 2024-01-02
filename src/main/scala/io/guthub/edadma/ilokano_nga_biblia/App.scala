@@ -43,11 +43,12 @@ def App =
         Button(
           if mode == "light" then SVG.moon else SVG.sun,
           cls := "ml-2",
-          onClick --> (_ => println(123)),
-//            val newMode: Mode = if mode == "light" then "dark" else "light"
-//
-//            Preferences set SetOptions("mode", newMode)
-//            setMode(newMode),
+          onClick --> { _ =>
+            val newMode: Mode = if mode == "light" then "dark" else "light"
+
+            Preferences set SetOptions("mode", newMode)
+            setMode(newMode)
+          },
         ),
       ),
     ),
@@ -94,7 +95,7 @@ def handleSearchInput(ref: HTMLInputElement): Unit =
   parseBibleReference(ref.value) match
     case None => // parse error
     case Some(book, chapter, verse) =>
-      books get book match
+      booksMap get book match
         case None => // book not found
         case Some(b) =>
           if chapter ne null then
