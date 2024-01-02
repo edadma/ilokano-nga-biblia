@@ -132,9 +132,11 @@ def handleSearchInput(ref: HTMLInputElement): Unit =
 
             if 1 <= chap && chap <= b.length then
               if verse ne null then
+
                 val verseElem = dom.document.getElementById(verse)
 
                 if verseElem ne null then
+                  println(123)
                   verseElem.scrollIntoView(true)
                   bookVar.set(b)
                   chapterVar.set(chap)
@@ -143,7 +145,6 @@ def handleSearchInput(ref: HTMLInputElement): Unit =
                 else {
                   // verse not found
                 }
-                end if
               else
                 bookVar.set(b)
                 chapterVar.set(chap)
