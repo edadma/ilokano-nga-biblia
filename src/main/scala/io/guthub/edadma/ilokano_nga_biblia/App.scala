@@ -137,7 +137,7 @@ def handleSearchInput(ref: HTMLInputElement): Unit =
               if verse ne null then
                 val verseNum = verse.toInt
 
-                if 1 <= verseNum && verseNum <= b(chap)._2 then
+                if 1 <= verseNum && verseNum <= b(chap - 1)._2 then
                   bookVar.set(b)
                   chapterVar.set(chap)
                   viewVar.set("text")
