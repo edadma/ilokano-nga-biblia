@@ -10,11 +10,14 @@ import concurrent.ExecutionContext.Implicits.global
 import typings.capacitorPreferences.mod.Preferences
 import typings.capacitorPreferences.distEsmDefinitionsMod.{GetOptions, RemoveOptions, SetOptions}
 import io.guthub.edadma.ilokano_nga_biblia.text.juan
-import org.scalajs.dom.{HTMLInputElement, MouseEvent}
+import org.scalajs.dom.HTMLInputElement
+
+import scala.collection.immutable.ArraySeq
+import scala.scalajs.js.timers.setTimeout
 
 type Mode = "light" | "dark"
 type View = "text" | "books"
-type Book = Seq[String]
+type Book = ArraySeq[(String, Int)]
 
 val bookVar = Var[Book](juan.book)
 val bookSignal = bookVar.signal
@@ -102,7 +105,7 @@ def App =
               cls := "no-scrollbar overflow-auto h-[calc(100vh-135px)]",
               child <-- bookSignal
                 .combineWith(chapterSignal)
-                .map((book, chapter) => foreignHtmlElement(DomApi.unsafeParseHtmlString(book(chapter - 1)))),
+                .map((book, chapter) => foreignHtmlElement(DomApi.unsafeParseHtmlString(book(chapter - 1)._1))),
             ),
           )
         case "books" =>
@@ -132,16 +135,14 @@ def handleSearchInput(ref: HTMLInputElement): Unit =
 
             if 1 <= chap && chap <= b.length then
               if verse ne null then
+                val verseNum = verse.toInt
 
-                val verseElem = dom.document.getElementById(verse)
-
-                if verseElem ne null then
-                  println(123)
-                  verseElem.scrollIntoView(true)
+                if 1 <= verseNum && verseNum <= b(chap)._2 then
                   bookVar.set(b)
                   chapterVar.set(chap)
                   viewVar.set("text")
                   blur()
+                  Option(dom.document.getElementById(verse)).map(v => setTimeout(10)(v.scrollIntoView(true)))
                 else {
                   // verse not found
                 }
