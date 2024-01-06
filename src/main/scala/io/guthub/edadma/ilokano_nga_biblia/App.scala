@@ -79,17 +79,25 @@ def App =
           )
         },
       ),
-      child <-- modeSignal.map(mode =>
-        Button(
-          if mode == "light" then SVG.moon else SVG.sun,
-          cls := "ml-2",
-          onClick --> { _ =>
-            val newMode: Mode = if mode == "light" then "dark" else "light"
+      Button(
+        cls := "ml-2",
+        SVG.userSettings,
+//        onClick --> { _ =>
+//          viewVar.set(viewSignal.now() match
+//            case "text"  => "books"
+//            case "books" => "text",
+//          )
+//        },
+      ),
+      Button(
+        cls := "ml-2",
+        child <-- modeSignal.map(mode => if mode == "light" then SVG.moon else SVG.sun),
+        onClick --> { _ =>
+          val newMode: Mode = if modeSignal.now() == "light" then "dark" else "light"
 
-            Preferences set SetOptions("mode", newMode)
-            setMode(newMode)
-          },
-        ),
+          Preferences set SetOptions("mode", newMode)
+          setMode(newMode)
+        },
       ),
     ),
     div(
