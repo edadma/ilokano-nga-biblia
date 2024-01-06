@@ -1484,6 +1484,10 @@ html {
   text-indent: 2rem;
 }
 
+.font-sans {
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
