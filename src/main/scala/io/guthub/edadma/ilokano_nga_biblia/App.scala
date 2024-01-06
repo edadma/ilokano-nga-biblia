@@ -1,19 +1,22 @@
 package io.guthub.edadma.ilokano_nga_biblia
 
+import io.github.edadma.translations.*
+
 import com.raquo.laminar.DomApi
 import com.raquo.laminar.api.L.{*, given}
-import components.*
 import org.scalajs.dom
 
 import scala.scalajs.js.Thenable.Implicits.*
 import concurrent.ExecutionContext.Implicits.global
 import typings.capacitorPreferences.mod.Preferences
 import typings.capacitorPreferences.distEsmDefinitionsMod.{GetOptions, RemoveOptions, SetOptions}
-import io.guthub.edadma.ilokano_nga_biblia.text.juan
+import text.juan
 import org.scalajs.dom.HTMLInputElement
 
 import scala.collection.immutable.ArraySeq
 import scala.scalajs.js.timers.setTimeout
+
+import components.*
 
 type Mode = "light" | "dark"
 type View = "text" | "books"
@@ -29,6 +32,24 @@ val viewVar = Var[View]("text")
 val viewSignal = viewVar.signal
 
 def App =
+  setLanguages(
+    """
+      |en:
+      |  search: Search
+      |  books: Books
+      |  text: Text
+      |  booksOfTheBible: Books of the Bible
+      |  missingBooks: Missing books will be added as they are translated.
+      |ilo:
+      |  search: Sapulen
+      |  books: Libro
+      |  text: Teksto
+      |  booksOfTheBible: Dagiti Libro ti Biblia
+      |  missingBooks: Mainayon dagiti awan a libro bayat ti pannakaipatarusda.
+      |""".stripMargin,
+  )
+  setLanguage("ilo")
+
   Preferences.get(GetOptions("mode")) foreach { v =>
     v.value match
       case null                      =>
@@ -41,15 +62,15 @@ def App =
       cls := "flex justify-between",
       Input(
         typ := "text",
-        placeholder := "Sapulen",
+        placeholder := t"search",
         cls := "sm:max-w-md",
-        inContext(thisNode => onChange --> { _ => handleSearchInput(thisNode.ref) }),
+        inContext(thisNode => onChange --> (_ => handleSearchInput(thisNode.ref))),
       ),
       Button(
         cls := "ml-2",
         child.text <-- viewSignal.map {
-          case "text"  => "Libro"
-          case "books" => "Teksto"
+          case "text"  => t"books"
+          case "books" => t"text"
         },
         onClick --> { _ =>
           viewVar.set(viewSignal.now() match
@@ -97,7 +118,7 @@ def App =
                       scrollToTop()
                     },
                   )
-                else div("books"),
+                else div(),
               ),
             ),
             div(
@@ -110,9 +131,9 @@ def App =
           )
         case "books" =>
           div(
-            Text(cls := "mt-6 mb-2 text-xl", "Dagiti Libro ti Biblia"),
+            Text(cls := "mt-6 mb-2 text-xl", t"booksOfTheBible"),
             books map { (name, book) => div(Button(name, onClick --> { _ => goToBook(book) })) },
-            Text(cls := "mt-5", "Mainayon dagiti awan a libro bayat ti pannakaipatarusda."),
+            Text(cls := "mt-5", t"missingBooks"),
           )
       },
     ),
