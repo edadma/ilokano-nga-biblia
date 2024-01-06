@@ -1,19 +1,19 @@
 package io.guthub.edadma.ilokano_nga_biblia.text.juan
 
 val juan_1 =
-  """<div class="prose prose-h1:font-fondamento prose-h1:font-normal prose-h1:text-gray-600 dark:prose-h1:text-gray-400 prose-h2:text-gray-600 dark:prose-h2:text-gray-400 prose-h3:text-gray-600 dark:prose-h3:text-gray-400 prose-p:text-gray-600 dark:prose-p:text-gray-400 prose-p:m-0 prose-p:leading-normal">
+  """<div class="prose prose-h1:font-fondamento prose-h1:font-normal prose-h1:text-gray-600 dark:prose-h1:text-gray-400 prose-h2:text-gray-600 dark:prose-h2:text-gray-400 prose-h3:text-gray-600 dark:prose-h3:text-gray-400 prose-p:text-lg prose-p:text-gray-600 dark:prose-p:text-gray-400 prose-p:m-0 prose-p:leading-normal">
 <h1>Ebanghelio ni Juan</h1>
 <h2>Kapitulo 1</h2>
 <h3>Nagbalin a Lasag ti Sao</h3>
-<p class=""><sup id="1">1</sup>Idi damo adda ti Sao, ket adda ti Sao iti Dios, ken ti Sao ket Dios.
+<p class=""><sup class="mr-px" id="1">1</sup>Idi damo adda ti Sao, ket adda ti Sao iti Dios, ken ti Sao ket Dios.
 <sup id="2">2</sup>Adda isuna idi damo iti Dios.
-<sup id="3">3</sup>Naaramid amin a bambanag babaen kenkuana, ket awan ti aniaman a naparsua no awan kenkuana.
-<sup id="4">4</sup>Kenkuana adda ti biag, ket ti biag isu ti silaw dagiti tattao.
+<sup class="mr-px" id="3">3</sup>Naaramid amin a bambanag babaen kenkuana, ket awan ti aniaman a naparsua no awan kenkuana.
+<sup class="mr-px" id="4">4</sup>Kenkuana adda ti biag, ket ti biag isu ti silaw dagiti tattao.
 <sup id="5">5</sup>Agsilnag ti lawag iti sipnget, ket saan a naparmek ti sipnget.</p>
 <p class="indent-8"><sup id="6">6</sup>Adda maysa a lalaki nga imbaon ti Dios, nga agnagan Juan.
 <sup id="7">7</sup>Immay isuna a kas saksi, tapno mangsaksi maipapan iti lawag, tapno mamati ti amin babaen kenkuana.
 <sup id="8">8</sup>Saan nga isu ti silaw, no di ket immay tapno mangsaksi maipapan iti lawag.</p>
-<p class="indent-8"><sup id="9">9</sup>Umay idi ditoy lubong ti pudno a lawag, a mangted lawag iti tunggal maysa.
+<p class="indent-8"><sup class="mr-px" id="9">9</sup>Umay idi ditoy lubong ti pudno a lawag, a mangted lawag iti tunggal maysa.
 <sup id="10">10</sup>Adda idi ditoy lubong, ket naparsua ti lubong babaen kenkuana, ngem saan nga am-ammo ti lubong.
 <sup id="11">11</sup>Immay iti bukodna, ket saan nga inawat dagiti bukodna a tattao.
 <sup id="12">12</sup>Ngem kadagiti amin a nangawat kenkuana, a namati iti naganna, intedna ti kalintegan nga agbalin nga annak ti Dios,
