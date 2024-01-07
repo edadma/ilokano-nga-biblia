@@ -5,6 +5,21 @@ import com.raquo.laminar.nodes.ReactiveSvgElement
 import org.scalajs.dom.SVGSVGElement
 
 object SVG:
+  def cross: ReactiveSvgElement[SVGSVGElement] =
+    svg(
+      cls := "w-3 h-3",
+      xmlns := "http://www.w3.org/2000/svg",
+      fill := "none",
+      viewBox := "0 0 14 14",
+      path(
+        stroke := "currentColor",
+        strokeLineCap := "round",
+        strokeLineJoin := "round",
+        strokeWidth := "2",
+        d := "m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6",
+      ),
+    )
+
   def userSettings: ReactiveSvgElement[SVGSVGElement] =
     svg(
       cls := "w-[16px] h-[16px]",
