@@ -99,7 +99,7 @@ def App =
       ),
     ),
     div(
-      Modal(Text("asdf"))(settingsVar, t"settings"),
+      Modal(Button("A"), Button("A"), Button("A"))(settingsVar, t"settings"),
       child <-- viewSignal.map {
         case "text" =>
           div(
