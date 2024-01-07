@@ -25,7 +25,7 @@ def Modal(
             onClick --> { _ => show.set(false) },
           ),
         ),
-        modifiers,
+        div(cls := "p-4 md:p-5 space-y-4", modifiers),
       ),
     ),
   )
