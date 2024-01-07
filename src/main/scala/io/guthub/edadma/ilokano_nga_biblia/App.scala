@@ -31,7 +31,6 @@ val modeSignal = modeVar.signal
 val viewVar = Var[View]("text")
 val viewSignal = viewVar.signal
 val settingsVar = Var(false)
-val settingsSignal = settingsVar.signal
 
 def App =
   setLanguages(
@@ -134,7 +133,7 @@ def App =
 //                                                                           |</div>""".stripMargin))
 //        else div()
 //      },
-      Modal(Text("asdf"))(settingsSignal),
+      Modal(Text("asdf"))(settingsVar, "Settings"),
       child <-- viewSignal.map {
         case "text" =>
           div(
