@@ -17,9 +17,13 @@ def Modal(
         div(
           cls := "flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600",
           Text(cls := "text-xl font-semibold", title),
-          button (typ:="button", cls:="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white",
+          button(
+            typ := "button",
+            cls := "text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white",
             SVG.cross,
-    <span class="sr-only">Close modal
+            span(cls := "sr-only", "Close"),
+            onClick --> { _ => show.set(false) },
+          ),
         ),
         modifiers,
       ),
