@@ -133,7 +133,11 @@ def App =
               cls := "no-scrollbar overflow-auto h-[calc(100vh-135px)]",
               child <-- bookSignal
                 .combineWith(chapterSignal)
-                .map((book, chapter) => foreignHtmlElement(DomApi.unsafeParseHtmlString(book(chapter - 1)._1))),
+                .map((book, chapter) =>
+                  foreignHtmlElement(
+                    DomApi.unsafeParseHtmlString(FormatString(book, chapter, Map("size" -> "prose-p:text-lg"))),
+                  ),
+                ),
             ),
           )
         case "books" =>
