@@ -91,12 +91,12 @@ def App =
             case "books" => "text",
           )
         },
-      ),
+      )(),
       Button(
         cls := "ml-2",
         SVG.userSettings,
         onClick --> { _ => settingsVar.set(true) },
-      ),
+      )(),
       Button(
         cls := "ml-2",
         child <-- modeSignal.map(mode => if mode == "light" then SVG.moon else SVG.sun),
@@ -106,14 +106,10 @@ def App =
           Preferences set SetOptions("mode", newMode)
           setMode(newMode)
         },
-      ),
+      )(),
     ),
     div(
-      Modal(
-        Button(cls := "font-gentium text-lg", onClick --> { _ => setSize("lg") }, "A"),
-        Button(cls := "font-gentium text-xl", onClick --> { _ => setSize("xl") }, "A"),
-        Button(cls := "font-gentium text-2xl", onClick --> { _ => setSize("2xl") }, "A"),
-      )(settingsVar, t"settings"),
+      settingsModel,
       child <-- viewSignal.map {
         case "text" =>
           div(
@@ -127,7 +123,7 @@ def App =
                       chapterVar.update(_ - 1)
                       scrollToTop()
                     },
-                  )
+                  )()
                 else div(),
               ),
               child <-- chapterSignal.map(ch =>
@@ -138,7 +134,7 @@ def App =
                       chapterVar.update(_ + 1)
                       scrollToTop()
                     },
-                  )
+                  )()
                 else div(),
               ),
             ),
@@ -167,13 +163,29 @@ def App =
         case "books" =>
           div(
             Text(cls := "mt-6 mb-2 text-xl", t"booksOfTheBible"),
-            books map { (name, book) => div(Button(name, onClick --> { _ => goToBook(book) })) },
+            books map { (name, book) => div(Button(name, onClick --> { _ => goToBook(book) })()) },
             Text(cls := "mt-5", t"missingBooks"),
           )
       },
     ),
   )
 end App
+
+def settingsModel =
+  Modal(
+    Button(cls := "font-gentium text-lg mr-2 w-14 h-9", onClick --> { _ => setSize("lg") }, "A")(
+      border = true,
+      focus = true,
+    ),
+    Button(cls := "font-gentium text-xl mr-2 w-14 h-9", onClick --> { _ => setSize("xl") }, "A")(
+      border = true,
+      focus = true,
+    ),
+    Button(cls := "font-gentium text-2xl w-14 h-9", onClick --> { _ => setSize("2xl") }, "A")(
+      border = true,
+      focus = true,
+    ),
+  )(settingsVar, t"settings", modalCls = "w-64")
 
 def setSize(size: Size): Unit =
   println(size)

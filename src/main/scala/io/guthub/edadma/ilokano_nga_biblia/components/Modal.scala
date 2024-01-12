@@ -6,9 +6,9 @@ import org.scalajs.dom.HTMLDivElement
 
 def Modal(
     modifiers: Modifier[ReactiveHtmlElement[HTMLDivElement]]*,
-)(show: Var[Boolean], title: String): ReactiveHtmlElement[HTMLDivElement] =
+)(show: Var[Boolean], title: String, modalCls: String = ""): ReactiveHtmlElement[HTMLDivElement] =
   div(
-    cls := "overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full",
+    cls := s"overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full $modalCls",
     cls.toggle("hidden") <-- show.signal.map(!_),
     div(
       cls := "relative p-4 w-full max-w-2xl max-h-full",
