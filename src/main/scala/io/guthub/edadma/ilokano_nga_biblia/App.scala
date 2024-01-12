@@ -31,6 +31,8 @@ val modeSignal = modeVar.signal
 val viewVar = Var[View]("text")
 val viewSignal = viewVar.signal
 val settingsVar = Var(false)
+val sizeVar = Var["lg" | "xl" | "2xl"]("lg")
+val sizeSignal = sizeVar.signal
 
 def App =
   setLanguages(
@@ -99,7 +101,11 @@ def App =
       ),
     ),
     div(
-      Modal(Button("A"), Button("A"), Button("A"))(settingsVar, t"settings"),
+      Modal(
+        Button(cls := "font-gentium text-lg", onClick --> { _ => sizeVar set "lg" }, "A"),
+        Button(cls := "font-gentium text-xl", onClick --> { _ => sizeVar set "xl" }, "A"),
+        Button(cls := "font-gentium text-2xl", onClick --> { _ => sizeVar set "2xl" }, "A"),
+      )(settingsVar, t"settings"),
       child <-- viewSignal.map {
         case "text" =>
           div(
@@ -132,10 +138,20 @@ def App =
               idAttr := "text",
               cls := "no-scrollbar overflow-auto h-[calc(100vh-135px)]",
               child <-- bookSignal
-                .combineWith(chapterSignal)
-                .map((book, chapter) =>
+                .combineWith(chapterSignal, sizeSignal)
+                .map((book, chapter, size) =>
                   foreignHtmlElement(
-                    DomApi.unsafeParseHtmlString(FormatString(book, chapter, Map("size" -> "prose-p:text-lg"))),
+                    DomApi.unsafeParseHtmlString(
+                      FormatString(
+                        book,
+                        chapter,
+                        Map("size" -> (size match {
+                          case "lg"  => "prose-p:text-lg"
+                          case "xl"  => "prose-p:text-xl"
+                          case "2xl" => "prose-p:text-2xl"
+                        })),
+                      ),
+                    ),
                   ),
                 ),
             ),
