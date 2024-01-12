@@ -21,6 +21,7 @@ import components.*
 type Mode = "light" | "dark"
 type View = "text" | "books"
 type Book = ArraySeq[(String, Int)]
+type Size = "lg" | "xl" | "2xl"
 
 val bookVar = Var[Book](juan.book)
 val bookSignal = bookVar.signal
@@ -31,7 +32,7 @@ val modeSignal = modeVar.signal
 val viewVar = Var[View]("text")
 val viewSignal = viewVar.signal
 val settingsVar = Var(false)
-val sizeVar = Var["lg" | "xl" | "2xl"]("lg")
+val sizeVar = Var[Size]("lg")
 val sizeSignal = sizeVar.signal
 
 def App =
@@ -60,6 +61,13 @@ def App =
       case null                      =>
       case mode @ ("light" | "dark") => setMode(mode)
       case _                         => Preferences.remove(RemoveOptions("mode"))
+  }
+
+  Preferences.get(GetOptions("size")) foreach { v =>
+    v.value match
+      case null                         =>
+      case size @ ("lg" | "xl" | "2xl") => setSize(size)
+      case _                            => Preferences.remove(RemoveOptions("size"))
   }
 
   Card(
@@ -102,9 +110,9 @@ def App =
     ),
     div(
       Modal(
-        Button(cls := "font-gentium text-lg", onClick --> { _ => sizeVar set "lg" }, "A"),
-        Button(cls := "font-gentium text-xl", onClick --> { _ => sizeVar set "xl" }, "A"),
-        Button(cls := "font-gentium text-2xl", onClick --> { _ => sizeVar set "2xl" }, "A"),
+        Button(cls := "font-gentium text-lg", onClick --> { _ => setSize("lg") }, "A"),
+        Button(cls := "font-gentium text-xl", onClick --> { _ => setSize("xl") }, "A"),
+        Button(cls := "font-gentium text-2xl", onClick --> { _ => setSize("2xl") }, "A"),
       )(settingsVar, t"settings"),
       child <-- viewSignal.map {
         case "text" =>
@@ -167,8 +175,13 @@ def App =
   )
 end App
 
+def setSize(size: Size): Unit =
+  println(size)
+  sizeVar set size
+  Preferences set SetOptions("size", size)
+
 def handleSearchInput(ref: HTMLInputElement): Unit =
-  def blur() =
+  def blur(): Unit =
     ref.blur()
     ref.value = ""
 
