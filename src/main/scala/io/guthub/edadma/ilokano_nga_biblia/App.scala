@@ -69,6 +69,7 @@ def App =
   }
 
   Card(
+    Text(cls := "flex justify-end text-xs", "2024-01-13"),
     div(
       cls := "flex justify-between",
       Input(
