@@ -191,13 +191,11 @@ def settingsModel =
     t"settings",
     modalCls = "w-64", {
       setTimeout(1) {
-        val btn =
-          sizeSignal.now() match
-            case "lg"  => btn1
-            case "xl"  => btn2
-            case "2xl" => btn3
-
-        btn.ref.focus()
+        (sizeSignal.now() match
+          case "lg"  => btn1
+          case "xl"  => btn2
+          case "2xl" => btn3
+        ).ref.focus()
       }
     },
   )
