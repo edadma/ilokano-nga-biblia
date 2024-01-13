@@ -138,7 +138,7 @@ def App =
             ),
             div(
               idAttr := "text",
-              cls := "no-scrollbar overflow-auto h-[calc(100vh-135px)]",
+              cls := "mt-2 no-scrollbar overflow-auto h-[calc(100vh-135px)]",
               child <-- bookSignal
                 .combineWith(chapterSignal, sizeSignal)
                 .map((book, chapter, size) =>

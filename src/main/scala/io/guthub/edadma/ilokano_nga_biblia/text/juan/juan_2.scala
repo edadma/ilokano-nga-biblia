@@ -10,7 +10,7 @@ val juan_2 =
 <sup class="mr-px" id="4">4</sup>Kinuna ni Jesus kenkuana, “Babai, ania ti pakainaigan daytoy kaniak? Saan pay a dimteng ti orasko.”
 <sup class="mr-px" id="5">5</sup>Kinuna ni nanangna kadagiti adipen, “Aramidenyo ti aniaman nga ibagana kadakayo.”</p>
 <p class="indent-8"><sup class="mr-px" id="6">6</sup>Ita adda innem a bato a pagkargaan ti danum sadiay para kadagiti ritual dagiti Judio iti panagdalus, a tunggal maysa ket makalaon iti duapulo wenno tallopulo a galon.
-<sup class="mr-px" id="7">7</sup>Kinuna ni Jesus kadagiti adipen, “Punnoyo iti danum dagiti garapon.” Ket pinunnoda ida agingga iti ungto.
+<sup class="mr-px" id="7">7</sup>Kinuna ni Jesus kadagiti adipen, “Punwenyo iti danum dagiti garapon.” Ket pinunnoda ida agingga iti ungto.
 <sup class="mr-px" id="8">8</sup>Kinunana kadakuada, “Ita, iruaryo ti sumagmamano ket ipanda iti apo ti piesta.” Isu nga innalada dayta.
 <sup class="mr-px" id="9">9</sup>Idi naramanan ti apo ti piesta ti danum nga agbalin itan nga arak, ket dina ammo no sadino ti naggapuanna (nupay ammo dagiti adipen a nagguyoden iti danum), inayaban ti apo ti piesta ti nobio
 <sup class="mr-px" id="10">10</sup>ket kinunana kenkuana, “Tunggal maysa idasarna nga umuna ti nasayaat nga arak, ket no siwayawaya nga uminum dagiti tattao, kalpasanna ti nakurapay nga arak. Ngem tinaginayonmo ti nasayaat nga arak agingga ita.”
