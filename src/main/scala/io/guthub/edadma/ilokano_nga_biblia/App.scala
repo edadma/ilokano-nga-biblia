@@ -32,6 +32,7 @@ val viewSignal = viewVar.signal
 val settingsVar = Var(false)
 val sizeVar = Var[Size]("lg")
 val sizeSignal = sizeVar.signal
+val aboutVar = Var(false)
 
 def App =
   setLanguages(
@@ -43,6 +44,7 @@ def App =
       |  booksOfTheBible: Books of the Bible
       |  missingBooks: Missing books will be added as they are translated.
       |  settings: Settings
+      |  about: About
       |ilo:
       |  search: Sapulen
       |  books: Libro
@@ -50,6 +52,7 @@ def App =
       |  booksOfTheBible: Dagiti Libro ti Biblia
       |  missingBooks: Mainayon dagiti awan a libro bayat ti pannakaipatarusda.
       |  settings: Dagiti Setting
+      |  about: Maipapan
       |""".stripMargin,
   )
   setLanguage("ilo")
@@ -98,6 +101,11 @@ def App =
       )(),
       Clickable(
         cls := "ml-2",
+        SVG.about,
+        onClick --> { _ => aboutVar.set(true) },
+      )(),
+      Clickable(
+        cls := "ml-2",
         child <-- modeSignal.map(mode => if mode == "light" then SVG.moon else SVG.sun),
         onClick --> { _ =>
           val newMode: Mode = if modeSignal.now() == "light" then "dark" else "light"
@@ -109,6 +117,7 @@ def App =
     ),
     div(
       settingsModel,
+      aboutModel,
       child <-- viewSignal.map {
         case "text" =>
           div(
@@ -189,6 +198,37 @@ def settingsModel =
     btn3,
   )(
     settingsVar,
+    t"settings",
+    modalCls = "w-64", {
+      setTimeout(1) {
+        (sizeSignal.now() match
+          case "lg"  => btn1
+          case "xl"  => btn2
+          case "2xl" => btn3
+        ).ref.focus()
+      }
+    },
+  )
+
+def aboutModel =
+  val btn1 = Button(
+    cls := "font-gentium text-lg mr-2 w-14 h-9",
+    onClick --> { _ => setSize("lg") },
+    "A",
+  )(focus = true)
+  val btn2 = Button(
+    cls := "font-gentium text-xl mr-2 w-14 h-9",
+    onClick --> { _ => setSize("xl") },
+    "A",
+  )(focus = true)
+  val btn3 = Button(cls := "font-gentium text-2xl w-14 h-9", onClick --> { _ => setSize("2xl") }, "A")(focus = true)
+
+  Modal(
+    btn1,
+    btn2,
+    btn3,
+  )(
+    aboutVar,
     t"settings",
     modalCls = "w-64", {
       setTimeout(1) {
