@@ -19,4 +19,9 @@ val booksMap =
     "1 juan" -> umuna_a_juan.book,
     "1 jn" -> umuna_a_juan.book,
     "1 jua" -> umuna_a_juan.book,
+
+    // 2 John
+    "2 juan" -> maikadua_a_juan.book,
+    "2 jn" -> maikadua_a_juan.book,
+    "2 jua" -> maikadua_a_juan.book,
   )
