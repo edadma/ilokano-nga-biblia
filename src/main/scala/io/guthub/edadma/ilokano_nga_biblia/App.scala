@@ -174,15 +174,12 @@ end App
 def settingsModel =
   Modal(
     Button(cls := "font-gentium text-lg mr-2 w-14 h-9", onClick --> { _ => setSize("lg") }, "A")(
-      border = true,
       focus = true,
     ),
     Button(cls := "font-gentium text-xl mr-2 w-14 h-9", onClick --> { _ => setSize("xl") }, "A")(
-      border = true,
       focus = true,
     ),
     Button(cls := "font-gentium text-2xl w-14 h-9", onClick --> { _ => setSize("2xl") }, "A")(
-      border = true,
       focus = true,
     ),
   )(settingsVar, t"settings", modalCls = "w-64")
