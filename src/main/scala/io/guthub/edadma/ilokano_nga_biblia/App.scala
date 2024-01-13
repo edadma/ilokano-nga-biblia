@@ -77,7 +77,7 @@ def App =
         cls := "sm:max-w-md",
         inContext(thisNode => onChange --> (_ => handleSearchInput(thisNode.ref))),
       ),
-      Button(
+      Clickable(
         cls := "ml-2",
         child.text <-- viewSignal.map {
           case "text"  => t"books"
@@ -90,12 +90,12 @@ def App =
           )
         },
       )(),
-      Button(
+      Clickable(
         cls := "ml-2",
         SVG.userSettings,
         onClick --> { _ => settingsVar.set(true) },
       )(),
-      Button(
+      Clickable(
         cls := "ml-2",
         child <-- modeSignal.map(mode => if mode == "light" then SVG.moon else SVG.sun),
         onClick --> { _ =>
@@ -115,7 +115,7 @@ def App =
               cls := "flex justify-between",
               child <-- chapterSignal.map(ch =>
                 if ch > 1 then
-                  Button(
+                  Clickable(
                     SVG.leftArrow,
                     onClick --> { _ =>
                       chapterVar.update(_ - 1)
@@ -126,7 +126,7 @@ def App =
               ),
               child <-- chapterSignal.map(ch =>
                 if ch < bookSignal.now().length then
-                  Button(
+                  Clickable(
                     SVG.rightArrow,
                     onClick --> { _ =>
                       chapterVar.update(_ + 1)
@@ -161,7 +161,7 @@ def App =
         case "books" =>
           div(
             Text(cls := "mt-6 mb-2 text-xl", t"booksOfTheBible"),
-            books map { (name, book) => div(Button(name, onClick --> { _ => goToBook(book) })()) },
+            books map { (name, book) => div(Clickable(name, onClick --> { _ => goToBook(book) })()) },
             Text(cls := "mt-5", t"missingBooks"),
           )
       },
