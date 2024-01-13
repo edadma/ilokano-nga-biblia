@@ -170,25 +170,33 @@ def App =
 end App
 
 def settingsModel =
-  val btn = Button(
+  val btn1 = Button(
+    cls := "font-gentium text-lg mr-2 w-14 h-9",
+    onClick --> { _ => setSize("lg") },
+    "A",
+  )()
+  val btn2 = Button(
     cls := "font-gentium text-xl mr-2 w-14 h-9",
     onClick --> { _ => setSize("xl") },
     "A",
   )()
+  val btn3 = Button(cls := "font-gentium text-2xl w-14 h-9", onClick --> { _ => setSize("2xl") }, "A")()
 
   Modal(
-    Button(
-      cls := "font-gentium text-lg mr-2 w-14 h-9",
-      onClick --> { _ => setSize("lg") },
-      "A",
-    )(),
-    btn,
-    Button(cls := "font-gentium text-2xl w-14 h-9", onClick --> { _ => setSize("2xl") }, "A")(),
+    btn1,
+    btn2,
+    btn3,
   )(
     settingsVar,
     t"settings",
     modalCls = "w-64", {
       setTimeout(1) {
+        val btn =
+          sizeSignal.now() match
+            case "lg"  => btn1
+            case "xl"  => btn2
+            case "2xl" => btn3
+
         btn.ref.focus()
       }
     },
