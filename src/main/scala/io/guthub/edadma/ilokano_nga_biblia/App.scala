@@ -1,7 +1,6 @@
 package io.guthub.edadma.ilokano_nga_biblia
 
 import io.github.edadma.translations.*
-
 import com.raquo.laminar.DomApi
 import com.raquo.laminar.api.L.{*, given}
 import org.scalajs.dom
@@ -15,7 +14,6 @@ import org.scalajs.dom.HTMLInputElement
 
 import scala.collection.immutable.ArraySeq
 import scala.scalajs.js.timers.setTimeout
-
 import components.*
 
 type Mode = "light" | "dark"
@@ -172,20 +170,31 @@ def App =
 end App
 
 def settingsModel =
+  val btn = Button(
+    cls := "font-gentium text-xl mr-2 w-14 h-9",
+    onClick --> { _ => setSize("xl") },
+    "A",
+  )()
+
   Modal(
-    Button(cls := "font-gentium text-lg mr-2 w-14 h-9", onClick --> { _ => setSize("lg") }, "A")(
-      focus = true,
-    ),
-    Button(cls := "font-gentium text-xl mr-2 w-14 h-9", onClick --> { _ => setSize("xl") }, "A")(
-      focus = true,
-    ),
-    Button(cls := "font-gentium text-2xl w-14 h-9", onClick --> { _ => setSize("2xl") }, "A")(
-      focus = true,
-    ),
-  )(settingsVar, t"settings", modalCls = "w-64")
+    Button(
+      cls := "font-gentium text-lg mr-2 w-14 h-9",
+      onClick --> { _ => setSize("lg") },
+      "A",
+    )(),
+    btn,
+    Button(cls := "font-gentium text-2xl w-14 h-9", onClick --> { _ => setSize("2xl") }, "A")(),
+  )(
+    settingsVar,
+    t"settings",
+    modalCls = "w-64", {
+      setTimeout(1) {
+        btn.ref.focus()
+      }
+    },
+  )
 
 def setSize(size: Size): Unit =
-  println(size)
   sizeVar set size
   Preferences set SetOptions("size", size)
 
