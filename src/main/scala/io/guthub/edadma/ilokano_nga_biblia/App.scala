@@ -49,12 +49,12 @@ def App =
       |    <div class="prose prose-h1:font-normal prose-h1:text-gray-600 dark:prose-h1:text-gray-400 prose-h2:text-gray-600 dark:prose-h2:text-gray-400 prose-h3:text-gray-600 dark:prose-h3:text-gray-400 prose-p:text-xl prose-p:text-gray-600 dark:prose-p:text-gray-400">
       |      <h1>The Ilokano Bible</h1>
       |      <p>This application contains the Holy Bible translated into the Ilokano language.</p>
-      |      <h2>Repositories</h2>
+      |      <h3>Repositories</h3>
       |      <p>The repository for the Bible translation can be found at <a href="https://github.com/nasantuan-a-biblia/teksto-ti-biblia">Nasantuan a Biblia</a>.
       |         The repository for this application can be found at <a href="https://github.com/edadma/ilokano-nga-biblia">Ilokano nga Biblia</a>.</p>
-      |      <h2>Version</h2>
+      |      <h3>Version</h3>
       |      <p>January 13, 2024</p>
-      |      <h2>License</h2>
+      |      <h3>License</h3>
       |      <p>This translation of the Holy Bible is in the public domain. The application is open source and is
       |         under the MIT license.</p>
       |    </div>
@@ -70,12 +70,12 @@ def App =
       |    <div class="prose prose-h1:font-normal prose-h1:text-gray-600 dark:prose-h1:text-gray-400 prose-h2:text-gray-600 dark:prose-h2:text-gray-400 prose-h3:text-gray-600 dark:prose-h3:text-gray-400 prose-p:text-xl prose-p:text-gray-600 dark:prose-p:text-gray-400">
       |      <h1>Ilokano nga Biblia</h1>
       |      <p>Daytoy nga aplikasion ket naglaon ti Nasantuan a Biblia a naipatarus iti pagsasao nga Ilokano.</p>
-      |      <h2>Dagiti Pagidulin</h2>
+      |      <h3>Dagiti Pagidulin</h3>
       |      <p>Masarakan ti pagidulinan iti patarus ti Biblia iti <a href="https://github.com/nasantuan-a-biblia/teksto-ti-biblia">Nasantuan a Biblia</a>.
       |         Ti pagidulinan para iti daytoy nga aplikasion ket mabalin a masarakan iti <a href="https://github.com/edadma/ilokano-nga-biblia">Ilokano nga Biblia</a>.</p>
-      |      <h2>Bersion</h2>
+      |      <h3>Bersion</h3>
       |      <p>Enero 13, 2024</p>
-      |      <h2>Lisensia</h2>
+      |      <h3>Lisensia</h3>
       |      <p>Daytoy a patarus ti Nasantuan a Biblia ket adda iti publiko. Ti aplikasion ket open source ken isu ti
       |         lisensia ti MIT.</p>
       |    </div>
