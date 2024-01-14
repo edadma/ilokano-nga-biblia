@@ -149,8 +149,9 @@ def App =
             div(
               cls := "flex justify-between",
               child <-- chapterSignal.map(ch =>
-                if ch > 1 then
+                if ch > 1 || bookSignal.now().length == 1 then
                   Clickable(
+                    cls.toggle("invisible") := bookSignal.now().length == 1,
                     SVG.leftArrow,
                     onClick --> { _ =>
                       chapterVar.update(_ - 1)
@@ -173,7 +174,7 @@ def App =
             ),
             div(
               idAttr := "text",
-              cls := "mt-2 no-scrollbar overflow-auto h-[calc(100vh-135px)]",
+              cls := "no-scrollbar overflow-auto h-[calc(100vh-135px)]",
               child <-- bookSignal
                 .combineWith(chapterSignal, sizeSignal)
                 .map((book, chapter, size) =>
