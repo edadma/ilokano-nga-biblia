@@ -45,6 +45,14 @@ def App =
       |  missingBooks: Missing books will be added as they are translated.
       |  settings: Settings
       |  about: About
+      |  aboutText: |
+      |    <div class="prose prose-h1:font-normal prose-h1:text-gray-600 dark:prose-h1:text-gray-400 prose-h2:text-gray-600 dark:prose-h2:text-gray-400 prose-h3:text-gray-600 dark:prose-h3:text-gray-400 prose-p:text-xl prose-p:text-gray-600 dark:prose-p:text-gray-400">
+      |      <h1>The Ilokano Bible</h1>
+      |      <p>This application contains the Holy Bible translated into the Ilokano language.</p>
+      |      <h2>License</h2>
+      |      <p>This translation of the Holy Bible is in the public domain. The application is open source and is
+      |         under the MIT license.</p>
+      |    </div>
       |ilo:
       |  search: Sapulen
       |  books: Libro
@@ -53,6 +61,14 @@ def App =
       |  missingBooks: Mainayon dagiti awan a libro bayat ti pannakaipatarusda.
       |  settings: Dagiti Setting
       |  about: Maipapan
+      |  aboutText: |
+      |    <div class="prose prose-h1:font-normal prose-h1:text-gray-600 dark:prose-h1:text-gray-400 prose-h2:text-gray-600 dark:prose-h2:text-gray-400 prose-h3:text-gray-600 dark:prose-h3:text-gray-400 prose-p:text-xl prose-p:text-gray-600 dark:prose-p:text-gray-400">
+      |      <h1>Ilokano nga Bbiblia</h1>
+      |      <p>Daytoy nga aplikasion ket naglaon ti Nasantuan a Biblia a naipatarus iti pagsasao nga Ilokano.</p>
+      |      <h2>Lisensia</h2>
+      |      <p>Daytoy a patarus ti Nasantuan a Biblia ket adda iti publiko. Ti aplikasion ket open source ken isu ti
+      |         lisensia ti MIT.</p>
+      |    </div>
       |""".stripMargin,
   )
   setLanguage("ilo")
@@ -211,34 +227,9 @@ def settingsModel =
   )
 
 def aboutModel =
-  val btn1 = Button(
-    cls := "font-gentium text-lg mr-2 w-14 h-9",
-    onClick --> { _ => setSize("lg") },
-    "A",
-  )(focus = true)
-  val btn2 = Button(
-    cls := "font-gentium text-xl mr-2 w-14 h-9",
-    onClick --> { _ => setSize("xl") },
-    "A",
-  )(focus = true)
-  val btn3 = Button(cls := "font-gentium text-2xl w-14 h-9", onClick --> { _ => setSize("2xl") }, "A")(focus = true)
-
-  Modal(
-    btn1,
-    btn2,
-    btn3,
-  )(
+  Modal(foreignHtmlElement(DomApi.unsafeParseHtmlString(t"aboutText".trim)))(
     aboutVar,
-    t"settings",
-    modalCls = "w-64", {
-      setTimeout(1) {
-        (sizeSignal.now() match
-          case "lg"  => btn1
-          case "xl"  => btn2
-          case "2xl" => btn3
-        ).ref.focus()
-      }
-    },
+    t"about",
   )
 
 def setSize(size: Size): Unit =
