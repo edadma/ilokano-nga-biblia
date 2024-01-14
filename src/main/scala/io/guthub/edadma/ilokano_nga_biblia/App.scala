@@ -49,6 +49,8 @@ def App =
       |    <div class="prose prose-h1:font-normal prose-h1:text-gray-600 dark:prose-h1:text-gray-400 prose-h2:text-gray-600 dark:prose-h2:text-gray-400 prose-h3:text-gray-600 dark:prose-h3:text-gray-400 prose-p:text-xl prose-p:text-gray-600 dark:prose-p:text-gray-400">
       |      <h1>The Ilokano Bible</h1>
       |      <p>This application contains the Holy Bible translated into the Ilokano language.</p>
+      |      <h2>Repositories</h2>
+      |      <p>The repository for the Bible translation can be found at <a href="https://github.com/nasantuan-a-biblia/teksto-ti-biblia">Nasantuan a Biblia</a>.</p>
       |      <h2>Version</h2>
       |      <p>January 13, 2024</p>
       |      <h2>License</h2>
@@ -65,8 +67,10 @@ def App =
       |  about: Maipapan
       |  aboutText: |
       |    <div class="prose prose-h1:font-normal prose-h1:text-gray-600 dark:prose-h1:text-gray-400 prose-h2:text-gray-600 dark:prose-h2:text-gray-400 prose-h3:text-gray-600 dark:prose-h3:text-gray-400 prose-p:text-xl prose-p:text-gray-600 dark:prose-p:text-gray-400">
-      |      <h1>Ilokano nga Bbiblia</h1>
+      |      <h1>Ilokano nga Biblia</h1>
       |      <p>Daytoy nga aplikasion ket naglaon ti Nasantuan a Biblia a naipatarus iti pagsasao nga Ilokano.</p>
+      |      <h2>Dagiti Pagidulin</h2>
+      |      <p>Masarakan ti pagidulinan iti patarus ti Biblia iti <a href="https://github.com/nasantuan-a-biblia/teksto-ti-biblia">Nasantuan a Biblia</a>.</p>
       |      <h2>Bersion</h2>
       |      <p>Enero 13, 2024</p>
       |      <h2>Lisensia</h2>
