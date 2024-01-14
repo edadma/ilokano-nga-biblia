@@ -50,7 +50,8 @@ def App =
       |      <h1>The Ilokano Bible</h1>
       |      <p>This application contains the Holy Bible translated into the Ilokano language.</p>
       |      <h2>Repositories</h2>
-      |      <p>The repository for the Bible translation can be found at <a href="https://github.com/nasantuan-a-biblia/teksto-ti-biblia">Nasantuan a Biblia</a>.</p>
+      |      <p>The repository for the Bible translation can be found at <a href="https://github.com/nasantuan-a-biblia/teksto-ti-biblia">Nasantuan a Biblia</a>.
+      |         The repository for this application can be found at <a href="https://github.com/edadma/ilokano-nga-biblia">Ilokano nga Biblia</a>.</p>
       |      <h2>Version</h2>
       |      <p>January 13, 2024</p>
       |      <h2>License</h2>
@@ -70,7 +71,8 @@ def App =
       |      <h1>Ilokano nga Biblia</h1>
       |      <p>Daytoy nga aplikasion ket naglaon ti Nasantuan a Biblia a naipatarus iti pagsasao nga Ilokano.</p>
       |      <h2>Dagiti Pagidulin</h2>
-      |      <p>Masarakan ti pagidulinan iti patarus ti Biblia iti <a href="https://github.com/nasantuan-a-biblia/teksto-ti-biblia">Nasantuan a Biblia</a>.</p>
+      |      <p>Masarakan ti pagidulinan iti patarus ti Biblia iti <a href="https://github.com/nasantuan-a-biblia/teksto-ti-biblia">Nasantuan a Biblia</a>.
+      |         Ti pagidulinan para iti daytoy nga aplikasion ket mabalin a masarakan iti <a href="https://github.com/edadma/ilokano-nga-biblia">Ilokano nga Biblia</a>.</p>
       |      <h2>Bersion</h2>
       |      <p>Enero 13, 2024</p>
       |      <h2>Lisensia</h2>
@@ -96,7 +98,6 @@ def App =
   }
 
   Card(
-    Text(cls := "flex justify-end text-xs", "2024-01-13"),
     div(
       cls := "flex justify-between",
       Input(
