@@ -49,11 +49,11 @@ def App =
       |    <div class="prose prose-h1:font-normal prose-h1:text-gray-600 dark:prose-h1:text-gray-400 prose-h2:text-gray-600 dark:prose-h2:text-gray-400 prose-h3:text-gray-600 dark:prose-h3:text-gray-400 prose-p:text-xl prose-p:text-gray-600 dark:prose-p:text-gray-400">
       |      <h1>The Ilokano Bible</h1>
       |      <p>This application contains the Holy Bible translated into the Ilokano language.</p>
+      |      <h2>Version</h2>
+      |      <p>January 13, 2024</p>
       |      <h2>License</h2>
       |      <p>This translation of the Holy Bible is in the public domain. The application is open source and is
       |         under the MIT license.</p>
-      |      <h2>Version</h2>
-      |      <p>January 13, 2024</p>
       |    </div>
       |ilo:
       |  search: Sapulen
