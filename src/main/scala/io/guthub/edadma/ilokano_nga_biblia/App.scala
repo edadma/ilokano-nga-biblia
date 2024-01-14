@@ -52,6 +52,8 @@ def App =
       |      <h2>License</h2>
       |      <p>This translation of the Holy Bible is in the public domain. The application is open source and is
       |         under the MIT license.</p>
+  |          <h2>Version</h2>
+  |          <p>January 13, 2024</p>
       |    </div>
       |ilo:
       |  search: Sapulen
@@ -68,6 +70,8 @@ def App =
       |      <h2>Lisensia</h2>
       |      <p>Daytoy a patarus ti Nasantuan a Biblia ket adda iti publiko. Ti aplikasion ket open source ken isu ti
       |         lisensia ti MIT.</p>
+      |      <h2>Bersion</h2>
+      |      <p>Enero 13, 2024</p>
       |    </div>
       |""".stripMargin,
   )
