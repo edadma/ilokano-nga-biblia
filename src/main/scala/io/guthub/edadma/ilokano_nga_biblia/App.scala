@@ -53,7 +53,7 @@ def App =
       |      <p>The repository for the Bible translation can be found at <a href="https://github.com/nasantuan-a-biblia/teksto-ti-biblia">Nasantuan a Biblia</a>.
       |         The repository for this application can be found at <a href="https://github.com/edadma/ilokano-nga-biblia">Ilokano nga Biblia</a>.</p>
       |      <h3>Version</h3>
-      |      <p>January 13, 2024</p>
+      |      <p>January 14, 2024</p>
       |      <h3>License</h3>
       |      <p>This translation of the Holy Bible is in the public domain. The application is open source and is
       |         under the MIT license.</p>
@@ -74,7 +74,7 @@ def App =
       |      <p>Masarakan ti pagidulinan iti patarus ti Biblia iti <a href="https://github.com/nasantuan-a-biblia/teksto-ti-biblia">Nasantuan a Biblia</a>.
       |         Ti pagidulinan para iti daytoy nga aplikasion ket mabalin a masarakan iti <a href="https://github.com/edadma/ilokano-nga-biblia">Ilokano nga Biblia</a>.</p>
       |      <h3>Bersion</h3>
-      |      <p>Enero 13, 2024</p>
+      |      <p>Enero 14, 2024</p>
       |      <h3>Lisensia</h3>
       |      <p>Daytoy a patarus ti Nasantuan a Biblia ket adda iti publiko. Ti aplikasion ket open source ken isu ti
       |         lisensia ti MIT.</p>
