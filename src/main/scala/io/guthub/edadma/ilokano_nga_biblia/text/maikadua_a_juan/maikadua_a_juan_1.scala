@@ -8,7 +8,7 @@ val maikadua_a_juan_1 =
 <sup class="mr-px" id="2">2</sup>gapu iti kinapudno nga agtalinaed kadatayo ken makikadua kadatayo iti agnanayon.
 <sup class="mr-px" id="3">3</sup>Addanto parabur, asi, ken talna kadatayo, manipud iti Dios Ama ken manipud ken Jesu-Kristo nga Anak ti Ama, iti kinapudno ken ayat.</p>
 <h3>Pannagna iti Kinapudno ken Ayat</h3>
-<p class=""><sup class="mr-px" id="4">4</sup>Nagrag-oak unay idi nasarakak ti sumagmamano nga annakyo a magmagna iti kinapudno, kas iti imbilin ti Ama.
+<p class=""><sup class="mr-px" id="4">4</sup>Nagrag-ok unay idi nasarakak ti sumagmamano nga annakyo a magmagna iti kinapudno, kas iti imbilin ti Ama.
 <sup class="mr-px" id="5">5</sup>Ket ita dawatek kenka, patpatgek a babai—saan a kasla agsursuratak kenka iti baro a bilin, no di ket daydiay adda kadakami manipud idi damo—nga agiinnayatkami.
 <sup class="mr-px" id="6">6</sup>Ket daytoy ti ayat, a magnatayo a maibatay kadagiti bilinna; daytoy ti bilin, kas iti nangngegyo manipud idi punganay, tapno magnakayo iti dayta.
 <sup class="mr-px" id="7">7</sup>Ta adu a manangallilaw ti rimmuar ditoy lubong, dagidiay saan a mangipudno iti yaay ni Jesu-Kristo iti lasag. Ti kasta isu ti manangallilaw ken antikristo.
