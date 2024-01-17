@@ -11,7 +11,7 @@ def Button(modifiers: Modifier[ReactiveHtmlElement[HTMLButtonElement]]*)(
 ): ReactiveHtmlElement[HTMLButtonElement] =
   button(
     typ := "button",
-    cls := "bg-gray-500 text-blue-700 font-sans font-medium text-md p-2.5 text-center justify-center inline-flex items-center dark:bg-gray-800 dark:text-blue-400",
+    cls := "bg-gray-500 text-blue-700 font-medium text-md p-2.5 text-center justify-center inline-flex items-center dark:bg-gray-800 dark:text-blue-400",
     //  hover:bg-gray-900
     cls.toggle("focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800") := focus,
     cls.toggle("rounded") := rounded,

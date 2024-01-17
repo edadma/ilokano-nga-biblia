@@ -216,7 +216,8 @@ def settingsModel =
     onClick --> { _ => setSize("xl") },
     "A",
   )(focus = true)
-  val btn3 = Button(cls := "font-gentium text-2xl w-14 h-9", onClick --> { _ => setSize("2xl") }, "A")(focus = true)
+  val btn3 =
+    Button(cls := "font-gentium text-2xl w-14 h-9", onClick --> { _ => setSize("2xl") }, "A")(focus = true)
 
   Modal(
     btn1,
