@@ -30,7 +30,11 @@ val juan_5 =
 <sup class="mr-px" id="22">22</sup>Ta ti Ama awan ti mangukom iti asinoman, no di ket intedna ti amin a panangukom iti Anak,
 <sup class="mr-px" id="23">23</sup>tapno amin ket dayawenda ti Anak, a kas iti panangdayawda iti Ama. Siasinoman a saan a mangpadayaw iti Anak, saanna a dayawen ti Ama a nangibaon kenkuana.
 <sup class="mr-px" id="24">24</sup>Pudno, pudno, kunak kadakayo, siasinoman a dumngeg iti saok ken mamati iti nangibaon kaniak, addaan iti biag nga agnanayon. Saan nga umay iti pannakaukom, no di ket limmasat manipud patay agingga iti biag.</p>
-<p class="indent-8"><sup class="mr-px" id="25">25</sup>“Pudno, pudno, kunak kadakayo, umay ti maysa nga oras, ket adda itan, inton mangngeg dagiti natay ti timek ti Anak ti Dios, ket agbiagto dagiti makangngeg. 26 Ta no kasano nga adda biag ti Ama iti bagina, kasta met nga intedna ti Anak a maaddaan iti biag iti bagina. 27 Ket inikkanna iti autoridad a mangukom, agsipud ta isu ti Anak ti Tao. 28 Dikay masdaaw iti daytoy, ta dumteng ti maysa nga oras inton mangngeg ti amin nga adda kadagiti tanem ti timekna 29 ket rummuarda, dagidiay nagaramid iti naimbag agingga iti panagungar ti biag, ken dagidiay nagaramid iti dakes agingga iti panagungar ti panangukom .</p>
+<p class="indent-8"><sup class="mr-px" id="25">25</sup>“Pudno, pudno, kunak kadakayo, umay ti maysa nga oras, ket adda itan, inton mangngeg dagiti natay ti timek ti Anak ti Dios, ket agbiagto dagiti makangngeg.
+<sup class="mr-px" id="26">26</sup>Ta no kasano nga adda biag ti Ama iti bagina, kasta met nga intedna ti Anak a maaddaan iti biag iti bagina.
+<sup class="mr-px" id="27">27</sup>Ket inikkanna iti autoridad a mangukom, agsipud ta isu ti Anak ti Tao.
+<sup class="mr-px" id="28">28</sup>Dikay masdaaw iti daytoy, ta dumteng ti maysa nga oras inton mangngeg ti amin nga adda kadagiti tanem ti timekna
+<sup class="mr-px" id="29">29</sup>ket rummuarda, dagidiay nagaramid iti naimbag agingga iti panagungar ti biag, ken dagidiay nagaramid iti dakes agingga iti panagungar ti panangukom.</p>
 <h3>Saksi ni Jesus</h3>
 <p class=""><sup class="mr-px" id="30">30</sup>“Awan ti maaramidak a bukbukodko. Kas mangngegko, ukomek, ket nalinteg ti panangukomko, agsipud ta saan a ti bukodko a pagayatan ti sapsapulek no di ket ti pagayatan ti nangibaon kaniak.
 <sup class="mr-px" id="31">31</sup>No siak laeng ti mangsaksi maipapan iti bagik, saan a pudno ti pammaneknekko.

@@ -5,6 +5,7 @@ import text.*
 val books =
   List(
     "Juan" -> juan.book,
+    "Roma" -> roma.book,
     "1 Juan" -> umuna_a_juan.book,
     "2 Juan" -> maikadua_a_juan.book,
     "3 Juan" -> maikatlo_a_juan.book,
@@ -16,6 +17,12 @@ val booksMap =
     "juan" -> juan.book,
     "jn" -> juan.book,
     "jua" -> juan.book,
+
+    // Romans
+    "romano" -> roma.book,
+    "roma" -> roma.book,
+    "rom" -> roma.book,
+    "rm" -> roma.book,
 
     // 1 John
     "1 juan" -> umuna_a_juan.book,
