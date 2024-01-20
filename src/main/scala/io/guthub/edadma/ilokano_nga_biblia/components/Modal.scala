@@ -14,7 +14,7 @@ def Modal(
       !s
     },
     div(
-      cls := s"relative p-4 w-full max-w-2xl max-h-full $modalCls",
+      cls := s"relative p-4 max-w-2xl max-h-full $modalCls",
       div(
         cls := "relative bg-white rounded-lg shadow dark:bg-gray-700",
         div(

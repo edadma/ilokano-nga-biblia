@@ -226,7 +226,7 @@ def settingsModel =
   )(
     settingsVar,
     t"settings",
-    modalCls = "w-[16rem]", {
+    modalCls = "w-64", {
       setTimeout(1) {
         (sizeSignal.now() match
           case "lg"  => btn1
