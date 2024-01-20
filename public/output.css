@@ -1479,10 +1479,6 @@ html {
   width: 0.75rem;
 }
 
-.w-64 {
-  width: 16rem;
-}
-
 .w-8 {
   width: 2rem;
 }
@@ -1491,12 +1487,12 @@ html {
   width: 16px;
 }
 
-.w-full {
-  width: 100%;
-}
-
 .w-\[16rem\] {
   width: 16rem;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .max-w-2xl {
