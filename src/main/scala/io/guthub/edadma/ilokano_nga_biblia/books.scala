@@ -6,6 +6,7 @@ val books =
   List(
     "Juan" -> juan.book,
     "Roma" -> roma.book,
+    "Galacia" -> galacia.book,
     "1 Juan" -> umuna_a_juan.book,
     "2 Juan" -> maikadua_a_juan.book,
     "3 Juan" -> maikatlo_a_juan.book,
@@ -23,6 +24,11 @@ val booksMap =
     "roma" -> roma.book,
     "rom" -> roma.book,
     "rm" -> roma.book,
+
+    // Galatians
+    "galacia" -> galacia.book,
+    "gal" -> galacia.book,
+    "gl" -> galacia.book,
 
     // 1 John
     "1 juan" -> umuna_a_juan.book,
