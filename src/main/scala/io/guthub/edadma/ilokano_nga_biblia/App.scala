@@ -98,6 +98,7 @@ def App =
   }
 
   Card(
+    cls := "h-screen",
     div(
       cls := "flex justify-between",
       Input(
