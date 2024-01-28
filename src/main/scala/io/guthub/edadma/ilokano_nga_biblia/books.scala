@@ -7,6 +7,7 @@ val books =
     "Juan" -> juan.book,
     "Roma" -> roma.book,
     "Galacia" -> galacia.book,
+    "Efeso" -> efeso.book,
     "1 Juan" -> umuna_a_juan.book,
     "2 Juan" -> maikadua_a_juan.book,
     "3 Juan" -> maikatlo_a_juan.book,
@@ -29,6 +30,11 @@ val booksMap =
     "galacia" -> galacia.book,
     "gal" -> galacia.book,
     "gl" -> galacia.book,
+
+    // Ephesians
+    "efeso" -> efeso.book,
+    "efe" -> efeso.book,
+    "ef" -> efeso.book,
 
     // 1 John
     "1 juan" -> umuna_a_juan.book,
