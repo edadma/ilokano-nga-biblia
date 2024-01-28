@@ -8,6 +8,10 @@ val books =
     "Roma" -> roma.book,
     "Galacia" -> galacia.book,
     "Efeso" -> efeso.book,
+    "Filipos" -> filipos.book,
+    "Colosas" -> colosas.book,
+    "1 Tesalonica" -> umuna_a_tesalonica.book,
+    "2 Tesalonica" -> maikadua_a_tesalonica.book,
     "1 Juan" -> umuna_a_juan.book,
     "2 Juan" -> maikadua_a_juan.book,
     "3 Juan" -> maikatlo_a_juan.book,
@@ -35,6 +39,26 @@ val booksMap =
     "efeso" -> efeso.book,
     "efe" -> efeso.book,
     "ef" -> efeso.book,
+
+    // Philippians
+    "filipos" -> filipos.book,
+    "fil" -> filipos.book,
+    "fl" -> filipos.book,
+
+    // Colossians
+    "colosas" -> colosas.book,
+    "col" -> colosas.book,
+    "cl" -> colosas.book,
+
+    // 1 Thessalonians
+    "1 tesalonica" -> umuna_a_tesalonica.book,
+    "1 tes" -> umuna_a_tesalonica.book,
+    "1 ts" -> umuna_a_tesalonica.book,
+
+    // 2 Thessalonians
+    "2 tesalonica" -> maikadua_a_tesalonica.book,
+    "2 tes" -> maikadua_a_tesalonica.book,
+    "2 ts" -> maikadua_a_tesalonica.book,
 
     // 1 John
     "1 juan" -> umuna_a_juan.book,
