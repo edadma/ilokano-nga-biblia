@@ -17,10 +17,10 @@ val juan_14 =
 <sup class="mr-px" id="11">11</sup>Mamatika kaniak nga addaak iti Ama ket adda kaniak ti Ama, wenno mamatikayo gapu kadagiti aramid a mismo.</p>
 <p class="indent-8"><sup class="mr-px" id="12">12</sup>“Pudno, pudno, kunak kadakayo, ti siasinoman a mamati kaniak aramidennanto met dagiti aramid nga ar-aramidek; ket aramidennanto dagiti dakdakkel nga aramid ngem kadagitoy, agsipud ta mapanak iti Ama.
 <sup class="mr-px" id="13">13</sup>Aniaman ti dawatenyo iti naganko, aramidekto daytoy tapno maidaydayaw ti Ama babaen ti Anak.
-<sup class="mr-px" id="14">14</sup>No damagenyo kaniak[e] ti aniaman a banag iti naganko, aramidekto dayta.</p>
+<sup class="mr-px" id="14">14</sup>No damagenyo kaniak ti aniaman a banag iti naganko, aramidekto dayta.</p>
 <h3>Inkari ni Jesus ti Espiritu Santo</h3>
 <p class=""><sup class="mr-px" id="15">15</sup>“No ay-ayatennak, tungpalenyo dagiti bilinko.
-<sup class="mr-px" id="16">16</sup>Ket dumawatakto iti Ama, ket ikkannakayo iti sabali a Katulongan,[f] tapno makikadua kadakayo iti agnanayon,
+<sup class="mr-px" id="16">16</sup>Ket dumawatakto iti Ama, ket ikkannakayo iti sabali a Katulongan, tapno makikadua kadakayo iti agnanayon,
 <sup class="mr-px" id="17">17</sup>uray ti Espiritu ti kinapudno, a saan a mabalin nga awaten ti lubong, agsipud ta saanna a makita wenno am-ammo. Am-ammom isuna, ta makipagnaed kenka ken addanto kenka.</p>
 <p class="indent-8"><sup class="mr-px" id="18">18</sup>“Saankayto a baybay-an kas ulila; Umayak kenka.
 <sup class="mr-px" id="19">19</sup>Iti apagbiit, saannakton a makita ti lubong, ngem makitadakto. Gapu ta agbibiagak, sika met ti agbiag.

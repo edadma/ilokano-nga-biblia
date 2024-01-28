@@ -19,17 +19,17 @@ val juan_20 =
 <sup class="mr-px" id="13">13</sup>Kinunada kenkuana, “Babai, apay nga agsangsangitka?” Kinunana kadakuada, “Innalada ti Apok, ket diak ammo no sadino ti nangikabilanda kenkuana.”
 <sup class="mr-px" id="14">14</sup>Idi naibagana daytoy, timmaliaw ket nakitana ni Jesus a nakatakder, ngem dina ammo a ni Jesus dayta.
 <sup class="mr-px" id="15">15</sup>Kinuna ni Jesus kenkuana, “Babai, apay nga agsangsangitka? Siasino ti sapsapulem?” Gapu ta impagarupna nga isu ti hardinero, kinunana kenkuana, “Apo, no inyawidmo, ibagam kaniak no sadino ti nangikabilam kenkuana, ket alaek.”
-<sup class="mr-px" id="16">16</sup>Kinuna ni Jesus kenkuana, “Maria.” Timmaliaw ket kinunana kenkuana iti Aramaiko,[b] “Rabboni!” (a kayatna a sawen, Mannursuro).
+<sup class="mr-px" id="16">16</sup>Kinuna ni Jesus kenkuana, “Maria.” Timmaliaw ket kinunana kenkuana iti Aramaiko, “Rabboni!” (a kayatna a sawen, Mannursuro).
 <sup class="mr-px" id="17">17</sup>Kinuna ni Jesus kenkuana, “Dika kumpet kaniak, ta diak pay immuli iti Ama; ngem mapanka kadagiti kakabsatko ket ibagam kadakuada, ‘Um-ulilaak iti Amak ken Amayo, iti Diosko ken iti Diosyo.’”
 <sup class="mr-px" id="18">18</sup>Napan ni Maria Magdalena ket impakaammona kadagiti adalan, “Nakitak ti Apo”—ket dayta imbagana dagitoy kenkuana.</p>
 <h3>Nagparang ni Jesus Kadagiti Adalan</h3>
-<p class=""><sup class="mr-px" id="19">19</sup>Iti malem dayta nga aldaw, iti umuna nga aldaw ti lawas, a nakaserra dagiti ruangan iti ayan dagiti adalan gapu iti panagbuteng kadagiti Judio,[c] immay ni Jesus ket nagtakder iti tengngada ket kinunana kadakuada, “Kappia koma kadakayo.”
+<p class=""><sup class="mr-px" id="19">19</sup>Iti malem dayta nga aldaw, iti umuna nga aldaw ti lawas, a nakaserra dagiti ruangan iti ayan dagiti adalan gapu iti panagbuteng kadagiti Judio, immay ni Jesus ket nagtakder iti tengngada ket kinunana kadakuada, “Kappia koma kadakayo.”
 <sup class="mr-px" id="20">20</sup>Idi naibagana daytoy, impakitana kadakuada dagiti imana ken ti sikiganna. Kalpasanna, naragsakan dagiti adalan idi nakitada ti Apo.
 <sup class="mr-px" id="21">21</sup>Kinuna manen ni Jesus kadakuada, “Adda koma talna kadakayo. Kas imbaonnak ti Ama, kasta met nga ibaonnaka.”
 <sup class="mr-px" id="22">22</sup>Idi naibagana daytoy, inlang-abna ida ket kinunana kadakuada, “Awatenyo ti Espiritu Santo.
 <sup class="mr-px" id="23">23</sup>No pakawanenyo ti basbasol ti siasinoman, mapakawanda ida; no lapdanmo ti pammakawan iti asinoman, malapdan dayta.”</p>
 <h3>Jesus ken Tomas</h3>
-<p class=""><sup class="mr-px" id="24">24</sup>Ita ni Tomas, maysa kadagiti sangapulo ket dua, a naawagan iti Singin,[d] awan kadakuada idi immay ni Jesus.
+<p class=""><sup class="mr-px" id="24">24</sup>Ita ni Tomas, maysa kadagiti sangapulo ket dua, a naawagan iti Singin, awan kadakuada idi immay ni Jesus.
 <sup class="mr-px" id="25">25</sup>Isu nga imbaga kenkuana dagiti dadduma nga adalan, “Nakitami ti Apo.” Ngem kinunana kadakuada, “Malaksid no makitak kadagiti imana ti marka dagiti kuko, ken ikabilko ti ramayko iti marka dagiti kuko, ken ikabilko ti imak iti sikiganna, diakto pulos mamati.”</p>
 <p class="indent-8"><sup class="mr-px" id="26">26</sup>Walo nga aldaw kalpasanna, adda manen dagiti adalanna iti uneg, ket kaduada ni Tomas. Nupay nakaserra dagiti ridaw, immay ni Jesus ket nagtakder iti tengngada ket kinunana, “Kappia koma kadakayo.”
 <sup class="mr-px" id="27">27</sup>Kalpasanna, kinunana ken Tomas, “Ikabilmo ditoy ti ramaymo, ket kitaem dagiti imak; ket iyunnatmo ti imam, ket ikabilmo iti sikigak. Saankayo a di mamati, no di ket mamatikayo.”
