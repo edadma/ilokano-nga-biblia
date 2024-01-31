@@ -17,6 +17,9 @@ val john4png: String = js.native
 val john5png: String = js.native
 @js.native @JSImport("/images/john-6.png", JSImport.Default)
 val john6png: String = js.native
+@js.native @JSImport("/images/john-7.png", JSImport.Default)
+val john7png: String = js.native
+
 @js.native @JSImport("/images/1-john-1.png", JSImport.Default)
 val onejohn1png: String = js.native
 
@@ -29,6 +32,7 @@ val imagesMap =
     (juan.book, 4) -> john4png,
     (juan.book, 5) -> john5png,
     (juan.book, 6) -> john6png,
+    (juan.book, 7) -> john7png,
 
     // 1 John
     (umuna_a_juan.book, 1) -> onejohn1png,
