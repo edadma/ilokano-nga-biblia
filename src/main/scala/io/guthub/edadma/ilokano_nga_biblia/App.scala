@@ -16,12 +16,6 @@ import scala.collection.immutable.ArraySeq
 import scala.scalajs.js.timers.setTimeout
 import components.*
 
-import scala.scalajs.js
-import scala.scalajs.js.annotation.JSImport
-
-@js.native @JSImport("/images/john-1.png", JSImport.Default)
-val john1png: String = js.native
-
 type Mode = "light" | "dark"
 type View = "text" | "books"
 type Book = ArraySeq[(String, Int)]
@@ -182,7 +176,13 @@ def App =
             div(
               idAttr := "text",
               cls := "no-scrollbar overflow-auto h-[calc(100vh-135px)]",
-              img(cls := "mb-5 w-full h-auto object-cover object-center", src := john1png),
+              child <-- bookSignal
+                .combineWith(chapterSignal)
+                .map((book, chapter) =>
+                  imagesMap get (book, chapter) match
+                    case None      => emptyNode
+                    case Some(png) => img(cls := "mb-5 w-full h-auto object-cover object-center", src := png),
+                ),
               child <-- bookSignal
                 .combineWith(chapterSignal, sizeSignal)
                 .map((book, chapter, size) =>
