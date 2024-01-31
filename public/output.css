@@ -1399,6 +1399,10 @@ html {
   margin-bottom: 0.5rem;
 }
 
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
 .ml-2 {
   margin-left: 0.5rem;
 }
@@ -1465,6 +1469,10 @@ html {
 
 .h-\[calc\(100vh-135px\)\] {
   height: calc(100vh - 135px);
+}
+
+.h-auto {
+  height: auto;
 }
 
 .h-screen {
@@ -1604,6 +1612,16 @@ html {
 
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.object-center {
+  -o-object-position: center;
+     object-position: center;
 }
 
 .p-2 {
