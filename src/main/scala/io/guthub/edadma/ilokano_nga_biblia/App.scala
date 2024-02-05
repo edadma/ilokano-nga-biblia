@@ -218,14 +218,14 @@ def settingsModel =
     cls := "font-gentium text-lg mr-2 w-14 h-9",
     onClick --> { _ => setSize("lg") },
     "A",
-  )(focus = true)
+  )
   val btn2 = Button(
     cls := "font-gentium text-xl mr-2 w-14 h-9",
     onClick --> { _ => setSize("xl") },
     "A",
-  )(focus = true)
+  )
   val btn3 =
-    Button(cls := "font-gentium text-2xl w-14 h-9", onClick --> { _ => setSize("2xl") }, "A")(focus = true)
+    Button(cls := "font-gentium text-2xl w-14 h-9", onClick --> { _ => setSize("2xl") }, "A")
 
   Modal(
     btn1,
@@ -235,13 +235,23 @@ def settingsModel =
     settingsVar,
     t"settings",
     modalCls = "w-64", {
-      setTimeout(1) {
+      val ref =
         (sizeSignal.now() match
           case "lg"  => btn1
           case "xl"  => btn2
           case "2xl" => btn3
-        ).ref.focus()
+        ).ref
+
+      Seq(btn1, btn2, btn3).foreach { b =>
+        b.ref.classList.remove("ring-4")
+        b.ref.classList.remove("outline-none")
+        b.ref.classList.remove("ring-blue-300")
+        b.ref.classList.remove("dark:ring-blue-800")
       }
+      ref.classList.add("ring-4")
+      ref.classList.add("outline-none")
+      ref.classList.add("ring-blue-300")
+      ref.classList.add("dark:ring-blue-800")
     },
   )
 
