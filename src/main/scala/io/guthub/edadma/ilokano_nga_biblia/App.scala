@@ -58,6 +58,8 @@ def App =
       |      <p>This translation of the Holy Bible is in the public domain. The application is open source and is
       |         under the MIT license.</p>
       |    </div>
+      |  oldTestament: Old Testament
+      |  newTestament: New Testament
       |ilo:
       |  search: Sapulen
       |  books: Libro
@@ -79,6 +81,8 @@ def App =
       |      <p>Daytoy a patarus ti Nasantuan a Biblia ket adda iti publiko. Ti aplikasion ket open source ken isu ti
       |         lisensia ti MIT.</p>
       |    </div>
+      |  oldTestament: Daan a Tulag
+      |  newTestament: Baro a Tulag
       |""".stripMargin,
   )
   setLanguage("ilo")
@@ -204,8 +208,20 @@ def App =
           )
         case "books" =>
           div(
-            Text(cls := "mt-6 mb-2 text-xl", t"booksOfTheBible"),
-            books map { (name, book) => div(Clickable(name, onClick --> { _ => goToBook(book) })()) },
+            Text(cls := "mt-6 mb-6 text-xl", t"booksOfTheBible"),
+            div(
+              cls := "flex flex-row",
+              div(
+                cls := "flex flex-col mr-10",
+                Text(cls := "mb-2 text-l", t"oldTestament"),
+                booksOT map { (name, book) => div(Clickable(name, onClick --> { _ => goToBook(book) })()) },
+              ),
+              div(
+                cls := "flex flex-col",
+                Text(cls := "mb-2 text-l", t"newTestament"),
+                booksNT map { (name, book) => div(Clickable(name, onClick --> { _ => goToBook(book) })()) },
+              ),
+            ),
             Text(cls := "mt-5", t"missingBooks"),
           )
       },

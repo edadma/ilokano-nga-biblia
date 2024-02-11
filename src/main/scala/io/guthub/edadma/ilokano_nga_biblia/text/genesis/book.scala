@@ -1,0 +1,5 @@
+package io.guthub.edadma.ilokano_nga_biblia.text.genesis
+
+import collection.immutable.ArraySeq
+
+val book = ArraySeq((genesis_1, 31), (genesis_2, 26), (genesis_3, 24), (genesis_4, 26), (genesis_5, 32), (genesis_6, 24), (genesis_7, 24), (genesis_8, 22), (genesis_9, 29), (genesis_10, 32), (genesis_11, 32), (genesis_12, 20), (genesis_13, 18), (genesis_14, 24), (genesis_15, 21), (genesis_16, 16), (genesis_17, 27), (genesis_18, 33), (genesis_19, 38), (genesis_20, 18), (genesis_21, 34), (genesis_22, 24), (genesis_23, 20), (genesis_24, 67), (genesis_25, 34), (genesis_26, 35), (genesis_27, 46), (genesis_28, 22), (genesis_29, 35), (genesis_30, 43), (genesis_31, 55), (genesis_32, 32), (genesis_33, 20), (genesis_34, 31), (genesis_35, 29), (genesis_36, 43), (genesis_37, 36), (genesis_38, 30), (genesis_39, 23), (genesis_40, 23), (genesis_41, 57), (genesis_42, 38), (genesis_43, 34), (genesis_44, 34), (genesis_45, 28), (genesis_46, 34), (genesis_47, 31), (genesis_48, 22), (genesis_49, 33), (genesis_50, 26))

@@ -5,6 +5,107 @@ import scala.scalajs.js.annotation.JSImport
 
 import text.*
 
+@js.native @JSImport("/images/genesis-1.png", JSImport.Default)
+val genesis1png: String = js.native
+@js.native @JSImport("/images/genesis-2.png", JSImport.Default)
+val genesis2png: String = js.native
+//@js.native @JSImport("/images/genesis-.png", JSImport.Default)
+//val genesispng: String = js.native
+//@js.native @JSImport("/images/genesis-.png", JSImport.Default)
+//val genesispng: String = js.native
+//@js.native @JSImport("/images/genesis-.png", JSImport.Default)
+//val genesispng: String = js.native
+//@js.native @JSImport("/images/genesis-.png", JSImport.Default)
+//val genesispng: String = js.native
+//@js.native @JSImport("/images/genesis-.png", JSImport.Default)
+//val genesispng: String = js.native
+//@js.native @JSImport("/images/genesis-.png", JSImport.Default)
+//val genesispng: String = js.native
+//@js.native @JSImport("/images/genesis-.png", JSImport.Default)
+//val genesispng: String = js.native
+//@js.native @JSImport("/images/genesis-.png", JSImport.Default)
+//val genesispng: String = js.native
+//@js.native @JSImport("/images/genesis-.png", JSImport.Default)
+//val genesispng: String = js.native
+//@js.native @JSImport("/images/genesis-.png", JSImport.Default)
+//val genesispng: String = js.native
+//@js.native @JSImport("/images/genesis-.png", JSImport.Default)
+//val genesispng: String = js.native
+//@js.native @JSImport("/images/genesis-.png", JSImport.Default)
+//val genesispng: String = js.native
+//@js.native @JSImport("/images/genesis-.png", JSImport.Default)
+//val genesispng: String = js.native
+//@js.native @JSImport("/images/genesis-.png", JSImport.Default)
+//val genesispng: String = js.native
+//@js.native @JSImport("/images/genesis-.png", JSImport.Default)
+//val genesispng: String = js.native
+//@js.native @JSImport("/images/genesis-.png", JSImport.Default)
+//val genesispng: String = js.native
+//@js.native @JSImport("/images/genesis-.png", JSImport.Default)
+//val genesispng: String = js.native
+//@js.native @JSImport("/images/genesis-.png", JSImport.Default)
+//val genesispng: String = js.native
+//@js.native @JSImport("/images/genesis-.png", JSImport.Default)
+//val genesispng: String = js.native
+//@js.native @JSImport("/images/genesis-.png", JSImport.Default)
+//val genesispng: String = js.native
+//@js.native @JSImport("/images/genesis-.png", JSImport.Default)
+//val genesispng: String = js.native
+//@js.native @JSImport("/images/genesis-.png", JSImport.Default)
+//val genesispng: String = js.native
+//@js.native @JSImport("/images/genesis-.png", JSImport.Default)
+//val genesispng: String = js.native
+//@js.native @JSImport("/images/genesis-.png", JSImport.Default)
+//val genesispng: String = js.native
+//@js.native @JSImport("/images/genesis-.png", JSImport.Default)
+//val genesispng: String = js.native
+//@js.native @JSImport("/images/genesis-.png", JSImport.Default)
+//val genesispng: String = js.native
+//@js.native @JSImport("/images/genesis-.png", JSImport.Default)
+//val genesispng: String = js.native
+//@js.native @JSImport("/images/genesis-.png", JSImport.Default)
+//val genesispng: String = js.native
+//@js.native @JSImport("/images/genesis-.png", JSImport.Default)
+//val genesispng: String = js.native
+//@js.native @JSImport("/images/genesis-.png", JSImport.Default)
+//val genesispng: String = js.native
+//@js.native @JSImport("/images/genesis-.png", JSImport.Default)
+//val genesispng: String = js.native
+//@js.native @JSImport("/images/genesis-.png", JSImport.Default)
+//val genesispng: String = js.native
+//@js.native @JSImport("/images/genesis-.png", JSImport.Default)
+//val genesispng: String = js.native
+@js.native @JSImport("/images/genesis-36.png", JSImport.Default)
+val genesis36png: String = js.native
+@js.native @JSImport("/images/genesis-37.png", JSImport.Default)
+val genesis37png: String = js.native
+@js.native @JSImport("/images/genesis-38.png", JSImport.Default)
+val genesis38png: String = js.native
+@js.native @JSImport("/images/genesis-39.png", JSImport.Default)
+val genesis39png: String = js.native
+@js.native @JSImport("/images/genesis-40.png", JSImport.Default)
+val genesis40png: String = js.native
+@js.native @JSImport("/images/genesis-41.png", JSImport.Default)
+val genesis41png: String = js.native
+@js.native @JSImport("/images/genesis-42.png", JSImport.Default)
+val genesis42png: String = js.native
+@js.native @JSImport("/images/genesis-43.png", JSImport.Default)
+val genesis43png: String = js.native
+@js.native @JSImport("/images/genesis-44.png", JSImport.Default)
+val genesis44png: String = js.native
+@js.native @JSImport("/images/genesis-45.png", JSImport.Default)
+val genesis45png: String = js.native
+@js.native @JSImport("/images/genesis-46.png", JSImport.Default)
+val genesis46png: String = js.native
+@js.native @JSImport("/images/genesis-47.png", JSImport.Default)
+val genesis47png: String = js.native
+//@js.native @JSImport("/images/genesis-48.png", JSImport.Default)
+//val genesis48png: String = js.native
+@js.native @JSImport("/images/genesis-49.png", JSImport.Default)
+val genesis49png: String = js.native
+@js.native @JSImport("/images/genesis-50.png", JSImport.Default)
+val genesis50png: String = js.native
+
 @js.native @JSImport("/images/john-1.png", JSImport.Default)
 val john1png: String = js.native
 @js.native @JSImport("/images/john-2.png", JSImport.Default)
@@ -27,6 +128,10 @@ val onejohn1png: String = js.native
 
 val imagesMap =
   Map[(Book, Int), String](
+    // Genesis
+    (genesis.book, 1) -> genesis1png,
+    (genesis.book, 36) -> genesis36png,
+
     // John
     (juan.book, 1) -> john1png,
     (juan.book, 2) -> john2png,

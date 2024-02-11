@@ -2,9 +2,14 @@ package io.guthub.edadma.ilokano_nga_biblia
 
 import text.*
 
-val books =
+val booksOT =
+  List(
+    "Genesis" -> genesis.book,
+  )
+val booksNT =
   List(
     "Juan" -> juan.book,
+    "Aramid" -> aramid.book,
     "Roma" -> roma.book,
     "Galacia" -> galacia.book,
     "Efeso" -> efeso.book,
@@ -19,10 +24,20 @@ val books =
   )
 val booksMap =
   Map(
+    // Genesis
+    "genesis" -> genesis.book,
+    "ge" -> genesis.book,
+    "gen" -> genesis.book,
+
     // John
     "juan" -> juan.book,
     "jn" -> juan.book,
     "jua" -> juan.book,
+
+    // Acts
+    "aramid" -> aramid.book,
+    "ar" -> aramid.book,
+    "ara" -> aramid.book,
 
     // Romans
     "romano" -> roma.book,
