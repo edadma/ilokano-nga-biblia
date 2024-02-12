@@ -1395,6 +1395,10 @@ html {
   z-index: 50;
 }
 
+.float-right {
+  float: right;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -1640,6 +1644,11 @@ html {
 .bg-gray-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
+.bg-gray-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-50 {

@@ -114,7 +114,6 @@ def App =
     cls := "h-screen",
     div(
       cls := "flex justify-between",
-      Toggle(inContext(thisNode => onChange --> (_ => setShowImages(thisNode.ref.checked)))),
       Input(
         typ := "text",
         placeholder := t"search",
@@ -255,9 +254,12 @@ def settingsModel =
     Button(cls := "font-gentium text-2xl w-14 h-9", onClick --> { _ => setSize("2xl") }, "A")
 
   Modal(
-    btn1,
-    btn2,
-    btn3,
+    div(btn1, btn2, btn3),
+    div(
+      cls := "flex items-center justify-between",
+      Text("show images"),
+      Toggle(inContext(thisNode => onChange --> (_ => setShowImages(thisNode.ref.checked)))),
+    ),
   )(
     settingsVar,
     t"settings",
