@@ -62,6 +62,7 @@ def App =
       |    </div>
       |  oldTestament: Old Testament
       |  newTestament: New Testament
+      |  showImages: Show images
       |ilo:
       |  search: Sapulen
       |  books: Libro
@@ -85,6 +86,7 @@ def App =
       |    </div>
       |  oldTestament: Daan a Tulag
       |  newTestament: Baro a Tulag
+      |  showImages: Ipakita dagiti ladawan
       |""".stripMargin,
   )
   setLanguage("ilo")
@@ -257,13 +259,16 @@ def settingsModel =
     div(btn1, btn2, btn3),
     div(
       cls := "flex items-center justify-between",
-      Text("show images"),
-      Toggle(inContext(thisNode => onChange --> (_ => setShowImages(thisNode.ref.checked)))),
+      Text(t"showImages"),
+      Toggle(
+        checked <-- showImagesSignal,
+        inContext(thisNode => onChange --> (_ => setShowImages(thisNode.ref.checked))),
+      ),
     ),
   )(
     settingsVar,
     t"settings",
-    modalCls = "w-64", {
+    modalCls = "w-72", {
       val ref =
         (sizeSignal.now() match
           case "lg"  => btn1
