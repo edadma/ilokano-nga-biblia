@@ -105,6 +105,7 @@ def App =
     cls := "h-screen",
     div(
       cls := "flex justify-between",
+      Toggle(),
       Input(
         typ := "text",
         placeholder := t"search",
