@@ -33,6 +33,8 @@ val settingsVar = Var(false)
 val sizeVar = Var[Size]("lg")
 val sizeSignal = sizeVar.signal
 val aboutVar = Var(false)
+val showImagesVar = Var(true)
+val showImagesSignal = showImagesVar.signal
 
 def App =
   setLanguages(
@@ -101,11 +103,18 @@ def App =
       case _                            => Preferences.remove(RemoveOptions("size"))
   }
 
+  Preferences.get(GetOptions("showImages")) foreach { v =>
+    v.value match
+      case null                            =>
+      case showImages @ ("true" | "false") => setShowImages(showImages == "true")
+      case _                               => Preferences.remove(RemoveOptions("showImages"))
+  }
+
   Card(
     cls := "h-screen",
     div(
       cls := "flex justify-between",
-      Toggle(),
+      Toggle(inContext(thisNode => onChange --> (_ => setShowImages(thisNode.ref.checked)))),
       Input(
         typ := "text",
         placeholder := t"search",
@@ -182,11 +191,12 @@ def App =
               idAttr := "text",
               cls := "no-scrollbar overflow-auto h-[calc(100vh-135px)]",
               child <-- bookSignal
-                .combineWith(chapterSignal)
-                .map((book, chapter) =>
+                .combineWith(chapterSignal, showImagesSignal)
+                .map((book, chapter, showImages) =>
                   imagesMap get (book, chapter) match
-                    case None      => emptyNode
-                    case Some(png) => img(cls := "mb-5 w-full h-auto object-cover object-center", src := png),
+                    case Some(png) if showImages =>
+                      img(cls := "mb-5 w-full h-auto object-cover object-center", src := png)
+                    case _ => emptyNode,
                 ),
               child <-- bookSignal
                 .combineWith(chapterSignal, sizeSignal)
@@ -281,6 +291,10 @@ def aboutModel =
 def setSize(size: Size): Unit =
   sizeVar set size
   Preferences set SetOptions("size", size)
+
+def setShowImages(setting: Boolean): Unit =
+  showImagesVar set setting
+  Preferences set SetOptions("showImages", if setting then "true" else "false")
 
 def handleSearchInput(ref: HTMLInputElement): Unit =
   def blur(): Unit =
