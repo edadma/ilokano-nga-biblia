@@ -362,3 +362,33 @@ def setMode(mode: Mode): Unit =
 
   if mode == "dark" then dom.document.documentElement.classList.add("dark")
   else dom.document.documentElement.classList.remove("dark")
+
+//<h3 class="mb-5 text-lg font-medium text-gray-900 dark:text-white">How much do you expect to use each month?</h3>
+//<div class="grid w-full gap-6 md:grid-cols-2">
+//  <div>
+//    <input type="radio" id="hosting-small" name="hosting" value="hosting-small" class="peer hidden" required />
+//    <label for="hosting-small" class="inline-block w-full cursor-pointer rounded-lg border border-gray-200 bg-white p-5 text-gray-500 hover:bg-gray-100 hover:text-gray-600 peer-checked:border-blue-600 peer-checked:text-blue-600 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:peer-checked:text-blue-500">
+//      <div class="inline-flex w-full cursor-pointer items-center justify-between">
+//      <div>
+//        <div class="text-lg font-semibold">0-50 MB</div>
+//        <div class="">Good for small websites</div>
+//      </div>
+//      <svg class="ms-3 h-5 w-5 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+//        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+//    </svg>
+//      </div>
+//    </label>
+//  </div>
+//  <div>
+//    <input type="radio" id="hosting-big" name="hosting" value="hosting-big" class="peer hidden" />
+//    <label for="hosting-big" class="inline-flex w-full cursor-pointer items-center justify-between rounded-lg border border-gray-200 bg-white p-5 text-gray-500 hover:bg-gray-100 hover:text-gray-600 peer-checked:border-blue-600 peer-checked:text-blue-600 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:peer-checked:text-blue-500">
+//      <div class="block">
+//        <div class="w-full text-lg font-semibold">500-1000 MB</div>
+//        <div class="w-full">Good for large websites</div>
+//      </div>
+//      <svg class="ms-3 h-5 w-5 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+//        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+//      </svg>
+//    </label>
+//  </div>
+//</div>
