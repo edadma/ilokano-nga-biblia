@@ -2,7 +2,7 @@ package io.guthub.edadma.ilokano_nga_biblia.text.maikadua_a_timoteo
 
 val maikadua_a_timoteo_2 =
 """<div class="prose prose-h1:font-fondamento prose-h1:font-normal prose-h1:text-gray-600 dark:prose-h1:text-gray-400 prose-h2:text-gray-600 dark:prose-h2:text-gray-400 prose-h3:text-gray-600 dark:prose-h3:text-gray-400 $size prose-p:text-gray-600 dark:prose-p:text-gray-400 prose-p:m-0 prose-p:leading-normal">
-<h2>Kapitulo 1</h2>
+<h2>Kapitulo 2</h2>
 <h3>Maysa a Naimbag a Soldado ni Cristo Jesus</h3>
 <p class=""><sup class="mr-px" id="1">1</sup>Sika ngarud, anakko, pabilgem ti parabur nga adda ken Kristo Jesus,
 <sup class="mr-px" id="2">2</sup>ket ti nangngegmo kaniak iti imatang ti adu a saksi italek kadagiti matalek a lallaki, a makaisuronto met kadagiti sabsabali.
