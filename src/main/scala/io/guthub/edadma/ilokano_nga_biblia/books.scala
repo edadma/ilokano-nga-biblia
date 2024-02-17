@@ -17,6 +17,7 @@ val booksNT =
     "Colosas" -> colosas.book,
     "1 Tesalonica" -> umuna_a_tesalonica.book,
     "2 Tesalonica" -> maikadua_a_tesalonica.book,
+    "1 Timoteo" -> umuna_a_timoteo.book,
     "1 Juan" -> umuna_a_juan.book,
     "2 Juan" -> maikadua_a_juan.book,
     "3 Juan" -> maikatlo_a_juan.book,
@@ -66,29 +67,34 @@ val booksMap =
     "cl" -> colosas.book,
 
     // 1 Thessalonians
-    "1 tesalonica" -> umuna_a_tesalonica.book,
-    "1 tes" -> umuna_a_tesalonica.book,
-    "1 ts" -> umuna_a_tesalonica.book,
+    "1tesalonica" -> umuna_a_tesalonica.book,
+    "1tes" -> umuna_a_tesalonica.book,
+    "1ts" -> umuna_a_tesalonica.book,
 
     // 2 Thessalonians
-    "2 tesalonica" -> maikadua_a_tesalonica.book,
-    "2 tes" -> maikadua_a_tesalonica.book,
-    "2 ts" -> maikadua_a_tesalonica.book,
+    "2tesalonica" -> maikadua_a_tesalonica.book,
+    "2tes" -> maikadua_a_tesalonica.book,
+    "2ts" -> maikadua_a_tesalonica.book,
+
+    // 1 Timothy
+    "1timoteo" -> umuna_a_timoteo.book,
+    "1tim" -> umuna_a_timoteo.book,
+    "1tm" -> umuna_a_timoteo.book,
 
     // 1 John
-    "1 juan" -> umuna_a_juan.book,
-    "1 jn" -> umuna_a_juan.book,
-    "1 jua" -> umuna_a_juan.book,
+    "1juan" -> umuna_a_juan.book,
+    "1jn" -> umuna_a_juan.book,
+    "1jua" -> umuna_a_juan.book,
 
     // 2 John
-    "2 juan" -> maikadua_a_juan.book,
-    "2 jn" -> maikadua_a_juan.book,
-    "2 jua" -> maikadua_a_juan.book,
+    "2juan" -> maikadua_a_juan.book,
+    "2jn" -> maikadua_a_juan.book,
+    "2jua" -> maikadua_a_juan.book,
 
     // 3 John
-    "3 juan" -> maikatlo_a_juan.book,
-    "3 jn" -> maikatlo_a_juan.book,
-    "3 jua" -> maikatlo_a_juan.book,
+    "3juan" -> maikatlo_a_juan.book,
+    "3jn" -> maikatlo_a_juan.book,
+    "3jua" -> maikatlo_a_juan.book,
 
     // Jude
     "judas" -> judas.book,

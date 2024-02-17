@@ -9,7 +9,6 @@ import scala.scalajs.js.Thenable.Implicits.*
 import concurrent.ExecutionContext.Implicits.global
 import typings.capacitorPreferences.mod.Preferences
 import typings.capacitorPreferences.distEsmDefinitionsMod.{GetOptions, RemoveOptions, SetOptions}
-import text.juan
 import org.scalajs.dom.HTMLInputElement
 
 import scala.collection.immutable.ArraySeq
@@ -21,7 +20,7 @@ type View = "text" | "books"
 type Book = ArraySeq[(String, Int)]
 type Size = "lg" | "xl" | "2xl"
 
-val bookVar = Var[Book](juan.book)
+val bookVar = Var[Book](text.genesis.book)
 val bookSignal = bookVar.signal
 val chapterVar = Var(1)
 val chapterSignal = chapterVar.signal
