@@ -11,6 +11,6 @@ def Clickable(modifiers: Modifier[ReactiveHtmlElement[HTMLButtonElement]]*)(
 ): ReactiveHtmlElement[HTMLButtonElement] =
   button(
     typ := "button",
-    cls := "text-blue-600 font-sans font-medium text-md p-2.5 text-center justify-center inline-flex items-center dark:text-blue-400",
+    cls := "text-blue-600 font-sans text-sm text-center justify-center inline-flex items-center dark:text-blue-400",
     modifiers,
   )
