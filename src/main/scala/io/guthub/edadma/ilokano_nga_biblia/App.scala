@@ -122,7 +122,7 @@ def App =
         inContext(thisNode => onChange --> (_ => handleSearchInput(thisNode.ref))),
       ),
       Clickable(
-        cls := "ml-2",
+        cls := "ml-2 p-2.5",
         child.text <-- viewSignal.map {
           case "text"  => t"books"
           case "books" => t"text"
@@ -135,17 +135,17 @@ def App =
         },
       )(),
       Clickable(
-        cls := "ml-2",
+        cls := "ml-2 p-2.5",
         SVG.userSettings,
         onClick --> { _ => settingsVar.set(true) },
       )(),
       Clickable(
-        cls := "ml-2",
+        cls := "ml-2 p-2.5",
         SVG.about,
         onClick --> { _ => aboutVar.set(true) },
       )(),
       Clickable(
-        cls := "ml-2",
+        cls := "ml-2 p-2.5",
         child <-- modeSignal.map(mode => if mode == "light" then SVG.moon else SVG.sun),
         onClick --> { _ =>
           val newMode: Mode = if modeSignal.now() == "light" then "dark" else "light"
@@ -225,12 +225,17 @@ def App =
               div(
                 cls := "flex flex-col mr-10",
                 Text(cls := "mb-2 text-l", t"oldTestament"),
-                booksOT map { (name, book) => div(Clickable(name, onClick --> { _ => goToBook(book) })()) },
+//                (1 to 39) map (n => div(Clickable(cls := "leading-tight", n.toString)())),
+                booksOT map { (name, book) =>
+                  div(Clickable(cls := "leading-tight", name, onClick --> { _ => goToBook(book) })())
+                },
               ),
               div(
                 cls := "flex flex-col",
                 Text(cls := "mb-2 text-l", t"newTestament"),
-                booksNT map { (name, book) => div(Clickable(name, onClick --> { _ => goToBook(book) })()) },
+                booksNT map { (name, book) =>
+                  div(Clickable(cls := "leading-tight", name, onClick --> { _ => goToBook(book) })())
+                },
               ),
             ),
             Text(cls := "mt-5", t"missingBooks"),
