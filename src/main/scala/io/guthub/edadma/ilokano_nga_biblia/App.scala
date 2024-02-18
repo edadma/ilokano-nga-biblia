@@ -133,17 +133,17 @@ def App =
             case "books" => "text",
           )
         },
-      )(),
+      ),
       Clickable(
         cls := "ml-2 p-2.5",
         SVG.userSettings,
         onClick --> { _ => settingsVar.set(true) },
-      )(),
+      ),
       Clickable(
         cls := "ml-2 p-2.5",
         SVG.about,
         onClick --> { _ => aboutVar.set(true) },
-      )(),
+      ),
       Clickable(
         cls := "ml-2 p-2.5",
         child <-- modeSignal.map(mode => if mode == "light" then SVG.moon else SVG.sun),
@@ -153,7 +153,7 @@ def App =
           Preferences set SetOptions("mode", newMode)
           setMode(newMode)
         },
-      )(),
+      ),
     ),
     div(
       settingsModel,
@@ -172,7 +172,7 @@ def App =
                       chapterVar.update(_ - 1)
                       scrollToTop()
                     },
-                  )()
+                  )
                 else div(),
               ),
               child <-- chapterSignal.map(ch =>
@@ -183,7 +183,7 @@ def App =
                       chapterVar.update(_ + 1)
                       scrollToTop()
                     },
-                  )()
+                  )
                 else div(),
               ),
             ),
@@ -227,14 +227,14 @@ def App =
                 Text(cls := "mb-2 text-l", t"oldTestament"),
 //                (1 to 39) map (n => div(Clickable(cls := "leading-tight", n.toString)())),
                 booksOT map { (name, book) =>
-                  div(Clickable(cls := "leading-tight", name, onClick --> { _ => goToBook(book) })())
+                  div(Clickable(cls := "leading-tight", name, onClick --> { _ => goToBook(book) }))
                 },
               ),
               div(
                 cls := "flex flex-col",
                 Text(cls := "mb-2 text-l", t"newTestament"),
                 booksNT map { (name, book) =>
-                  div(Clickable(cls := "leading-tight", name, onClick --> { _ => goToBook(book) })())
+                  div(Clickable(cls := "leading-tight", name, onClick --> { _ => goToBook(book) }))
                 },
               ),
             ),
