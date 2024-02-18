@@ -162,7 +162,7 @@ def App =
         case "text" =>
           div(
             div(
-              cls := "flex justify-between",
+              cls := "flex justify-between p-2.5",
               child <-- chapterSignal.map(ch =>
                 if ch > 1 || bookSignal.now().length == 1 then
                   Clickable(
