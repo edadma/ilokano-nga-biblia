@@ -165,6 +165,8 @@ val acts19png: String = js.native
 val acts20png: String = js.native
 @js.native @JSImport("/images/acts-21.png", JSImport.Default)
 val acts21png: String = js.native
+@js.native @JSImport("/images/acts-22.png", JSImport.Default)
+val acts22png: String = js.native
 
 val imagesMap =
   Map[(Book, Int), String](
@@ -246,4 +248,5 @@ val imagesMap =
     (aramid.book, 19) -> acts19png,
     (aramid.book, 20) -> acts20png,
     (aramid.book, 21) -> acts21png,
+    (aramid.book, 22) -> acts22png,
   )
