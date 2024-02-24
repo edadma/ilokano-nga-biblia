@@ -108,6 +108,12 @@ val genesis50png: String = js.native
 
 @js.native @JSImport("/images/ruth-1.png", JSImport.Default)
 val ruth1png: String = js.native
+@js.native @JSImport("/images/ruth-2.png", JSImport.Default)
+val ruth2png: String = js.native
+@js.native @JSImport("/images/ruth-3.png", JSImport.Default)
+val ruth3png: String = js.native
+@js.native @JSImport("/images/ruth-4.png", JSImport.Default)
+val ruth4png: String = js.native
 
 @js.native @JSImport("/images/john-1.png", JSImport.Default)
 val john1png: String = js.native
@@ -235,6 +241,9 @@ val imagesMap =
     (genesis.book, 49) -> genesis49png,
     (genesis.book, 50) -> genesis50png,
     (ruth.book, 1) -> ruth1png,
+    (ruth.book, 2) -> ruth1png,
+    (ruth.book, 3) -> ruth1png,
+    (ruth.book, 4) -> ruth1png,
     (juan.book, 1) -> john1png,
     (juan.book, 2) -> john2png,
     (juan.book, 3) -> john3png,
