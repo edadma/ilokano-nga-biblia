@@ -5,6 +5,7 @@ import text.*
 val booksOT =
   List(
     "Genesis" -> genesis.book,
+    "Ruth" -> ruth.book,
   )
 val booksNT =
   List(
@@ -32,6 +33,11 @@ val booksMap =
     "genesis" -> genesis.book,
     "ge" -> genesis.book,
     "gen" -> genesis.book,
+
+    // Ruth
+    "ruth" -> ruth.book,
+    "ru" -> ruth.book,
+    "rut" -> ruth.book,
 
     // John
     "juan" -> juan.book,

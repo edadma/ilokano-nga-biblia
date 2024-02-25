@@ -106,6 +106,15 @@ val genesis49png: String = js.native
 @js.native @JSImport("/images/genesis-50.png", JSImport.Default)
 val genesis50png: String = js.native
 
+@js.native @JSImport("/images/ruth-1.png", JSImport.Default)
+val ruth1png: String = js.native
+@js.native @JSImport("/images/ruth-2.png", JSImport.Default)
+val ruth2png: String = js.native
+@js.native @JSImport("/images/ruth-3.png", JSImport.Default)
+val ruth3png: String = js.native
+@js.native @JSImport("/images/ruth-4.png", JSImport.Default)
+val ruth4png: String = js.native
+
 @js.native @JSImport("/images/john-1.png", JSImport.Default)
 val john1png: String = js.native
 @js.native @JSImport("/images/john-2.png", JSImport.Default)
@@ -167,6 +176,18 @@ val acts20png: String = js.native
 val acts21png: String = js.native
 @js.native @JSImport("/images/acts-22.png", JSImport.Default)
 val acts22png: String = js.native
+@js.native @JSImport("/images/acts-23.png", JSImport.Default)
+val acts23png: String = js.native
+@js.native @JSImport("/images/acts-24.png", JSImport.Default)
+val acts24png: String = js.native
+@js.native @JSImport("/images/acts-25.png", JSImport.Default)
+val acts25png: String = js.native
+@js.native @JSImport("/images/acts-26.png", JSImport.Default)
+val acts26png: String = js.native
+@js.native @JSImport("/images/acts-27.png", JSImport.Default)
+val acts27png: String = js.native
+@js.native @JSImport("/images/acts-28.png", JSImport.Default)
+val acts28png: String = js.native
 
 val imagesMap =
   Map[(Book, Int), String](
@@ -219,6 +240,10 @@ val imagesMap =
     (genesis.book, 47) -> genesis47png,
     (genesis.book, 49) -> genesis49png,
     (genesis.book, 50) -> genesis50png,
+    (ruth.book, 1) -> ruth1png,
+    (ruth.book, 2) -> ruth1png,
+    (ruth.book, 3) -> ruth1png,
+    (ruth.book, 4) -> ruth1png,
     (juan.book, 1) -> john1png,
     (juan.book, 2) -> john2png,
     (juan.book, 3) -> john3png,
@@ -249,4 +274,10 @@ val imagesMap =
     (aramid.book, 20) -> acts20png,
     (aramid.book, 21) -> acts21png,
     (aramid.book, 22) -> acts22png,
+    (aramid.book, 23) -> acts23png,
+    (aramid.book, 24) -> acts24png,
+    (aramid.book, 25) -> acts25png,
+    (aramid.book, 26) -> acts26png,
+    (aramid.book, 27) -> acts27png,
+    (aramid.book, 28) -> acts28png,
   )
