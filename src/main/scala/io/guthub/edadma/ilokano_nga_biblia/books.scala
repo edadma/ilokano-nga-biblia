@@ -23,6 +23,7 @@ val booksNT =
     "Tito" -> tito.book,
     "Filemon" -> filemon.book,
     "Hebreo" -> hebreo.book,
+    "Santiago" -> santiago.book,
     "1 Juan" -> umuna_a_juan.book,
     "2 Juan" -> maikadua_a_juan.book,
     "3 Juan" -> maikatlo_a_juan.book,
@@ -110,6 +111,11 @@ val booksMap =
     "hebreo" -> hebreo.book,
     "heb" -> hebreo.book,
     "he" -> hebreo.book,
+
+    // James
+    "santiago" -> santiago.book,
+    "san" -> santiago.book,
+    "sa" -> santiago.book,
 
     // 1 John
     "1juan" -> umuna_a_juan.book,
