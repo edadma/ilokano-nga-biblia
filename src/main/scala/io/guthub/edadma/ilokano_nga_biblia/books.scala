@@ -22,6 +22,7 @@ val booksNT =
     "2 Timoteo" -> maikadua_a_timoteo.book,
     "Tito" -> tito.book,
     "Filemon" -> filemon.book,
+    "Hebreo" -> hebreo.book,
     "1 Juan" -> umuna_a_juan.book,
     "2 Juan" -> maikadua_a_juan.book,
     "3 Juan" -> maikatlo_a_juan.book,
@@ -104,6 +105,11 @@ val booksMap =
     "filemon" -> filemon.book,
     "fil" -> filemon.book,
     "fi" -> filemon.book,
+
+    // Hebrews
+    "hebreo" -> hebreo.book,
+    "heb" -> hebreo.book,
+    "he" -> hebreo.book,
 
     // 1 John
     "1juan" -> umuna_a_juan.book,
