@@ -24,6 +24,7 @@ val booksNT =
     "Filemon" -> filemon.book,
     "Hebreo" -> hebreo.book,
     "Santiago" -> santiago.book,
+    "1 Pedro" -> umuna_a_pedro.book,
     "1 Juan" -> umuna_a_juan.book,
     "2 Juan" -> maikadua_a_juan.book,
     "3 Juan" -> maikatlo_a_juan.book,
