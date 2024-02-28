@@ -117,6 +117,11 @@ val booksMap =
     "san" -> santiago.book,
     "sa" -> santiago.book,
 
+    // 1 Peter
+    "1peter" -> umuna_a_pedro.book,
+    "1pet" -> umuna_a_pedro.book,
+    "1pe" -> umuna_a_pedro.book,
+
     // 1 John
     "1juan" -> umuna_a_juan.book,
     "1jn" -> umuna_a_juan.book,
