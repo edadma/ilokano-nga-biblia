@@ -25,10 +25,12 @@ val booksNT =
     "Hebreo" -> hebreo.book,
     "Santiago" -> santiago.book,
     "1 Pedro" -> umuna_a_pedro.book,
+    "2 Pedro" -> maikadua_a_pedro.book,
     "1 Juan" -> umuna_a_juan.book,
     "2 Juan" -> maikadua_a_juan.book,
     "3 Juan" -> maikatlo_a_juan.book,
     "Judas" -> judas.book,
+    "Apocalipsis" -> apocalipsis.book,
   )
 val booksMap =
   Map(
@@ -119,9 +121,14 @@ val booksMap =
     "sa" -> santiago.book,
 
     // 1 Peter
-    "1peter" -> umuna_a_pedro.book,
-    "1pet" -> umuna_a_pedro.book,
+    "1pedro" -> umuna_a_pedro.book,
+    "1ped" -> umuna_a_pedro.book,
     "1pe" -> umuna_a_pedro.book,
+
+    // 2 Peter
+    "2pedro" -> umuna_a_pedro.book,
+    "2ped" -> umuna_a_pedro.book,
+    "2pe" -> umuna_a_pedro.book,
 
     // 1 John
     "1juan" -> umuna_a_juan.book,
@@ -142,4 +149,9 @@ val booksMap =
     "judas" -> judas.book,
     "jud" -> judas.book,
     "jd" -> judas.book,
+
+    // Revelation
+    "apocalipsis" -> apocalipsis.book,
+    "apo" -> apocalipsis.book,
+    "ap" -> apocalipsis.book,
   )
