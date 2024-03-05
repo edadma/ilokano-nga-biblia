@@ -13,6 +13,7 @@ val booksNT =
     "Aramid" -> aramid.book,
     "Roma" -> roma.book,
     "1 Corinto" -> umuna_a_corinto.book,
+    "2 Corinto" -> maikadua_a_corinto.book,
     "Galacia" -> galacia.book,
     "Efeso" -> efeso.book,
     "Filipos" -> filipos.book,
@@ -65,6 +66,11 @@ val booksMap =
     "1corinto" -> umuna_a_corinto.book,
     "1cor" -> umuna_a_corinto.book,
     "1co" -> umuna_a_corinto.book,
+
+    // 2 Corinthians
+    "2corinto" -> maikadua_a_corinto.book,
+    "2cor" -> maikadua_a_corinto.book,
+    "2co" -> maikadua_a_corinto.book,
 
     // Galatians
     "galacia" -> galacia.book,
