@@ -12,6 +12,7 @@ val booksNT =
     "Juan" -> juan.book,
     "Aramid" -> aramid.book,
     "Roma" -> roma.book,
+    "1 Corinto" -> umuna_a_corinto.book,
     "Galacia" -> galacia.book,
     "Efeso" -> efeso.book,
     "Filipos" -> filipos.book,
@@ -57,6 +58,11 @@ val booksMap =
     "roma" -> roma.book,
     "rom" -> roma.book,
     "rm" -> roma.book,
+
+    // 1 Corinthians
+    "1corinto" -> umuna_a_corinto.book,
+    "1cor" -> umuna_a_corinto.book,
+    "1co" -> umuna_a_corinto.book,
 
     // Galatians
     "galacia" -> galacia.book,
