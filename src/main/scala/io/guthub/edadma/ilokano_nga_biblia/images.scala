@@ -189,6 +189,51 @@ val acts27png: String = js.native
 @js.native @JSImport("/images/acts-28.png", JSImport.Default)
 val acts28png: String = js.native
 
+@js.native @JSImport("/images/revelation-1.png", JSImport.Default)
+val revelation1png: String = js.native
+@js.native @JSImport("/images/revelation-2.png", JSImport.Default)
+val revelation2png: String = js.native
+@js.native @JSImport("/images/revelation-3.png", JSImport.Default)
+val revelation3png: String = js.native
+@js.native @JSImport("/images/revelation-4.png", JSImport.Default)
+val revelation4png: String = js.native
+@js.native @JSImport("/images/revelation-5.png", JSImport.Default)
+val revelation5png: String = js.native
+@js.native @JSImport("/images/revelation-6.png", JSImport.Default)
+val revelation6png: String = js.native
+@js.native @JSImport("/images/revelation-7.png", JSImport.Default)
+val revelation7png: String = js.native
+@js.native @JSImport("/images/revelation-8.png", JSImport.Default)
+val revelation8png: String = js.native
+@js.native @JSImport("/images/revelation-9.png", JSImport.Default)
+val revelation9png: String = js.native
+@js.native @JSImport("/images/revelation-10.png", JSImport.Default)
+val revelation10png: String = js.native
+@js.native @JSImport("/images/revelation-11.png", JSImport.Default)
+val revelation11png: String = js.native
+@js.native @JSImport("/images/revelation-12.png", JSImport.Default)
+val revelation12png: String = js.native
+@js.native @JSImport("/images/revelation-13.png", JSImport.Default)
+val revelation13png: String = js.native
+@js.native @JSImport("/images/revelation-14.png", JSImport.Default)
+val revelation14png: String = js.native
+@js.native @JSImport("/images/revelation-15.png", JSImport.Default)
+val revelation15png: String = js.native
+@js.native @JSImport("/images/revelation-16.png", JSImport.Default)
+val revelation16png: String = js.native
+@js.native @JSImport("/images/revelation-17.png", JSImport.Default)
+val revelation17png: String = js.native
+@js.native @JSImport("/images/revelation-18.png", JSImport.Default)
+val revelation18png: String = js.native
+@js.native @JSImport("/images/revelation-19.png", JSImport.Default)
+val revelation19png: String = js.native
+@js.native @JSImport("/images/revelation-20.png", JSImport.Default)
+val revelation20png: String = js.native
+@js.native @JSImport("/images/revelation-21.png", JSImport.Default)
+val revelation21png: String = js.native
+@js.native @JSImport("/images/revelation-22.png", JSImport.Default)
+val revelation22png: String = js.native
+
 val imagesMap =
   Map[(Book, Int), String](
     (genesis.book, 1) -> genesis1png,
@@ -280,4 +325,26 @@ val imagesMap =
     (aramid.book, 26) -> acts26png,
     (aramid.book, 27) -> acts27png,
     (aramid.book, 28) -> acts28png,
+    (apocalipsis.book, 1) -> revelation1png,
+    (apocalipsis.book, 2) -> revelation2png,
+    (apocalipsis.book, 3) -> revelation3png,
+    (apocalipsis.book, 4) -> revelation4png,
+    (apocalipsis.book, 5) -> revelation5png,
+    (apocalipsis.book, 6) -> revelation6png,
+    (apocalipsis.book, 7) -> revelation7png,
+    (apocalipsis.book, 8) -> revelation8png,
+    (apocalipsis.book, 9) -> revelation9png,
+    (apocalipsis.book, 10) -> revelation10png,
+    (apocalipsis.book, 11) -> revelation11png,
+    (apocalipsis.book, 12) -> revelation12png,
+    (apocalipsis.book, 13) -> revelation13png,
+    (apocalipsis.book, 14) -> revelation14png,
+    (apocalipsis.book, 15) -> revelation15png,
+    (apocalipsis.book, 16) -> revelation16png,
+    (apocalipsis.book, 17) -> revelation17png,
+    (apocalipsis.book, 18) -> revelation18png,
+    (apocalipsis.book, 19) -> revelation19png,
+    (apocalipsis.book, 20) -> revelation20png,
+    (apocalipsis.book, 21) -> revelation21png,
+    (apocalipsis.book, 22) -> revelation22png,
   )
