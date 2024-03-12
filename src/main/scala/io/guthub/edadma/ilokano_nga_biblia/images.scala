@@ -115,6 +115,63 @@ val ruth3png: String = js.native
 @js.native @JSImport("/images/ruth-4.png", JSImport.Default)
 val ruth4png: String = js.native
 
+@js.native @JSImport("/images/matthew-1.png", JSImport.Default)
+val matthew1png: String = js.native
+@js.native @JSImport("/images/matthew-2.png", JSImport.Default)
+val matthew2png: String = js.native
+@js.native @JSImport("/images/matthew-3.png", JSImport.Default)
+val matthew3png: String = js.native
+@js.native @JSImport("/images/matthew-4.png", JSImport.Default)
+val matthew4png: String = js.native
+@js.native @JSImport("/images/matthew-5.png", JSImport.Default)
+val matthew5png: String = js.native
+@js.native @JSImport("/images/matthew-6.png", JSImport.Default)
+val matthew6png: String = js.native
+@js.native @JSImport("/images/matthew-7.png", JSImport.Default)
+val matthew7png: String = js.native
+@js.native @JSImport("/images/matthew-8.png", JSImport.Default)
+val matthew8png: String = js.native
+@js.native @JSImport("/images/matthew-9.png", JSImport.Default)
+val matthew9png: String = js.native
+@js.native @JSImport("/images/matthew-10.png", JSImport.Default)
+val matthew10png: String = js.native
+@js.native @JSImport("/images/matthew-11.png", JSImport.Default)
+val matthew11png: String = js.native
+@js.native @JSImport("/images/matthew-12.png", JSImport.Default)
+val matthew12png: String = js.native
+@js.native @JSImport("/images/matthew-13.png", JSImport.Default)
+val matthew13png: String = js.native
+@js.native @JSImport("/images/matthew-14.png", JSImport.Default)
+val matthew14png: String = js.native
+@js.native @JSImport("/images/matthew-15.png", JSImport.Default)
+val matthew15png: String = js.native
+@js.native @JSImport("/images/matthew-16.png", JSImport.Default)
+val matthew16png: String = js.native
+@js.native @JSImport("/images/matthew-17.png", JSImport.Default)
+val matthew17png: String = js.native
+@js.native @JSImport("/images/matthew-18.png", JSImport.Default)
+val matthew18png: String = js.native
+@js.native @JSImport("/images/matthew-19.png", JSImport.Default)
+val matthew19png: String = js.native
+@js.native @JSImport("/images/matthew-20.png", JSImport.Default)
+val matthew20png: String = js.native
+@js.native @JSImport("/images/matthew-21.png", JSImport.Default)
+val matthew21png: String = js.native
+@js.native @JSImport("/images/matthew-22.png", JSImport.Default)
+val matthew22png: String = js.native
+@js.native @JSImport("/images/matthew-23.png", JSImport.Default)
+val matthew23png: String = js.native
+@js.native @JSImport("/images/matthew-24.png", JSImport.Default)
+val matthew24png: String = js.native
+@js.native @JSImport("/images/matthew-25.png", JSImport.Default)
+val matthew25png: String = js.native
+@js.native @JSImport("/images/matthew-26.png", JSImport.Default)
+val matthew26png: String = js.native
+@js.native @JSImport("/images/matthew-27.png", JSImport.Default)
+val matthew27png: String = js.native
+@js.native @JSImport("/images/matthew-28.png", JSImport.Default)
+val matthew28png: String = js.native
+
 @js.native @JSImport("/images/john-1.png", JSImport.Default)
 val john1png: String = js.native
 @js.native @JSImport("/images/john-2.png", JSImport.Default)
@@ -289,6 +346,34 @@ val imagesMap =
     (ruth.book, 2) -> ruth2png,
     (ruth.book, 3) -> ruth3png,
     (ruth.book, 4) -> ruth4png,
+    (mateo.book, 1) -> matthew1png,
+    (mateo.book, 2) -> matthew2png,
+    (mateo.book, 3) -> matthew3png,
+    (mateo.book, 4) -> matthew4png,
+    (mateo.book, 5) -> matthew5png,
+    (mateo.book, 6) -> matthew6png,
+    (mateo.book, 7) -> matthew7png,
+    (mateo.book, 8) -> matthew8png,
+    (mateo.book, 9) -> matthew9png,
+    (mateo.book, 10) -> matthew10png,
+    (mateo.book, 11) -> matthew11png,
+    (mateo.book, 12) -> matthew12png,
+    (mateo.book, 13) -> matthew13png,
+    (mateo.book, 14) -> matthew14png,
+    (mateo.book, 15) -> matthew15png,
+    (mateo.book, 16) -> matthew16png,
+    (mateo.book, 17) -> matthew17png,
+    (mateo.book, 18) -> matthew18png,
+    (mateo.book, 19) -> matthew19png,
+    (mateo.book, 20) -> matthew20png,
+    (mateo.book, 21) -> matthew21png,
+    (mateo.book, 22) -> matthew22png,
+    (mateo.book, 23) -> matthew23png,
+    (mateo.book, 24) -> matthew24png,
+    (mateo.book, 25) -> matthew25png,
+    (mateo.book, 26) -> matthew26png,
+    (mateo.book, 27) -> matthew27png,
+    (mateo.book, 28) -> matthew28png,
     (juan.book, 1) -> john1png,
     (juan.book, 2) -> john2png,
     (juan.book, 3) -> john3png,
