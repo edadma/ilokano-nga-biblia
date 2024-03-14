@@ -1,7 +1,7 @@
 package io.guthub.edadma.ilokano_nga_biblia.text.apocalipsis
 
 val apocalipsis_9 =
-"""<div class="prose prose-h1:font-fondamento prose-h1:font-normal prose-h1:text-gray-600 dark:prose-h1:text-gray-400 prose-h2:text-gray-600 dark:prose-h2:text-gray-400 prose-h3:text-gray-600 dark:prose-h3:text-gray-400 $size prose-p:text-gray-600 dark:prose-p:text-gray-400 prose-p:m-0 prose-p:leading-normal">
+"""<div class="prose prose-h1:font-quintessential prose-h1:font-normal prose-h1:text-gray-600 dark:prose-h1:text-gray-400 prose-h2:text-gray-600 dark:prose-h2:text-gray-400 prose-h3:text-gray-600 dark:prose-h3:text-gray-400 $size prose-p:text-gray-600 dark:prose-p:text-gray-400 prose-p:m-0 prose-p:leading-normal">
 <h2>Kapitulo 9</h2>
 <p class=""><sup class="mr-px" id="1">1</sup>Ket ti maikalima nga anghel pinuyotna ti trumpetana, ket nakitak ti maysa a bituen a natnag manipud langit nga agturong iti daga, ket naited kenkuana ti tulbek ti bangkong ti awan babana nga abut.
 <sup class="mr-px" id="2">2</sup>Linuktanna ti bangkay ti awan babana nga abut, ken manipud iti shaft timmaud nga asuk a kas iti asuk ti dakkel nga urno, ket ti init ken angin nasipnget gapu iti asuk manipud iti shaft.

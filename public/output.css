@@ -711,6 +711,18 @@ select {
   src: url("/Fondamento/Fondamento-Italic.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: 'Quintessential';
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  font-display: swap;
+
+  src: url("/Quintessential/Quintessential-Regular.ttf") format("truetype");
+}
+
 html {
   font-family: "Gentium Plus", serif;
 }
@@ -1920,6 +1932,10 @@ html {
 
 .prose-h1\:font-fondamento :is(:where(h1):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
   font-family: Fondamento, serif;
+}
+
+.prose-h1\:font-quintessential :is(:where(h1):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+  font-family: Quintessential, serif;
 }
 
 .prose-h1\:font-normal :is(:where(h1):not(:where([class~="not-prose"],[class~="not-prose"] *))) {

@@ -1,7 +1,7 @@
 package io.guthub.edadma.ilokano_nga_biblia.text.aramid
 
 val aramid_14 =
-"""<div class="prose prose-h1:font-fondamento prose-h1:font-normal prose-h1:text-gray-600 dark:prose-h1:text-gray-400 prose-h2:text-gray-600 dark:prose-h2:text-gray-400 prose-h3:text-gray-600 dark:prose-h3:text-gray-400 $size prose-p:text-gray-600 dark:prose-p:text-gray-400 prose-p:m-0 prose-p:leading-normal">
+"""<div class="prose prose-h1:font-quintessential prose-h1:font-normal prose-h1:text-gray-600 dark:prose-h1:text-gray-400 prose-h2:text-gray-600 dark:prose-h2:text-gray-400 prose-h3:text-gray-600 dark:prose-h3:text-gray-400 $size prose-p:text-gray-600 dark:prose-p:text-gray-400 prose-p:m-0 prose-p:leading-normal">
 <h2>Kapitulo 14</h2>
 <h3>Pablo ken Bernabe idiay Iconio</h3>
 <p class=""><sup class="mr-px" id="1">1</sup>Ita idiay Iconio simrekda a sangsangkamaysa iti sinagoga dagiti Judio ket nagsaoda iti wagas a namati ti adu a Judio ken Griego.

@@ -1,7 +1,7 @@
 package io.guthub.edadma.ilokano_nga_biblia.text.genesis
 
 val genesis_35 =
-"""<div class="prose prose-h1:font-fondamento prose-h1:font-normal prose-h1:text-gray-600 dark:prose-h1:text-gray-400 prose-h2:text-gray-600 dark:prose-h2:text-gray-400 prose-h3:text-gray-600 dark:prose-h3:text-gray-400 $size prose-p:text-gray-600 dark:prose-p:text-gray-400 prose-p:m-0 prose-p:leading-normal">
+"""<div class="prose prose-h1:font-quintessential prose-h1:font-normal prose-h1:text-gray-600 dark:prose-h1:text-gray-400 prose-h2:text-gray-600 dark:prose-h2:text-gray-400 prose-h3:text-gray-600 dark:prose-h3:text-gray-400 $size prose-p:text-gray-600 dark:prose-p:text-gray-400 prose-p:m-0 prose-p:leading-normal">
 <h2>Kapitulo 35</h2>
 <h3>Bendisionan ken Binagan ti Dios ni Jacob</h3>
 <p class=""><sup class="mr-px" id="1">1</sup>Kinuna ti Dios ken Jacob, “Bumangonka, sumang-atka idiay Bethel ket agtaengka sadiay. Mangaramidka sadiay iti altar para iti Dios a nagparang kenka idi nagtalawka iti kabsatmo nga Esau.”

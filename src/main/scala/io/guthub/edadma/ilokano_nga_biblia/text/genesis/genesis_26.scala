@@ -1,7 +1,7 @@
 package io.guthub.edadma.ilokano_nga_biblia.text.genesis
 
 val genesis_26 =
-"""<div class="prose prose-h1:font-fondamento prose-h1:font-normal prose-h1:text-gray-600 dark:prose-h1:text-gray-400 prose-h2:text-gray-600 dark:prose-h2:text-gray-400 prose-h3:text-gray-600 dark:prose-h3:text-gray-400 $size prose-p:text-gray-600 dark:prose-p:text-gray-400 prose-p:m-0 prose-p:leading-normal">
+"""<div class="prose prose-h1:font-quintessential prose-h1:font-normal prose-h1:text-gray-600 dark:prose-h1:text-gray-400 prose-h2:text-gray-600 dark:prose-h2:text-gray-400 prose-h3:text-gray-600 dark:prose-h3:text-gray-400 $size prose-p:text-gray-600 dark:prose-p:text-gray-400 prose-p:m-0 prose-p:leading-normal">
 <h2>Kapitulo 26</h2>
 <h3>Ti Kari ti Dios ken Isaac</h3>
 <p class=""><sup class="mr-px" id="1">1</sup>Ita adda bisin iti daga, malaksid iti dati a bisin idi kaaldawan ni Abraham. Ket ni Isaac napan idiay Gerar ken ni Abimelec nga ari dagiti Filisteo.

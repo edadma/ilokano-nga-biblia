@@ -63,6 +63,14 @@
     src: url("/Fondamento/Fondamento-Italic.ttf") format("truetype");
   }
 
+  @font-face {
+    font-family: 'Quintessential';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("/Quintessential/Quintessential-Regular.ttf") format("truetype");
+  }
+
   html {
     font-family: "Gentium Plus", serif;
   }

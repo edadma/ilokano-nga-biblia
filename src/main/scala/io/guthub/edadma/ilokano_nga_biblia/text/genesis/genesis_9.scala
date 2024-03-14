@@ -1,7 +1,7 @@
 package io.guthub.edadma.ilokano_nga_biblia.text.genesis
 
 val genesis_9 =
-"""<div class="prose prose-h1:font-fondamento prose-h1:font-normal prose-h1:text-gray-600 dark:prose-h1:text-gray-400 prose-h2:text-gray-600 dark:prose-h2:text-gray-400 prose-h3:text-gray-600 dark:prose-h3:text-gray-400 $size prose-p:text-gray-600 dark:prose-p:text-gray-400 prose-p:m-0 prose-p:leading-normal">
+"""<div class="prose prose-h1:font-quintessential prose-h1:font-normal prose-h1:text-gray-600 dark:prose-h1:text-gray-400 prose-h2:text-gray-600 dark:prose-h2:text-gray-400 prose-h3:text-gray-600 dark:prose-h3:text-gray-400 $size prose-p:text-gray-600 dark:prose-p:text-gray-400 prose-p:m-0 prose-p:leading-normal">
 <h2>Kapitulo 9</h2>
 <p class=""><sup class="mr-px" id="1">1</sup>Ket binendisionan ti Dios ni Noe ken dagiti annakna ket kinunana kadakuada, “Agbungakayo ket umadukayo ket punnuenyo ti daga.
 <sup class="mr-px" id="2">2</sup>Ti panagbuteng kenka ken ti panagbuteng kenka addanto iti tunggal animal iti daga ken iti tunggal tumatayab iti langlangit, iti amin nga agkarkarayam iti daga ken amin nga ikan iti baybay. Iti imam naitedda.

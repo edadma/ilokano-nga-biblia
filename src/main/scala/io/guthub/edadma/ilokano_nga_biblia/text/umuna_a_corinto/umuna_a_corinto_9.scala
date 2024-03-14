@@ -1,7 +1,7 @@
 package io.guthub.edadma.ilokano_nga_biblia.text.umuna_a_corinto
 
 val umuna_a_corinto_9 =
-"""<div class="prose prose-h1:font-fondamento prose-h1:font-normal prose-h1:text-gray-600 dark:prose-h1:text-gray-400 prose-h2:text-gray-600 dark:prose-h2:text-gray-400 prose-h3:text-gray-600 dark:prose-h3:text-gray-400 $size prose-p:text-gray-600 dark:prose-p:text-gray-400 prose-p:m-0 prose-p:leading-normal">
+"""<div class="prose prose-h1:font-quintessential prose-h1:font-normal prose-h1:text-gray-600 dark:prose-h1:text-gray-400 prose-h2:text-gray-600 dark:prose-h2:text-gray-400 prose-h3:text-gray-600 dark:prose-h3:text-gray-400 $size prose-p:text-gray-600 dark:prose-p:text-gray-400 prose-p:m-0 prose-p:leading-normal">
 <h2>Kapitulo 9</h2>
 <h3>Isuko ni Pablo Dagiti Karbenganna</h3>
 <p class=""><sup class="mr-px" id="1">1</sup>Saanak kadi a nawaya? Saanak kadi nga apostol? Diak kadi nakita ni Jesus nga Apotayo? Saan kadi a sika ti aramidko iti Apo?

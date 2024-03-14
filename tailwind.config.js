@@ -6,7 +6,8 @@ module.exports = {
     extend: {
       fontFamily: {
         gentium: ['Gentium Plus', 'serif'],
-        fondamento: ['Fondamento', 'serif']
+        fondamento: ['Fondamento', 'serif'],
+        quintessential: ['Quintessential', 'serif']
       },
       typography: {
         DEFAULT: {

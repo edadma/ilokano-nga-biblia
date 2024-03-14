@@ -1,7 +1,7 @@
 package io.guthub.edadma.ilokano_nga_biblia.text.genesis
 
 val genesis_7 =
-"""<div class="prose prose-h1:font-fondamento prose-h1:font-normal prose-h1:text-gray-600 dark:prose-h1:text-gray-400 prose-h2:text-gray-600 dark:prose-h2:text-gray-400 prose-h3:text-gray-600 dark:prose-h3:text-gray-400 $size prose-p:text-gray-600 dark:prose-p:text-gray-400 prose-p:m-0 prose-p:leading-normal">
+"""<div class="prose prose-h1:font-quintessential prose-h1:font-normal prose-h1:text-gray-600 dark:prose-h1:text-gray-400 prose-h2:text-gray-600 dark:prose-h2:text-gray-400 prose-h3:text-gray-600 dark:prose-h3:text-gray-400 $size prose-p:text-gray-600 dark:prose-p:text-gray-400 prose-p:m-0 prose-p:leading-normal">
 <h2>Kapitulo 7</h2>
 <p class=""><sup class="mr-px" id="1">1</sup>Kalpasanna, kinuna ti Apo ken Noe, “Sumrekka iti daong, sika ken ti amin a sangakabbalayam, ta nakitak a nalintegka iti sanguanak iti daytoy a kaputotan.
 <sup class="mr-px" id="2">2</sup>Mangikuyogkayo iti pito a paris ti amin a nadalus nga animal, ti kalakian ken ti asawana, ken ti maysa a paris kadagiti animal a saan a nadalus, ti kalakian ken ti asawana,

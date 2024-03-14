@@ -1,7 +1,7 @@
 package io.guthub.edadma.ilokano_nga_biblia.text.genesis
 
 val genesis_27 =
-"""<div class="prose prose-h1:font-fondamento prose-h1:font-normal prose-h1:text-gray-600 dark:prose-h1:text-gray-400 prose-h2:text-gray-600 dark:prose-h2:text-gray-400 prose-h3:text-gray-600 dark:prose-h3:text-gray-400 $size prose-p:text-gray-600 dark:prose-p:text-gray-400 prose-p:m-0 prose-p:leading-normal">
+"""<div class="prose prose-h1:font-quintessential prose-h1:font-normal prose-h1:text-gray-600 dark:prose-h1:text-gray-400 prose-h2:text-gray-600 dark:prose-h2:text-gray-400 prose-h3:text-gray-600 dark:prose-h3:text-gray-400 $size prose-p:text-gray-600 dark:prose-p:text-gray-400 prose-p:m-0 prose-p:leading-normal">
 <h2>Kapitulo 27</h2>
 <h3>Bendisionan ni Isaac ni Jacob</h3>
 <p class=""><sup class="mr-px" id="1">1</sup>Idi lakayen ni Isaac ken nakudrep dagiti matana isu a saan a makakita, inayabanna ni Esau nga in-inauna nga anakna ket kinunana kenkuana, “Anakko”; ket insungbatna, “Adtoyak.”

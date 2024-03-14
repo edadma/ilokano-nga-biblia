@@ -1,7 +1,7 @@
 package io.guthub.edadma.ilokano_nga_biblia.text.maikadua_a_corinto
 
 val maikadua_a_corinto_8 =
-"""<div class="prose prose-h1:font-fondamento prose-h1:font-normal prose-h1:text-gray-600 dark:prose-h1:text-gray-400 prose-h2:text-gray-600 dark:prose-h2:text-gray-400 prose-h3:text-gray-600 dark:prose-h3:text-gray-400 $size prose-p:text-gray-600 dark:prose-p:text-gray-400 prose-p:m-0 prose-p:leading-normal">
+"""<div class="prose prose-h1:font-quintessential prose-h1:font-normal prose-h1:text-gray-600 dark:prose-h1:text-gray-400 prose-h2:text-gray-600 dark:prose-h2:text-gray-400 prose-h3:text-gray-600 dark:prose-h3:text-gray-400 $size prose-p:text-gray-600 dark:prose-p:text-gray-400 prose-p:m-0 prose-p:leading-normal">
 <h2>Kapitulo 8</h2>
 <h3>Paregta nga Mangted a Sipaparabur</h3>
 <p class=""><sup class="mr-px" id="8">8</sup>Kayatmi a maammuanyo, kakabsat, ti maipapan iti parabur ti Dios a naited kadagiti iglesia ti Macedonia, 2 ta iti nakaro a pannubok ti rigat, ti kinaruay ti rag-oda ken ti nakaro a kinapanglawda naglapunos iti kinabaknang ti kinaparabur iti biangda. 3 Ta nangtedda sigun iti kabaelanda, kas mapaneknekak, ken iti labes ti kabaelanda, iti bukodda a pagayatan, 4 a sipapasnek nga agpakpakaasi kadakami iti pabor a makipaset iti panangsaranay kadagiti sasanto— 5 ket daytoy, saan a kas ninamnamami, ngem intedda nga umuna ti bagbagida iti Apo ket kalpasanna babaen ti pagayatan ti Dios kadakami. 6 Maitunos iti dayta, indagadagmi ken Tito a kas iti panangrugina, kasta met nga iringpasna daytoy nga aramid ti parabur iti tengngayo. 7 Ngem bayat a nalaingkayo iti amin—iti pammati, iti panagsao, iti pannakaammo, iti amin a kinapasnek, ken iti panagayatmi kadakayo—kitaenyo a nalaingkayo met iti daytoy nga aramid ti parabur.</p>
