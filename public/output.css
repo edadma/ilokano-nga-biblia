@@ -688,30 +688,6 @@ select {
 }
 
 @font-face {
-  font-family: 'Fondamento';
-
-  font-style: normal;
-
-  font-weight: 400;
-
-  font-display: swap;
-
-  src: url("/Fondamento/Fondamento-Regular.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: 'Fondamento';
-
-  font-style: italic;
-
-  font-weight: 400;
-
-  font-display: swap;
-
-  src: url("/Fondamento/Fondamento-Italic.ttf") format("truetype");
-}
-
-@font-face {
   font-family: 'Quintessential';
 
   font-style: normal;
@@ -1928,10 +1904,6 @@ html {
 .peer:focus ~ .peer-focus\:ring-blue-300 {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(147 197 253 / var(--tw-ring-opacity));
-}
-
-.prose-h1\:font-fondamento :is(:where(h1):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-  font-family: Fondamento, serif;
 }
 
 .prose-h1\:font-quintessential :is(:where(h1):not(:where([class~="not-prose"],[class~="not-prose"] *))) {

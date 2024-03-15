@@ -48,22 +48,6 @@
   }
 
   @font-face {
-    font-family: 'Fondamento';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url("/Fondamento/Fondamento-Regular.ttf") format("truetype");
-  }
-
-  @font-face {
-    font-family: 'Fondamento';
-    font-style: italic;
-    font-weight: 400;
-    font-display: swap;
-    src: url("/Fondamento/Fondamento-Italic.ttf") format("truetype");
-  }
-
-  @font-face {
     font-family: 'Quintessential';
     font-style: normal;
     font-weight: 400;
