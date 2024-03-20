@@ -10,6 +10,7 @@ val booksOT =
 val booksNT =
   List(
     "Mateo" -> mateo.book,
+    "Marcos" -> marcos.book,
     "Juan" -> juan.book,
     "Aramid" -> aramid.book,
     "Roma" -> roma.book,
@@ -51,6 +52,11 @@ val booksMap =
     "mateo" -> mateo.book,
     "ma" -> mateo.book,
     "mat" -> mateo.book,
+
+    // Mark
+    "marcos" -> marcos.book,
+    "mar" -> marcos.book,
+    "marc" -> marcos.book,
 
     // John
     "juan" -> juan.book,
