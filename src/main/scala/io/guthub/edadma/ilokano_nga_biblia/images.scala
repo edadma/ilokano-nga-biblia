@@ -172,6 +172,39 @@ val matthew27png: String = js.native
 @js.native @JSImport("/images/matthew-28.png", JSImport.Default)
 val matthew28png: String = js.native
 
+@js.native @JSImport("/images/mark-1.png", JSImport.Default)
+val mark1png: String = js.native
+@js.native @JSImport("/images/mark-2.png", JSImport.Default)
+val mark2png: String = js.native
+@js.native @JSImport("/images/mark-3.png", JSImport.Default)
+val mark3png: String = js.native
+@js.native @JSImport("/images/mark-4.png", JSImport.Default)
+val mark4png: String = js.native
+@js.native @JSImport("/images/mark-5.png", JSImport.Default)
+val mark5png: String = js.native
+@js.native @JSImport("/images/mark-6.png", JSImport.Default)
+val mark6png: String = js.native
+@js.native @JSImport("/images/mark-7.png", JSImport.Default)
+val mark7png: String = js.native
+@js.native @JSImport("/images/mark-8.png", JSImport.Default)
+val mark8png: String = js.native
+@js.native @JSImport("/images/mark-9.png", JSImport.Default)
+val mark9png: String = js.native
+@js.native @JSImport("/images/mark-10.png", JSImport.Default)
+val mark10png: String = js.native
+@js.native @JSImport("/images/mark-11.png", JSImport.Default)
+val mark11png: String = js.native
+@js.native @JSImport("/images/mark-12.png", JSImport.Default)
+val mark12png: String = js.native
+@js.native @JSImport("/images/mark-13.png", JSImport.Default)
+val mark13png: String = js.native
+@js.native @JSImport("/images/mark-14.png", JSImport.Default)
+val mark14png: String = js.native
+@js.native @JSImport("/images/mark-15.png", JSImport.Default)
+val mark15png: String = js.native
+@js.native @JSImport("/images/mark-16.png", JSImport.Default)
+val mark16png: String = js.native
+
 @js.native @JSImport("/images/john-1.png", JSImport.Default)
 val john1png: String = js.native
 @js.native @JSImport("/images/john-2.png", JSImport.Default)
@@ -374,6 +407,22 @@ val imagesMap =
     (mateo.book, 26) -> matthew26png,
     (mateo.book, 27) -> matthew27png,
     (mateo.book, 28) -> matthew28png,
+    (marcos.book, 1) -> mark1png,
+    (marcos.book, 2) -> mark2png,
+    (marcos.book, 3) -> mark3png,
+    (marcos.book, 4) -> mark4png,
+    (marcos.book, 5) -> mark5png,
+    (marcos.book, 6) -> mark6png,
+    (marcos.book, 7) -> mark7png,
+    (marcos.book, 8) -> mark8png,
+    (marcos.book, 9) -> mark9png,
+    (marcos.book, 10) -> mark10png,
+    (marcos.book, 11) -> mark11png,
+    (marcos.book, 12) -> mark12png,
+    (marcos.book, 13) -> mark13png,
+    (marcos.book, 14) -> mark14png,
+    (marcos.book, 15) -> mark15png,
+    (marcos.book, 16) -> mark16png,
     (juan.book, 1) -> john1png,
     (juan.book, 2) -> john2png,
     (juan.book, 3) -> john3png,
