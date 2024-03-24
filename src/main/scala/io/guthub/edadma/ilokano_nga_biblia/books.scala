@@ -59,6 +59,11 @@ val booksMap =
     "mar" -> marcos.book,
     "marc" -> marcos.book,
 
+    // Luke
+    "lucas" -> lucas.book,
+    "lu" -> lucas.book,
+    "luc" -> lucas.book,
+
     // John
     "juan" -> juan.book,
     "jn" -> juan.book,
