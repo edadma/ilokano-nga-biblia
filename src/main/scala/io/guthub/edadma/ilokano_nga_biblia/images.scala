@@ -205,6 +205,55 @@ val mark15png: String = js.native
 @js.native @JSImport("/images/mark-16.png", JSImport.Default)
 val mark16png: String = js.native
 
+@js.native @JSImport("/images/luke-1.png", JSImport.Default)
+val luke1png: String = js.native
+@js.native @JSImport("/images/luke-2.png", JSImport.Default)
+val luke2png: String = js.native
+@js.native @JSImport("/images/luke-3.png", JSImport.Default)
+val luke3png: String = js.native
+@js.native @JSImport("/images/luke-4.png", JSImport.Default)
+val luke4png: String = js.native
+@js.native @JSImport("/images/luke-5.png", JSImport.Default)
+val luke5png: String = js.native
+@js.native @JSImport("/images/luke-6.png", JSImport.Default)
+val luke6png: String = js.native
+@js.native @JSImport("/images/luke-7.png", JSImport.Default)
+val luke7png: String = js.native
+@js.native @JSImport("/images/luke-8.png", JSImport.Default)
+val luke8png: String = js.native
+@js.native @JSImport("/images/luke-9.png", JSImport.Default)
+val luke9png: String = js.native
+@js.native @JSImport("/images/luke-10.png", JSImport.Default)
+val luke10png: String = js.native
+@js.native @JSImport("/images/luke-11.png", JSImport.Default)
+val luke11png: String = js.native
+@js.native @JSImport("/images/luke-12.png", JSImport.Default)
+val luke12png: String = js.native
+@js.native @JSImport("/images/luke-13.png", JSImport.Default)
+val luke13png: String = js.native
+@js.native @JSImport("/images/luke-14.png", JSImport.Default)
+val luke14png: String = js.native
+@js.native @JSImport("/images/luke-15.png", JSImport.Default)
+val luke15png: String = js.native
+@js.native @JSImport("/images/luke-16.png", JSImport.Default)
+val luke16png: String = js.native
+@js.native @JSImport("/images/luke-17.png", JSImport.Default)
+val luke17png: String = js.native
+@js.native @JSImport("/images/luke-18.png", JSImport.Default)
+val luke18png: String = js.native
+@js.native @JSImport("/images/luke-19.png", JSImport.Default)
+val luke19png: String = js.native
+@js.native @JSImport("/images/luke-20.png", JSImport.Default)
+val luke20png: String = js.native
+@js.native @JSImport("/images/luke-21.png", JSImport.Default)
+val luke21png: String = js.native
+@js.native @JSImport("/images/luke-22.png", JSImport.Default)
+val luke22png: String = js.native
+@js.native @JSImport("/images/luke-23.png", JSImport.Default)
+val luke23png: String = js.native
+@js.native @JSImport("/images/luke-24.png", JSImport.Default)
+val luke24png: String = js.native
+
 @js.native @JSImport("/images/john-1.png", JSImport.Default)
 val john1png: String = js.native
 @js.native @JSImport("/images/john-2.png", JSImport.Default)
@@ -423,6 +472,30 @@ val imagesMap =
     (marcos.book, 14) -> mark14png,
     (marcos.book, 15) -> mark15png,
     (marcos.book, 16) -> mark16png,
+    (lucas.book, 1) -> luke1png,
+    (lucas.book, 2) -> luke2png,
+    (lucas.book, 3) -> luke3png,
+    (lucas.book, 4) -> luke4png,
+    (lucas.book, 5) -> luke5png,
+    (lucas.book, 6) -> luke6png,
+    (lucas.book, 7) -> luke7png,
+    (lucas.book, 8) -> luke8png,
+    (lucas.book, 9) -> luke9png,
+    (lucas.book, 10) -> luke10png,
+    (lucas.book, 11) -> luke11png,
+    (lucas.book, 12) -> luke12png,
+    (lucas.book, 13) -> luke13png,
+    (lucas.book, 14) -> luke14png,
+    (lucas.book, 15) -> luke15png,
+    (lucas.book, 16) -> luke16png,
+    (lucas.book, 17) -> luke17png,
+    (lucas.book, 18) -> luke18png,
+    (lucas.book, 19) -> luke19png,
+    (lucas.book, 20) -> luke20png,
+    (lucas.book, 21) -> luke21png,
+    (lucas.book, 22) -> luke22png,
+    (lucas.book, 23) -> luke23png,
+    (lucas.book, 24) -> luke24png,
     (juan.book, 1) -> john1png,
     (juan.book, 2) -> john2png,
     (juan.book, 3) -> john3png,
