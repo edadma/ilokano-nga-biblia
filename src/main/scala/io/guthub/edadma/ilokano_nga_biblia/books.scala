@@ -11,6 +11,7 @@ val booksNT =
   List(
     "Mateo" -> mateo.book,
     "Marcos" -> marcos.book,
+    "Lucas" -> lucas.book,
     "Juan" -> juan.book,
     "Aramid" -> aramid.book,
     "Roma" -> roma.book,
