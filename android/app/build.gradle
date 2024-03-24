@@ -7,8 +7,8 @@ android {
         applicationId "io.guthub.edadma.ilokano_nga_biblia"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 6
-        versionName "2024-03-23"
+        versionCode 7
+        versionName "2024-03-24"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         aaptOptions {
              // Files and dirs to omit from the packaged assets dir, modified to accommodate modern web apps.
