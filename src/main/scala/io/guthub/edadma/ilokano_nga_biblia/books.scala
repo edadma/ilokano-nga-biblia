@@ -6,6 +6,7 @@ val booksOT =
   List(
     "Genesis" -> genesis.book,
     "Ruth" -> ruth.book,
+    "Salmo" -> salmo.book,
   )
 val booksNT =
   List(
@@ -48,6 +49,11 @@ val booksMap =
     "ruth" -> ruth.book,
     "ru" -> ruth.book,
     "rut" -> ruth.book,
+
+    // Psalm
+    "salmo" -> salmo.book,
+    "sa" -> salmo.book,
+    "sal" -> salmo.book,
 
     // Matthew
     "mateo" -> mateo.book,
